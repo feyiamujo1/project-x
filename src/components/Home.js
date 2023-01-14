@@ -11,8 +11,18 @@ import FirstNewsImage from "../../src/assets/images/Rectangle32.png"
 import SecondNewsImage from "../../src/assets/images/Rectangle33.png"
 import ThirdNewsImage from "../../src/assets/images/Rectangle34.png"
 import CampaignHoldings from "./UI/CampaignHoldings"
+import Footer from "./UI/Footer"
+import Partners from "./UI/Partners"
+import { useRef } from "react"
+import { TypeAnimation } from "react-type-animation"
 
 const Home = () => {
+    
+    const ref = useRef(null);
+    const ScrollToView = () => {
+        ref.current?.scrollIntoView({behavior: 'smooth'});
+    };
+
   return (
     <div>
         <div className="w-full h-screen bg-cover bg-no-repeat bg-center bg-hero-image relative">
@@ -28,11 +38,11 @@ const Home = () => {
                         projecting your brand in memorable ways
                     </p>
                     <p className="text-white text-sm font-light absolute bottom-4 right-[2%]">RC 722750</p>
-                    <DownButton className="w-8 h-8 absolute bottom-8 right-[50%] translate-x-2/4 fill-custom-blue cursor-pointer animate-bounce hover:-translate-y-2 transition duration-500 delay-100" />
+                    <DownButton onClick={ScrollToView} className="w-8 h-8 absolute bottom-8 right-[50%] translate-x-2/4 fill-custom-blue cursor-pointer animate-bounce hover:-translate-y-2 transition duration-500 delay-100" />
                 </div>
             </div>
         </div>
-        <div className="w-full bg-black py-14">
+        <div ref={ref} className="w-full bg-black pt-14 pb-6 mt-10 rounded-[32px] space-y-6">
             <div className='w-11/12 h-full mx-auto flex flex-col items-center justify-center space-y-14'>
                 <div className="w-fit space-y-4 text-center">
                     <h1 className="text-white font-extrabold text-5xl mx-auto">Our Holdings</h1>
@@ -43,61 +53,179 @@ const Home = () => {
                 </div>
                 <CampaignHoldings />
             </div>
-        </div>
-        <div className="w-full py-14">
-            <div className='w-11/12 mx-auto space-y-10'>
-                <h1 className="text-black font-extrabold text-5xl">what we do.</h1>
-                <div className="w-full flex flex-row gap-12 items-start ">
-                    <div className="w-1/3">
-                        <img className="" src={FirstFrameImage} alt='' />
+            <div>
+                <div className="m-scroll">
+                    <div className="m-scroll__title">
+                        <div className="marquee-one">
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Think Iconic &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Think Iconic &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Think Iconic &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Think Iconic &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Think Iconic &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Think Iconic &nbsp;
+                            </h1>
+                        </div>
                     </div>
-                    <p className="w-2/3 text-base">
-                        We specialize in out of homes advertising and marketing communication and provide solutions 
-                        for our customers in form of our media platform across Nigeria. 
-                        We also provide our client with strategic board awareness insight, creative support and channel to deliver with their
-                        brand message from start to finish. We have won several awards in recognition of our innovative ideas and disruptive 
-                        concept delivered across the country. <br></br> With our vast experience, we intend to expand your market visibility to creating 
-                        bond and affinity for your brand through provision of excellent innovative and environmentally friendly integrated 
-                        marketing communication advertising services.
-                    </p>
-                </div>
-                <div className="w-full flex flex-row gap-12 items-start">
-                    <p className="w-2/3 text-base">
-                    At Eyekontact we ensure that customers have a positive experience of communication regardless of their locations , we have an 
-                    overall marketing strategy that focuses on reaching the target audience from multiple platforms and channels. Our type of strategy 
-                    includes both traditional marketing and digital marketing channels infused within the entire customer journey. We also play into key 
-                    content like: Media planning, Media buying, Pr activation, creative design and branding .
-                    </p>
-                    <div className="w-1/3">
-                        <img className="" src={SecondFrameImage} alt='' />
-                    </div>
-                </div>
-                <div className="w-full flex flex-row gap-12 items-start">
-                    <div className="w-1/3">
-                        <img className="w-full" src={ThirdFrameImage} alt='' />
-                    </div>
-                    <div className="w-2/3 space-y-8 text-base">
-                        <p>
-                            Eyekontact limited is one of Nigeria’s leading advertising companies which was incorporated in December 2007. 
-                            We specialise in out-of-home (OOH) advertising and marketing communication which provides solutions for our customers 
-                            inform of out media platforms across Nigeria. We believe in the power of OOH advertising and we will serve you the most 
-                            cost effective ways to reach your target audience in strategic locations. <br></br>
-                            If you have an idea that needs to be seen , or a product that needs to be sold , we can and will help. Plan your next campaign with us.
-                        </p>
-                        <div className="relative w-fit border-2 border-[#002F5A] rounded-full">
-                            <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div>
-                            <p className="py-[8px] pr-8 pl-12 font-semibold">Contact Us</p>
+                    <div className="m-scroll__title">
+                        <div className="marquee-two">
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Think EyeKontact &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Think EyeKontact &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Think EyeKontact &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Think EyeKontact &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Think EyeKontact &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Think EyeKontact &nbsp;
+                            </h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="w-full py-14 bg-black">
+        <div className="w-full py-14">
             <div className='w-11/12 mx-auto space-y-10'>
+                <h1 className="text-black font-extrabold text-5xl">what we do.</h1>
+                <div className="space-y-16">
+                    <div className="w-full flex flex-row gap-10 items-start ">
+                        <div className="w-1/3">
+                            <img className="" src={FirstFrameImage} alt='' />
+                        </div>
+                        <p className="w-2/3 text-base leading-8 text-justify">
+                            We specialize in out of homes advertising and marketing communication and provide solutions 
+                            for our customers in form of our media platform across Nigeria. 
+                            We also provide our client with strategic board awareness insight, creative support and channel to deliver with their
+                            brand message from start to finish. We have won several awards in recognition of our innovative ideas and disruptive 
+                            concept delivered across the country. <br></br> With our vast experience, we intend to expand your market visibility to creating 
+                            bond and affinity for your brand through provision of excellent innovative and environmentally friendly integrated 
+                            marketing communication advertising services.
+                        </p>
+                    </div>
+                    <div className="w-full flex flex-row gap-10 items-start">
+                        <p className="w-2/3 text-base leading-8 text-justify">
+                        At Eyekontact we ensure that customers have a positive experience of communication regardless of their locations , we have an 
+                        overall marketing strategy that focuses on reaching the target audience from multiple platforms and channels. Our type of strategy 
+                        includes both traditional marketing and digital marketing channels infused within the entire customer journey. We also play into key 
+                        content like: Media planning, Media buying, Pr activation, creative design and branding .
+                        </p>
+                        <div className="w-1/3">
+                            <img className="" src={SecondFrameImage} alt='' />
+                        </div>
+                    </div>
+                    <div className="w-full flex flex-row gap-10 items-start">
+                        <div className="w-1/3">
+                            <img className="w-full" src={ThirdFrameImage} alt='' />
+                        </div>
+                        <div className="w-2/3 space-y-5 text-base">
+                            <p className="leading-8 text-justify">
+                                Eyekontact limited is one of Nigeria’s leading advertising companies which was incorporated in December 2007. 
+                                We specialise in out-of-home (OOH) advertising and marketing communication which provides solutions for our customers 
+                                inform of out media platforms across Nigeria. We believe in the power of OOH advertising and we will serve you the most 
+                                cost effective ways to reach your target audience in strategic locations.
+                                If you have an idea that needs to be seen , or a product that needs to be sold , we can and will help. Plan your next campaign with us.
+                            </p>
+                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div>
+                                <p className="py-[8px] pr-8 pl-12 font-semibold">Contact Us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="w-full pb-14 pt-6 bg-black space-y-10">
+            <div>
+                <div className="m-scroll">
+                    <div className="m-scroll__title">
+                        <div className="marquee-one">
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Ideate Visualise &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Ideate Visualise &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Ideate Visualise &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Ideate Visualise &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Ideate Visualise &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-8xl ">
+                                Ideate Visualise &nbsp;
+                            </h1>
+                        </div>
+                    </div>
+                    <div className="m-scroll__title">
+                        <div className="marquee-two">
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Implement Execute 
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Implement Execute &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Implement Execute &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Implement Execute &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Implement Execute &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-8xl  right-marquee">
+                                Implement Execute &nbsp;
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='w-11/12 mx-auto space-y-14'>
                 <div className="space-y-3">
                     <h2 className="font-extrabold text-white text-center text-base tracking-[0.45em]">WHAT SETS US APART</h2>
-                    <p className="text-white font-semibold text-3xl w-[800px] mx-auto text-center">
-                        We are a strategic partner to our amazing clients. We will help you to <span className="text-custom-blue">ideate</span> and <span className="text-custom-blue">implement</span> your product from conception 
+                    <div>
+                    
+                    </div>
+                    <p className="text-white font-bold text-3xl w-[800px] mx-auto text-center leading-[50px]">
+                        We are a strategic partner to our amazing clients. We will help you to 
+                        <span className="text-custom-blue"> ideate</span> and <span className="text-custom-blue">implement</span>
+                        {/* <TypeAnimation
+                            sequence={[' ideate', 3000, ' envisage', 3000, ' imagine', 3000, ' conceive', 3000, ' picture', 3000]}
+                                        //  Replacing previous Text
+                            style={{ color: '#3ADDFF' }}
+                            wrapper="span"
+                            repeat={Infinity}
+                        />
+                        and 
+                        <TypeAnimation
+                            sequence={[' implement', 3500, ' apply', 3500, ' enforce', 3500, ' conceive', 3500, ' picture', 3500]}
+                                        //  Replacing previous Text
+                            style={{ color: '#3ADDFF' }}
+                            wrapper="span"
+                            repeat={Infinity}
+                        /> */}
+                        your product from conception 
                         to iterative development support and growth, we're always working proactively for you.
                     </p>
                 </div>
@@ -117,13 +245,15 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className="w-full py-14">
+        <div className="w-full py-14 space-y-10">
             <div className='w-11/12 mx-auto space-y-10'>
-                <div className="space-y-3">
+                <div className="space-y-4">
                     <h2 className="font-extrabold text-custom-blue text-base tracking-[0.45em]">TRUSTED PARTNERS</h2>
-                    <p className="text-black font-extrabold text-5xl"> <span className="text-custom-black">since 2007</span>, more than 100 brands have trusted us.</p>
-                    
+                    <p className="text-black font-extrabold text-5xl w-[870px]"> <span className="text-custom-black">since 2007</span>, more than 100 brands have trusted us.</p>
                 </div>
+            </div>
+            <div className="overflow-hidden">
+                <Partners />
             </div>
         </div>
         <div className="w-full py-14 bg-[#00D3FF]">
@@ -197,55 +327,68 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className="w-full py-14">
+        <div className="w-full pb-14">
             <div className='w-11/12 mx-auto space-y-10'>
-                <h1 className="text-black font-extrabold text-5xl">some icing on the cake.</h1>
-                <div className="space-y-10">
-                    <div className="w-full flex flex-row gap-12 items-center">
+                <h1 className="text-black font-extrabold text-5xl">recent news.</h1>
+                <div className="space-y-5">
+                    <div className="w-full flex flex-row gap-12 items-start">
                         <div className="w-1/3">
                             <img className="w-full" src={FirstNewsImage} alt='' />
                         </div>
-                        <div className="w-2/3 text-base">
-                            <p>
+                        <div className="w-2/3 text-base space-y-4">
+                            <p className="leading-8 text-justify">
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas 
                             mauris at risus. Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus 
                             laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat 
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
+                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div>
+                                <p className="py-[8px] pr-6 pl-12 font-semibold">Read More</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="w-full flex flex-row gap-12 items-center border-t border-b border-[#0000001F] py-10">
+                    <div className="w-full flex flex-row gap-12 items-start border-t border-b border-[#0000001F] py-5">
                         <div className="w-1/3">
                             <img className="w-full" src={SecondNewsImage} alt='' />
                         </div>
-                        <div className="w-2/3 text-base">
-                            <p>
+                        <div className="w-2/3 text-base space-y-4">
+                            <p className="leading-8 text-justify">
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas 
                             mauris at risus. Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus 
                             laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat 
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
+                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div>
+                                <p className="py-[8px] pr-6 pl-12 font-semibold">Read More</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="w-full flex flex-row gap-12 items-center">
+                    <div className="w-full flex flex-row gap-12 items-start">
                         <div className="w-1/3">
                             <img className="w-full" src={ThirdNewsImage} alt='' />
                         </div>
-                        <div className="w-2/3 text-base">
-                            <p>
+                        <div className="w-2/3 text-base space-y-4">
+                            <p className="leading-8 text-justify">
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas 
                             mauris at risus. Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus 
                             laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat 
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
+                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div>
+                                <p className="py-[8px] pr-6 pl-12 font-semibold">Read More</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }
