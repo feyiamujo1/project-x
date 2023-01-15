@@ -325,7 +325,7 @@ const Home = () => {
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
-                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer bg-custom-blue float-right">
+                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer bg-custom-blue mx-auto  md:mx-0">
                                 {/* <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div> */}
                                 {/* <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold">Read More</p> */}
                                 <p className="py-2 p-4 font-semibold text-white">Read More</p>
@@ -344,7 +344,7 @@ const Home = () => {
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
-                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer float-right">
+                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer bg-custom-blue mx-auto md:mx-0">
                                 {/* <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div> */}
                                 {/* <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold">Read More</p> */}
                                 <p className="py-2 p-4 font-semibold text-white">Read More</p>
@@ -363,7 +363,7 @@ const Home = () => {
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
-                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer mx-auto">
+                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer bg-custom-blue mx-auto  md:mx-0">
                                 {/* <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div> */}
                                 {/* <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold">Read More</p> */}
                                 <p className="py-2 p-4 font-semibold text-white">Read More</p>
