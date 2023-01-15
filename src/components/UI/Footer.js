@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='pt-14'>
-            <p className='text-white text-center'>2023 EyeKontact Limited, All Rights Reserved</p>
+            <p className='text-white text-center w-11/12'>2023 EyeKontact Limited, All Rights Reserved</p>
         </div>
     </div>
   )
