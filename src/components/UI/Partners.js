@@ -48,15 +48,15 @@ const Partners = () => {
   ];
 
   return (
-    <div className='goat'>
+    <div>
       <div className="m-scroll-image">
         <div className="m-scroll__title-image">
             <div className="marquee-image pl-5">
             {
               SliderImages.map((SliderImage) => {
                   return (
-                      <div key={SliderImage.id} className='w-[220px] h-[220px] border-[0.01px] border-[#ACACAC80] rounded-full -m-2 flex flex-row justify-center items-center bg-white'>
-                        <img className='w-7/12 h-[45px]' src={SliderImage.logo} alt={SliderImage.alt_text}/>
+                      <div key={SliderImage.id} className='w-[220px] h-[220px] border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
+                        <img className='w-8/12 -mt-2 h-[50px] sm:max-h-[55px]' src={SliderImage.logo} alt={SliderImage.alt_text}/>
                       </div>
                   )
               })

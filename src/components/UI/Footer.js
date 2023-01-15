@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <div className="py-14 bg-black">
         <div className='w-11/12 mx-auto space-y-10 text-white'>
-            <div className="grid grid-cols-3">
+            <div className="grid md:grid-cols-3 space-y-6 md:space-x-0">
                 <h1 className="font-extrabold text-5xl">Hello.</h1>
-                <div className='space-y-6 mx-auto'>
+                <div className='space-y-6'>
                     <div className='flex flex-row gap-6 items-center'>
                         <HomeIcon />
                         <p>Home</p>
@@ -37,14 +37,14 @@ const Footer = () => {
                         <p>Contact Us</p>
                     </div>
                 </div>
-                <div className='text-right space-y-4'>
+                <div className='md:text-right space-y-4'>
                     <p className=''>
                         Place your business where it counts.
                     </p>
                     <p className='text-3xl'>
                         Contact Us
                     </p>
-                    <div className='flex flex-row items-center justify-end space-x-4'>
+                    <div className='flex flex-row items-center md:justify-end space-x-4'>
                         <IgIcon className='w-6 h-6 fill-white' />
                         <FbIcon className='w-6 h-6 fill-white'/>
                         <LinkedInIcon className='w-5 h-5 fill-white' />
