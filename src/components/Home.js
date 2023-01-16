@@ -48,7 +48,7 @@ const Home = () => {
             </div>
         </div>
          <div ref={ref} className="w-full bg-black py-16 mt-10 rounded-[32px] space-y-6">
-            <div className='w-[11/12] lg:w-[85%] h-full mx-auto flex flex-col items-center justify-center space-y-14'>
+            <div className='w-11/12 lg:w-[85%] h-full mx-auto flex flex-col items-center justify-center space-y-14'>
                 <div className="w-fit space-y-4 text-center">
                     <h1 className="text-white font-extrabold text-4xl sm:text-5xl mx-auto">Our Holdings</h1>
                     <p className="text-white text-base md:text-sm font-normal w-full md:w-[480px]">
