@@ -25,9 +25,9 @@ const Home = () => {
 
   return (
     <div>
-        <div className="w-full h-screen bg-cover bg-no-repeat bg-center  relative">
+        <div className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center  relative">
             <Navbar />
-            <video className="w-screen h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
+            <video className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
                 <source src={BgVideo} type="video/mp4" />
             </video>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
