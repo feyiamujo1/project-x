@@ -1,11 +1,11 @@
 import Logo from '../../../src/assets/images/logo.png'
 import * as IoIcon from "react-icons/io5"
 import * as HiIcon from "react-icons/hi"
-import {ReactComponent as HomeIcon} from '../../../src/assets/images/homeIcon.svg'
-import {ReactComponent as PlatformIcon} from '../../../src/assets/images/Vector2.svg'
-import {ReactComponent as ServiceIcon} from '../../../src/assets/images/Vector3.svg'
-import {ReactComponent as BlogIcon} from '../../../src/assets/images/Vector4.svg'
-import {ReactComponent as ContactIcon} from '../../../src/assets/images/Vector5.svg'
+// import {ReactComponent as HomeIcon} from '../../../src/assets/images/homeIcon.svg'
+// import {ReactComponent as PlatformIcon} from '../../../src/assets/images/Vector2.svg'
+// import {ReactComponent as ServiceIcon} from '../../../src/assets/images/Vector3.svg'
+// import {ReactComponent as BlogIcon} from '../../../src/assets/images/Vector4.svg'
+// import {ReactComponent as ContactIcon} from '../../../src/assets/images/Vector5.svg'
 
 const Navbar = () => {
     const showSideBarar = () => {
