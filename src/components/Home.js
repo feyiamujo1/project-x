@@ -31,17 +31,17 @@ const Home = () => {
                 <source src={BgVideo} type="video/mp4" />
             </video>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
-                <div className="w-fit -mt-5 md:mt-0">
+                <div className="w-fit -mt-14 md:mt-0">
                     <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">EyeKontact</h1>
-                    <p className="text-white text-lg sm:text-xl text-right font-semibold">Limited</p>
+                    <p className="text-white text-sm sm:text-xl text-right font-semibold -mt-3 sm:mt-0">Limited</p>
                 </div>
                 <div>
-                    <p className="w-full md:w-[550px] text-white text-base font-normal md:absolute md:bottom-24 md:right-[50%] md:translate-x-2/4 left-auto">
+                    <p className="w-11/12 md:w-[550px] text-white text-center text-sm sm:text-base font-normal absolute left-0 right-0 mx-auto bottom-[110px] md:bottom-24 md:right-[50%] md:translate-x-2/4 md:left-auto">
                         We are a value driven organisation that helps you connect with your target audience by 
                         projecting your brand in memorable ways
                     </p>
                     <p className="text-white text-xs sm:text-sm font-light absolute bottom-4 right-[5%] md:right-[2%]">RC 722750</p>
-                    <div className="w-full absolute left-0 right-0 bottom-16 md:bottom-8 flex flex-row justify-center items-center">
+                    <div className="w-full absolute left-0 right-0 bottom-10 md:bottom-8 flex flex-row justify-center items-center">
                         <DownButton onClick={ScrollToView} className="h-12 w-12 sm:w-10 sm:h-10 fill-custom-blue cursor-pointer animate-bounce" />
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const Home = () => {
         <div className="w-full py-16">
             <div className='w-11/12 lg:w-[85%] mx-auto space-y-10'>
                 <h1 className="text-black font-extrabold text-4xl md:text-5xl">what we do.</h1>
-                <div className="space-y-4 md:space-y-16">
+                <div className="space-y-10 md:space-y-16">
                     <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start ">
                         <div className="w-full md:w-1/3">
                             <img className="w-full" src={FirstFrameImage} alt='' />
@@ -148,7 +148,7 @@ const Home = () => {
                                 cost effective ways to reach your target audience in strategic locations.
                                 If you have an idea that needs to be seen , or a product that needs to be sold , we can and will help. Plan your next campaign with us.
                             </p>
-                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer">
+                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer mx-auto md:ml-0">
                                 <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
                                 <p className="py-[8px] pr-5 pl-12 font-semibold">Contact Us</p>
                             </div>
@@ -163,44 +163,80 @@ const Home = () => {
                     <div className="m-scroll__title">
                         <div className="marquee-one">
                             <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
-                                Ideate Visualise &nbsp;
+                                Ideate &nbsp;
                             </h1>
                             <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
-                                Ideate Visualise &nbsp;
+                                Visualise &nbsp;
                             </h1>
                             <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
-                                Ideate Visualise &nbsp;
+                                envision &nbsp;
                             </h1>
                             <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
-                                Ideate Visualise &nbsp;
+                                Cogitate &nbsp;
                             </h1>
                             <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
-                                Ideate Visualise &nbsp;
+                                Examine &nbsp;
                             </h1>
                             <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
-                                Ideate Visualise &nbsp;
+                                Envisage &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
+                                Ideate &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
+                                Visualise &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
+                                envision &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
+                                Cogitate &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
+                                Examine &nbsp;
+                            </h1>
+                            <h1 className="text-[#00D3FF] font-black text-[78px] md:text-8xl ">
+                                Envisage &nbsp;
                             </h1>
                         </div>
                     </div>
                     <div className="m-scroll__title">
                         <div className="marquee-two mt-[72px] md:mt-[90px]">
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Implement Execute 
+                                Implement &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Implement Execute &nbsp;
+                                Execute &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Implement Execute &nbsp;
+                                Enact &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Implement Execute &nbsp;
+                                Enforce &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Implement Execute &nbsp;
+                                Execute &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Implement Execute &nbsp;
+                                Legislate &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
+                                Implement &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
+                                Execute &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
+                                Enact &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
+                                Enforce &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
+                                Execute &nbsp;
+                            </h1>
+                            <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
+                                Legislate &nbsp;
                             </h1>
                         </div>
                     </div>
@@ -208,7 +244,7 @@ const Home = () => {
             </div>
             <div className='w-11/12 lg:w-[85%] mx-auto space-y-10'>
                 <div className="space-y-3">
-                    <h2 className="font-extrabold text-white text-center text-2xl md:text-base tracking-[0.45em]">WHAT SETS US APART</h2>
+                    <h2 className="font-extrabold text-white text-center text-lg md:text-base tracking-[0.45em]">WHAT SETS US APART</h2>
                     <p className="text-white font-bold w-full text-lg md:text-3xl md:max-w-[800px] lg:w-10/12 mx-auto text-center md:leading-[50px]">
                         We are a strategic partner to our amazing clients. We will help you to 
                         <span className="text-custom-blue"> ideate</span> and <span className="text-custom-blue">implement </span>

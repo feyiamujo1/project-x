@@ -21,7 +21,7 @@ const CampaignHoldings = () => {
       { id: 7, name: "Wallwrap", image: WallWrapImage, vacant: 54, deployed: 4 },
       { id: 8, name: "Fence Drape", image: FenceDrapeImage, vacant: 0, deployed: 17 },
     ]
-    let campaignStyle = "text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer hover:bg-custom-blue";
+    let campaignStyle = "text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer active:bg-custom-blue md:hover:bg-custom-blue";
   return (
     <div className="w-full space-y-4">
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -31,7 +31,7 @@ const CampaignHoldings = () => {
             <div className="mx-auto w-fit">
               <img className="w-[70px] h-[65px]" src={campaign.image} alt="" />
             </div>
-            <h2 className="font-medium mx-auto w-fit text-xl">{campaign.name}</h2>
+            <h2 className="font-medium mx-auto w-fit text-xl ">{campaign.name}</h2>
             <div className="space-y-4">
               <div className="flex flex-row items-center">
                 <div className="">
@@ -52,7 +52,7 @@ const CampaignHoldings = () => {
                   
                 </div>
                 <div className="w-full text-center">
-                  <p className="group-hover:text-black group-hover:font-medium"><span className="font-bold">{campaign.vacant}</span> Available</p>
+                  <p className="md:group-hover:text-black group-hover:font-medium"><span className="font-bold">{campaign.vacant}</span> Available</p>
                 </div>
               </div>
               <div className="flex flex-row items-center">
@@ -60,19 +60,19 @@ const CampaignHoldings = () => {
                   <div className="w-3 h-3 bg-notification-white group-hover:bg-white rounded-full relative"></div>
                 </div>
                 <div className="w-full text-center">
-                  <p className="text-notification-white group-hover:text-black group-hover:font-medium"><span className="font-bold">{campaign.deployed}</span> Deployed</p>
+                  <p className="text-notification-white group-active:text-white md:group-hover:text-black group-hover:font-medium"><span className="font-bold">{campaign.deployed}</span> Deployed</p>
                 </div>
               </div>
             </div>
           </div>
         )
         )}
-        <div className="space-y-7 md:col-span-3 p-6 border border-custom-white rounded-2xl"> {/*sm:col-span-2 */}
+        <div className="space-y-7 md:col-span-3 p-6 border border-custom-white rounded-2xl group active:bg-custom-blue md:hover:bg-custom-blue"> {/*sm:col-span-2 */}
           <div className="">
               <img className="mx-auto" src={WhiteLogo} alt="" />
           </div>
-          <p className="text-white font-medium text-center text-xl">Iconic Concept</p>
-          <p className="text-white text-center text-base">On Request</p>
+          <p className="text-white font-medium text-center text-xl md:group-hover:text-black">Iconic Concept</p>
+          <p className="text-white text-center text-base md:group-hover:text-black">On Request</p>
         </div>
       </div>
       

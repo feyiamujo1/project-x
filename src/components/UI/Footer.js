@@ -1,4 +1,4 @@
-import {ReactComponent as HomeIcon} from '../../../src/assets/images/Vector1.svg'
+import {ReactComponent as HomeIcon} from '../../../src/assets/images/homeIcon.svg'
 import {ReactComponent as PlatformIcon} from '../../../src/assets/images/Vector2.svg'
 import {ReactComponent as ServiceIcon} from '../../../src/assets/images/Vector3.svg'
 import {ReactComponent as BlogIcon} from '../../../src/assets/images/Vector4.svg'
@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className=''>
                     <div className='space-y-6 md:w-[160px] md:mx-auto'>
                         <div className='flex flex-row gap-6 items-center'>
-                            <HomeIcon />
+                            <HomeIcon className='w-[16px] h-[15px]'/>
                             <p>Home</p>
                         </div>
                         <div className='flex flex-row gap-6 items-center'>
@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:text-right space-y-4'>
+                <div className='md:text-right md:space-y-4 space-y-8'>
                     <p className=''>
                         Place your business where it counts.
                     </p>
