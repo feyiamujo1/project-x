@@ -49,14 +49,14 @@ const Partners = () => {
 
   return (
     <div>
-      <div className="m-scroll-image">
+      <div className="m-scroll-image h-[230px] md:h-[270px]">
         <div className="m-scroll__title-image">
-            <div className="marquee-image pl-5">
+            <div className="marquee-image pl-5 ">
             {
               SliderImages.map((SliderImage) => {
                   return (
-                      <div key={SliderImage.id} className='w-[220px] h-[220px] border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                        <img className='w-8/12 -mt-2 h-[50px] sm:max-h-[55px]' src={SliderImage.logo} alt={SliderImage.alt_text}/>
+                      <div key={SliderImage.id} className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
+                        <img className='w-[160px] md:w-[172px] -mt-2 h-[50px] md:h-[55px] ' src={SliderImage.logo} alt={SliderImage.alt_text}/>
                       </div>
                   )
               })

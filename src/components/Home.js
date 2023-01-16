@@ -10,6 +10,7 @@ import ThirdRecImage from "../../src/assets/images/Rectangle18.png"
 import FirstNewsImage from "../../src/assets/images/Rectangle32.png"
 import SecondNewsImage from "../../src/assets/images/Rectangle33.png"
 import ThirdNewsImage from "../../src/assets/images/Rectangle34.png"
+import BgVideo from "../../src/assets/video/website_header.MP4"
 import CampaignHoldings from "./UI/CampaignHoldings"
 import Footer from "./UI/Footer"
 import Partners from "./UI/Partners"
@@ -24,8 +25,11 @@ const Home = () => {
 
   return (
     <div>
-        <div className="w-full h-screen bg-cover bg-no-repeat bg-center bg-hero-image relative">
+        <div className="w-full h-screen bg-cover bg-no-repeat bg-center  relative">
             <Navbar />
+            <video className="w-screen h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted >
+                <source src={BgVideo} type="video/mp4" />
+            </video>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
                 <div className="w-fit -mt-5 md:mt-0">
                     <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">EyeKontact</h1>
@@ -43,8 +47,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
-         <div ref={ref} className="w-full bg-black pt-14 pb-6 mt-10 rounded-[32px] space-y-6">
-            <div className='w-11/12 h-full mx-auto flex flex-col items-center justify-center space-y-14'>
+         <div ref={ref} className="w-full bg-black py-16 mt-10 rounded-[32px] space-y-6">
+            <div className='w-[11/12] md:w-[85%] h-full mx-auto flex flex-col items-center justify-center space-y-14'>
                 <div className="w-fit space-y-4 text-center">
                     <h1 className="text-white font-extrabold text-4xl sm:text-5xl mx-auto">Our Holdings</h1>
                     <p className="text-white text-base md:text-sm font-normal w-full md:w-[480px]">
@@ -103,8 +107,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className="w-full py-14">
-            <div className='w-11/12 mx-auto space-y-10'>
+        <div className="w-full py-16">
+            <div className='w-11/12 md:w-[85%] mx-auto space-y-10'>
                 <h1 className="text-black font-extrabold text-4xl md:text-5xl">what we do.</h1>
                 <div className="space-y-4 md:space-y-16">
                     <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start ">
@@ -144,16 +148,16 @@ const Home = () => {
                                 cost effective ways to reach your target audience in strategic locations.
                                 If you have an idea that needs to be seen , or a product that needs to be sold , we can and will help. Plan your next campaign with us.
                             </p>
-                            <div className="relative w-fit border-2 border-[#002F5A] rounded-full cursor-pointer">
-                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div>
-                                <p className="py-[8px] pr-8 pl-12 font-semibold">Contact Us</p>
+                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
+                                <p className="py-[8px] pr-5 pl-12 font-semibold">Contact Us</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="w-full pb-14 pt-6 bg-black space-y-10">
+        <div className="w-full py-16 bg-black space-y-12">
             <div>
                 <div className="m-scroll h-[180px] md:h-[200px]">
                     <div className="m-scroll__title">
@@ -202,7 +206,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-11/12 mx-auto space-y-14'>
+            <div className='w-11/12 md:w-[85%] mx-auto space-y-10'>
                 <div className="space-y-3">
                     <h2 className="font-extrabold text-white text-center text-2xl md:text-base tracking-[0.45em]">WHAT SETS US APART</h2>
                     <p className="text-white font-bold w-full text-lg md:text-3xl md:max-w-[800px] lg:w-10/12 mx-auto text-center md:leading-[50px]">
@@ -227,8 +231,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className="w-full py-14 space-y-10">
-            <div className='w-11/12 mx-auto space-y-10'>
+        <div className="w-full py-16 space-y-10">
+            <div className='w-11/12 md:w-[85%] mx-auto space-y-12'>
                 <div className="space-y-4">
                     <h2 className="font-extrabold text-custom-blue text-base tracking-[0.45em]">TRUSTED PARTNERS</h2>
                     <p className="text-black font-extrabold text-3xl md:text-5xl max-w-[870px]"> <span className="text-custom-black">since 2007</span>, more than 100 brands have trusted us.</p>
@@ -264,12 +268,12 @@ const Home = () => {
             </div>
         </div>
         <div className="w-full py-14">
-            <div className='w-11/12 mx-auto space-y-10'>
+            <div className='w-11/12 md:w-[85%] mx-auto space-y-10'>
                 <h1 className="text-black font-extrabold text-4xl md:text-5xl">some icing on the cake.</h1>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
                     <div className="space-y-8">
                         <div className="rounded-xl">
-                            <img className="w-full" src={FirstRecImage} alt="" />
+                            <img className="w-full md:w-11/12" src={FirstRecImage} alt="" />
                         </div>
                         <div className="space-y-3">
                             <p className="text-center font-extrabold">
@@ -282,7 +286,7 @@ const Home = () => {
                     </div>
                     <div className="space-y-8">
                         <div className="rounded-xl">
-                            <img className="w-full" src={SecondRecImage} alt="" />
+                            <img className="w-full md:w-11/12" src={SecondRecImage} alt="" />
                         </div>
                         <div className="space-y-3">
                             <p className="text-center font-extrabold">
@@ -295,7 +299,7 @@ const Home = () => {
                     </div>
                     <div className="space-y-8">
                         <div className="rounded-xl">
-                            <img className="w-full" src={ThirdRecImage} alt="" />
+                            <img className="w-full md:w-11/12" src={ThirdRecImage} alt="" />
                         </div>
                         <div className="space-y-3">
                             <p className="text-center font-extrabold">
@@ -310,7 +314,7 @@ const Home = () => {
             </div>
         </div>
         <div className="w-full pb-14">
-            <div className='w-11/12 mx-auto space-y-10'>
+            <div className='w-11/12 md:w-[85%] mx-auto space-y-10'>
                 <h1 className="text-black font-extrabold text-4xl md:text-5xl">recent news.</h1>
                 <div className="space-y-5">
                     <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start">
@@ -325,10 +329,10 @@ const Home = () => {
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
-                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer bg-custom-blue mx-auto  md:mx-0">
-                                {/* <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div> */}
-                                {/* <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold">Read More</p> */}
-                                <p className="py-2 p-4 font-semibold text-white">Read More</p>
+                            <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
+                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold hidden md:block">Read More</p>
+                                <p className="py-2 p-4 font-semibold text-white md:hidden">Read More</p>
                             </div>
                         </div>
                     </div>
@@ -344,10 +348,10 @@ const Home = () => {
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
-                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer bg-custom-blue mx-auto md:mx-0">
-                                {/* <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div> */}
-                                {/* <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold">Read More</p> */}
-                                <p className="py-2 p-4 font-semibold text-white">Read More</p>
+                            <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
+                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold hidden md:block">Read More</p>
+                                <p className="py-2 p-4 font-semibold text-white md:hidden">Read More</p>
                             </div>
                         </div>
                     </div>
@@ -363,10 +367,10 @@ const Home = () => {
                             pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                             </p>
-                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer bg-custom-blue mx-auto  md:mx-0">
-                                {/* <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-[#002F5A] -left-1"></div> */}
-                                {/* <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold">Read More</p> */}
-                                <p className="py-2 p-4 font-semibold text-white">Read More</p>
+                            <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
+                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
+                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold hidden md:block">Read More</p>
+                                <p className="py-2 p-4 font-semibold text-white md:hidden">Read More</p>
                             </div>
                         </div>
                     </div>

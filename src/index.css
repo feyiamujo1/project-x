@@ -90,7 +90,6 @@ html {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 230px;
 }
 .m-scroll__title-image {
   display: flex;

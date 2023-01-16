@@ -12,29 +12,31 @@ import {ReactComponent as LocationIcon} from '../../../src/assets/images/Locatio
 const Footer = () => {
   return (
     <div className="py-14 bg-black">
-        <div className='w-11/12 mx-auto space-y-10 text-white'>
-            <div className="grid md:grid-cols-3 space-y-6 md:space-x-0">
+        <div className='w-11/12 md:w-[85%] mx-auto space-y-10 text-white'>
+            <div className="grid md:grid-cols-3 space-y-6">
                 <h1 className="font-extrabold text-5xl">Hello.</h1>
-                <div className='space-y-6'>
-                    <div className='flex flex-row gap-6 items-center'>
-                        <HomeIcon />
-                        <p>Home</p>
-                    </div>
-                    <div className='flex flex-row gap-6 items-center'>
-                        <PlatformIcon />
-                        <p>Our Platform</p>
-                    </div>
-                    <div className='flex flex-row gap-6 items-center'>
-                        <ServiceIcon />
-                        <p>Our Services</p>
-                    </div>
-                    <div className='flex flex-row gap-6 items-center'>
-                        <BlogIcon />
-                        <p>Blog</p>
-                    </div>
-                    <div className='flex flex-row gap-6 items-center'>
-                        <ContactIcon />
-                        <p>Contact Us</p>
+                <div className=''>
+                    <div className='space-y-6 md:w-[160px] md:mx-auto'>
+                        <div className='flex flex-row gap-6 items-center'>
+                            <HomeIcon />
+                            <p>Home</p>
+                        </div>
+                        <div className='flex flex-row gap-6 items-center'>
+                            <PlatformIcon />
+                            <p>Our Platform</p>
+                        </div>
+                        <div className='flex flex-row gap-6 items-center'>
+                            <ServiceIcon />
+                            <p>Our Services</p>
+                        </div>
+                        <div className='flex flex-row gap-6 items-center'>
+                            <BlogIcon />
+                            <p>Blog</p>
+                        </div>
+                        <div className='flex flex-row gap-6 items-center'>
+                            <ContactIcon />
+                            <p>Contact Us</p>
+                        </div>
                     </div>
                 </div>
                 <div className='md:text-right space-y-4'>
@@ -63,8 +65,8 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='pt-14'>
-            <p className='text-white text-center w-11/12'>2023 EyeKontact Limited, All Rights Reserved</p>
+        <div className='pt-14 w-11/12 md:w-[85%] mx-auto'>
+            <p className='text-white text-center mx-auto'>&#169; 2023 EyeKontact Limited, All Rights Reserved</p>
         </div>
     </div>
   )
