@@ -12,7 +12,7 @@ import {ReactComponent as LocationIcon} from '../../../src/assets/images/Locatio
 const Footer = () => {
   return (
     <div className="py-14 bg-black">
-        <div className='w-11/12 md:w-[85%] mx-auto space-y-10 text-white'>
+        <div className='w-11/12 lg:w-[85%] mx-auto space-y-10 text-white'>
             <div className="grid md:grid-cols-3 space-y-6">
                 <h1 className="font-extrabold text-5xl">Hello.</h1>
                 <div className=''>
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='pt-14 w-11/12 md:w-[85%] mx-auto'>
+        <div className='pt-14 w-11/12 lg:w-[85%] mx-auto'>
             <p className='text-white text-center mx-auto'>&#169; 2023 EyeKontact Limited, All Rights Reserved</p>
         </div>
     </div>

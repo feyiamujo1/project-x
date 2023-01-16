@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className="absolute top-0 w-full">
-        <div className='w-11/12 mx-auto py-4 flex items-center justify-between font-medium'>
+        <div className='w-11/12 lg:w-[85%] mx-auto py-4 flex items-center justify-between font-medium'>
             <div className='h-11 w-20 md:w-24 cursor-pointer flex items-center justify-between'>
                 <img className='w-full' src={Logo} alt="" />
             </div>
