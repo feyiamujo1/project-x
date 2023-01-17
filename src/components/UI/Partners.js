@@ -138,7 +138,7 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[80px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
+                <div className='w-[80px] md:w-[80pxfi] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
                   <img className='w-full md:w-fit md:h-fit' src={PeakMilk} alt=""/>
                 </div>
               </div>
@@ -248,7 +248,7 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[80px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
+                <div className='w-[80px] md:w-[80px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
                   <img className='w-full md:w-fit md:h-fit' src={PeakMilk} alt=""/>
                 </div>
               </div>
