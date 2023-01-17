@@ -56,7 +56,9 @@ const Partners = () => {
               SliderImages.map((SliderImage) => {
                   return (
                       <div key={SliderImage.id} className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                        <img className='w-[160px] md:w-[172px] -mt-2 h-[50px] md:h-[55px] ' src={SliderImage.logo} alt={SliderImage.alt_text}/>
+                        <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
+                          <img className='w-fit h-full' src={SliderImage.logo} alt={SliderImage.alt_text}/>
+                        </div>
                       </div>
                   )
               })

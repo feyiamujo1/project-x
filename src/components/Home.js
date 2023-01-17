@@ -38,11 +38,11 @@ const Home = () => {
                 <div>
                     <p className="w-11/12 md:w-[550px] text-white text-center text-sm sm:text-base font-normal absolute left-0 right-0 mx-auto bottom-[110px] md:bottom-24 md:right-[50%] md:translate-x-2/4 md:left-auto">
                         We are a value driven organisation that helps you connect with your target audience by 
-                        projecting your brand in memorable ways
+                        projecting your brand in memorable ways.
                     </p>
                     <p className="text-white text-xs sm:text-sm font-light absolute bottom-4 right-[5%] md:right-[2%]">RC 722750</p>
                     <div className="w-full absolute left-0 right-0 bottom-10 md:bottom-8 flex flex-row justify-center items-center">
-                        <DownButton onClick={ScrollToView} className="h-12 w-12 sm:w-10 sm:h-10 fill-custom-blue cursor-pointer animate-bounce" />
+                        <DownButton onClick={ScrollToView} className=" w-10 h-10 fill-custom-blue cursor-pointer animate-bounce" />
                     </div>
                 </div>
             </div>
