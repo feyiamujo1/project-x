@@ -148,9 +148,10 @@ const Home = () => {
                                 cost effective ways to reach your target audience in strategic locations.
                                 If you have an idea that needs to be seen , or a product that needs to be sold , we can and will help. Plan your next campaign with us.
                             </p>
-                            <div className="relative w-fit border-2 border-black rounded-full cursor-pointer mx-auto md:ml-0">
-                                <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
-                                <p className="py-[8px] pr-5 pl-12 font-semibold">Contact Us</p>
+                            <div className="relative w-fit md:border-2 bg-custom-blue md:bg-white md:border-black rounded-full cursor-pointer mx-auto md:ml-0">
+                                <div className="hidden md:block absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
+                                <p className="py-[8px] hidden md:block pr-5 pl-12 font-semibold">Contact Us</p>
+                                <p className="py-2 p-4 font-semibold text-white md:hidden">Contact Us</p>
                             </div>
                         </div>
                     </div>

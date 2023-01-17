@@ -21,13 +21,12 @@ const CampaignHoldings = () => {
       { id: 7, name: "Wallwrap", image: WallWrapImage, vacant: 54, deployed: 4 },
       { id: 8, name: "Fence Drape", image: FenceDrapeImage, vacant: 0, deployed: 17 },
     ]
-    let campaignStyle = "text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer active:bg-custom-blue md:hover:bg-custom-blue";
   return (
     <div className="w-full space-y-4">
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         {Campaigns.map((campaign) => 
         (
-          <div className={campaignStyle} key={campaign.id}> {/* confirm style first campaign.id === 8 ? campaignStyle + " sm:col-span-2 md:col-span-1" : campaignStyle*/}
+          <div className="text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer active:bg-custom-blue md:hover:bg-custom-blue group" key={campaign.id}> {/* confirm style first campaign.id === 8 ? campaignStyle + " sm:col-span-2 md:col-span-1" : campaignStyle*/}
             <div className="mx-auto w-fit">
               <img className="w-[70px] h-[65px]" src={campaign.image} alt="" />
             </div>
@@ -52,7 +51,7 @@ const CampaignHoldings = () => {
                   
                 </div>
                 <div className="w-full text-center">
-                  <p className="md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.vacant}</span> Available</p>
+                  <p className="group-active:text-black md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.vacant}</span> Available</p>
                 </div>
               </div>
               <div className="flex flex-row items-center">
@@ -60,7 +59,7 @@ const CampaignHoldings = () => {
                   <div className="w-3 h-3 bg-notification-white group-hover:bg-white rounded-full relative"></div>
                 </div>
                 <div className="w-full text-center">
-                  <p className="text-notification-white group-active:text-white md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.deployed}</span> Deployed</p>
+                  <p className="text-notification-white group-active:text-black md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.deployed}</span> Deployed</p>
                 </div>
               </div>
             </div>
@@ -69,7 +68,7 @@ const CampaignHoldings = () => {
         )}
         <div className="space-y-7 md:col-span-3 p-6 border border-custom-white rounded-2xl group active:bg-custom-blue md:hover:bg-custom-blue cursor-pointer"> {/*sm:col-span-2 */}
           <div className="">
-              <img className="mx-auto group-active:brightness-50 md:group-hover:brightness-0 " src={WhiteLogo} alt="" />
+              <img className="mx-auto" src={WhiteLogo} alt="" />
           </div>
           <p className="text-white font-semibold text-center text-xl group-active:text-black md:group-hover:text-black">Iconic Concept</p>
           <p className="text-white font-semibold text-center text-base group-active:text-black md:group-hover:text-black">On Request</p>

@@ -59,7 +59,7 @@ const Partners = () => {
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
                 <div className='w-[130px] md:w-[172px] h-[40px] mt-3 md:mt-8 md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={BioOil} alt=""/>
+                  <img className='w-full md:w-fit md:h-fit' src={BioOil} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -73,8 +73,8 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-11 nd:mt-12 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={CreditDirect} alt=""/>
+                <div className='w-[130px] md:w-[172px] mt-3 md:mt-12 h-[30px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full h-full md:w-fit md:h-fit' src={CreditDirect} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -83,8 +83,8 @@ const Partners = () => {
                 </div>
               </div>  
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] -mt-6 md:-mt-5 h-[56px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={FriesLand} alt=""/>
+                <div className='w-[160px] -mt-2 md:-mt-5 h-[58px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full md:w-fit md:h-fit' src={FriesLand} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -93,8 +93,8 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-4 md:-mt-4 h-[55px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={HenryMontego} alt=""/>
+                <div className='w-[160px] md:w-[172px] mt-2 md:-mt-4 h-[55px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full md:w-fit md:h-fit' src={HenryMontego} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -109,11 +109,11 @@ const Partners = () => {
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
                 <div className='w-[150px] md:w-[170px] mt-4 md:mt-3.5 h-[50px] md:h-[60px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={Konga} alt=""/>
+                  <img className='w-full md:w-fit md:h-fit' src={Konga} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
+                <div className='w-[160px] md:w-[172px] mt-2 md:mt-0 h-[58px] md:h-[65px] box-border flex justify-center'>
                   <img className='w-fit h-full' src={Kuda} alt=""/>
                 </div>
               </div>
@@ -138,8 +138,8 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={PeakMilk} alt=""/>
+                <div className='w-[80px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full md:w-fit md:h-fit' src={PeakMilk} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -169,7 +169,7 @@ const Partners = () => {
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
                 <div className='w-[130px] md:w-[172px] h-[40px] mt-3 md:mt-8 md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={BioOil} alt=""/>
+                  <img className='w-full md:w-fit md:h-fit' src={BioOil} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -183,8 +183,8 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-11 nd:mt-12 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={CreditDirect} alt=""/>
+                <div className='w-[130px] md:w-[172px] mt-3 md:mt-12 h-[30px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full h-full md:w-fit md:h-fit' src={CreditDirect} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -193,8 +193,8 @@ const Partners = () => {
                 </div>
               </div>  
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] -mt-6 md:-mt-5 h-[56px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={FriesLand} alt=""/>
+                <div className='w-[160px] -mt-2 md:-mt-5 h-[58px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full md:w-fit md:h-fit' src={FriesLand} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -203,8 +203,8 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-4 md:-mt-4 h-[55px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={HenryMontego} alt=""/>
+                <div className='w-[160px] md:w-[172px] mt-2 md:-mt-4 h-[55px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full md:w-fit md:h-fit' src={HenryMontego} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -219,11 +219,11 @@ const Partners = () => {
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
                 <div className='w-[150px] md:w-[170px] mt-4 md:mt-3.5 h-[50px] md:h-[60px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={Konga} alt=""/>
+                  <img className='w-full md:w-fit md:h-fit' src={Konga} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
+                <div className='w-[160px] md:w-[172px] mt-2 md:mt-0 h-[58px] md:h-[65px] box-border flex justify-center'>
                   <img className='w-fit h-full' src={Kuda} alt=""/>
                 </div>
               </div>
@@ -248,8 +248,8 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={PeakMilk} alt=""/>
+                <div className='w-[80px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full md:w-fit md:h-fit' src={PeakMilk} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -279,7 +279,7 @@ const Partners = () => {
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
                 <div className='w-[130px] md:w-[172px] h-[40px] mt-3 md:mt-8 md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={BioOil} alt=""/>
+                  <img className='w-full md:w-fit md:h-fit' src={BioOil} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
@@ -293,8 +293,8 @@ const Partners = () => {
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-11 nd:mt-12 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-fit' src={CreditDirect} alt=""/>
+                <div className='w-[130px] md:w-[172px] mt-3 md:mt-12 h-[30px] md:h-[65px] box-border flex justify-center'>
+                  <img className='w-full h-full md:w-fit md:h-fit' src={CreditDirect} alt=""/>
                 </div>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
