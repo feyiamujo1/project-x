@@ -52,7 +52,7 @@ const CampaignHoldings = () => {
                   
                 </div>
                 <div className="w-full text-center">
-                  <p className="md:group-hover:text-black group-hover:font-medium"><span className="font-bold">{campaign.vacant}</span> Available</p>
+                  <p className="md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.vacant}</span> Available</p>
                 </div>
               </div>
               <div className="flex flex-row items-center">
@@ -60,19 +60,19 @@ const CampaignHoldings = () => {
                   <div className="w-3 h-3 bg-notification-white group-hover:bg-white rounded-full relative"></div>
                 </div>
                 <div className="w-full text-center">
-                  <p className="text-notification-white group-active:text-white md:group-hover:text-black group-hover:font-medium"><span className="font-bold">{campaign.deployed}</span> Deployed</p>
+                  <p className="text-notification-white group-active:text-white md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.deployed}</span> Deployed</p>
                 </div>
               </div>
             </div>
           </div>
         )
         )}
-        <div className="space-y-7 md:col-span-3 p-6 border border-custom-white rounded-2xl group active:bg-custom-blue md:hover:bg-custom-blue"> {/*sm:col-span-2 */}
+        <div className="space-y-7 md:col-span-3 p-6 border border-custom-white rounded-2xl group active:bg-custom-blue md:hover:bg-custom-blue cursor-pointer"> {/*sm:col-span-2 */}
           <div className="">
-              <img className="mx-auto" src={WhiteLogo} alt="" />
+              <img className="mx-auto group-active:brightness-50 md:group-hover:brightness-0 " src={WhiteLogo} alt="" />
           </div>
-          <p className="text-white font-medium text-center text-xl md:group-hover:text-black">Iconic Concept</p>
-          <p className="text-white text-center text-base md:group-hover:text-black">On Request</p>
+          <p className="text-white font-semibold text-center text-xl group-active:text-black md:group-hover:text-black">Iconic Concept</p>
+          <p className="text-white font-semibold text-center text-base group-active:text-black md:group-hover:text-black">On Request</p>
         </div>
       </div>
       

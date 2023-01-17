@@ -103,8 +103,12 @@ html {
 
 .m-scroll__title-image .marquee-image {
   display: flex;
-  animation: scrollText 50s infinite linear;
+  animation: scrollImage 120s infinite linear;
   z-index: 10;
+}
+@keyframes scrollImage {
+  from   { transform: translateX(0%); }
+  to { transform: translateX(-89%); }
 }
 
 .lock-scroll {
