@@ -6,7 +6,7 @@ import CreditDirect from '../../../src/assets/images/credit_direct.png'
 import EcoBank from '../../../src/assets/images/ecobank.png'
 import FriesLand from '../../../src/assets/images/friesland.png'
 import Guiness from '../../../src/assets/images/guiness.png'
-import HenryMontego from '../../../src/assets/images/henrymontego.png'
+import HenryMontego from '../../../src/assets/images/henry_montego_logo.jpg'
 import Jameson from '../../../src/assets/images/jameson.png'
 import Jumia from '../../../src/assets/images/jumia.png'
 import Konga from '../../../src/assets/images/konga.png'
@@ -53,254 +53,154 @@ const Partners = () => {
         <div className="m-scroll__title-image">
             <div className="marquee-image">
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Bet9ja} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Bet9ja} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[130px] md:w-[172px] h-[40px] mt-3 md:mt-8 md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={BioOil} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={BioOil} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2.5 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Chivas} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Chivas} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px]  h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Cocacola} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Cocacola} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[130px] md:w-[172px] mt-3 md:mt-12 h-[30px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full h-full md:w-fit md:h-fit' src={CreditDirect} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={CreditDirect} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={EcoBank} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={EcoBank} alt=""/>
               </div>  
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] -mt-2 md:-mt-5 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={FriesLand} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={FriesLand} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Guiness} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Guiness} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-2 md:-mt-4 h-[55px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={HenryMontego} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={HenryMontego} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Jameson} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Jameson} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Jumia} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Jumia} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[150px] md:w-[170px] mt-4 md:mt-3.5 h-[50px] md:h-[60px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={Konga} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Konga} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-2 md:mt-0 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Kuda} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Kuda} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={LifeMate} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={LifeMate} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Martel} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Martel} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={MTN} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={MTN} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[168px] md:w-[172px] mt-1 h-[60px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={NigerianBrewery} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={NigerianBrewery} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[80px] md:w-[80pxfi] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={PeakMilk} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={PeakMilk} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={PowerOil} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={PowerOil} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Stanbic} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Stanbic} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Unilever} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Unilever} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Vento} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Vento} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Bet9ja} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Bet9ja} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[130px] md:w-[172px] h-[40px] mt-3 md:mt-8 md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={BioOil} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={BioOil} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2.5 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Chivas} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Chivas} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px]  h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Cocacola} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Cocacola} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[130px] md:w-[172px] mt-3 md:mt-12 h-[30px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full h-full md:w-fit md:h-fit' src={CreditDirect} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={CreditDirect} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={EcoBank} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={EcoBank} alt=""/>
               </div>  
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] -mt-2 md:-mt-5 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={FriesLand} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={FriesLand} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Guiness} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Guiness} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-2 md:-mt-4 h-[55px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={HenryMontego} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={HenryMontego} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Jameson} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Jameson} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Jumia} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Jumia} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[150px] md:w-[170px] mt-4 md:mt-3.5 h-[50px] md:h-[60px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={Konga} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Konga} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-2 md:mt-0 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Kuda} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Kuda} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={LifeMate} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={LifeMate} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Martel} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Martel} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={MTN} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={MTN} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[168px] md:w-[172px] mt-1 h-[60px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={NigerianBrewery} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={NigerianBrewery} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[80px] md:w-[80px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={PeakMilk} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={PeakMilk} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={PowerOil} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={PowerOil} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] mt-1 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Stanbic} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Stanbic} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Unilever} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Unilever} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Vento} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Vento} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Bet9ja} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Bet9ja} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[130px] md:w-[172px] h-[40px] mt-3 md:mt-8 md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full md:w-fit md:h-fit' src={BioOil} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={BioOil} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2.5 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Chivas} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Chivas} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px]  h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={Cocacola} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={Cocacola} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[130px] md:w-[172px] mt-3 md:mt-12 h-[30px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-full h-full md:w-fit md:h-fit' src={CreditDirect} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={CreditDirect} alt=""/>
               </div>
               <div className='w-[220px] h-[220px] md:w-64 md:h-64 border-[0.01px] border-[#ACACAC80] rounded-full -ml-4 flex flex-row justify-center items-center bg-white'>
-                <div className='w-[160px] md:w-[172px] -mt-2 h-[58px] md:h-[65px] box-border flex justify-center'>
-                  <img className='w-fit h-full' src={EcoBank} alt=""/>
-                </div>
+                <img className='w-fit h-fit' src={EcoBank} alt=""/>
               </div>  
             </div>
         </div>
