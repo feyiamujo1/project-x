@@ -122,6 +122,18 @@ html {
   fill: #00D3FF;
 }
 
+.abt{
+  margin-top: -24px !important;
+}
+
+@media (min-width: 768px) {
+  .abt{
+    margin-top: 40px !important;
+  }
+}
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -8,6 +8,8 @@ import InnovationManagerImage from '../../src/assets/images/enare.png'
 import MarketingManagerImage from '../../src/assets/images/gbemi.png'
 import CreativeSpecialityImage from '../../src/assets/images/abiola.png'
 import JohnDoeImage from '../../src/assets/images/john.png'
+import DirectionImage from '../../src/assets/images/directions.png'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     
@@ -26,7 +28,12 @@ const About = () => {
     <div>
         <div className='bg-black'>
             <div className="w-11/12 lg:w-[85%] mx-auto min-h-[90vh] md:min-h-screen relative pb-16 pt-36 space-y-10">
-                <h1 className="font-extrabold text-4xl md:text-5xl text-white">About Us</h1>
+
+                <div className='hidden md:block'>
+                    <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> About Us</p>
+                </div>
+
+                <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">About Us</h1>
                 <div className='flex flex-col md:flex-row gap-14 md:gap-8 lg:gap-10 xl:gap-14 z-[10]'>
                     <div className='w-fit md:w-[500px]'>
                         <img className='hidden md:block' src={AboutImage} alt='' />
@@ -96,7 +103,7 @@ const About = () => {
                         {
                             Members.map((member, id) => (
                                 id !== 0 ?
-                                <div className='w-fit mx-auto cursor-pointer group z-50 relative'>
+                                <div key={member.id} className='w-fit mx-auto cursor-pointer group z-50 relative'>
                                     <div className='w-[270px] h-[300px] box-border text-center'>
                                         <img className='h-full w-auto mx-auto' src={member.image} alt=""/>
                                     </div>
