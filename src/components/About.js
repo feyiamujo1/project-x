@@ -128,17 +128,17 @@ const About = () => {
                                             <p className='text-custom-ash group-hover:text-custom-blue-dark'>{member.position}</p>
                                         </div>
                                     </div>
-                                    <div className='bg-[#1E1E1E] w-[700px] h-[230px] absolute -left-[150px] right-0 mx-auto -z-[9] -bottom-[25px]'></div>
+                                    <div className='bg-[#1E1E1E] w-[700px] h-[230px] absolute -left-[185px] right-0 mx-auto -z-[9] -bottom-[25px] sm:hidden'></div>
                                 </div>
                                 : null
                             ))
                         }
                     </div>
-                    {
+                    {/* {
                         Array.apply(null, {length: backlights}).map((e, i)=>(
                             <div className={`bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[${980+(i*470)}px]`}></div>
                         ))
-                    }
+                    } */}
                     
                     {
                         console.log(backlights)
