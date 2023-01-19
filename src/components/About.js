@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import AboutImage from '../../src/assets/images/about_image.png'
 import AboutImageMobile from '../../src/assets/images/about_image_mobile.png'
 import ManagingDirectorImage from '../../src/assets/images/md.png'
@@ -11,9 +10,7 @@ import CreativeSpecialityImage from '../../src/assets/images/abiola.png'
 import JohnDoeImage from '../../src/assets/images/john.png'
 
 const About = () => {
-    const [backlights, setBacklights] = useState(3);
-
-
+    
     const Members = [
         { id: 0, name: "Adeniyi Ganiyu", position: "Managing Director", image: ManagingDirectorImage },
         { id: 1, name: "Lucky Nwaka", position: "Operation Manager", image: OperationManager },
@@ -24,24 +21,6 @@ const About = () => {
         { id: 6, name: "Abiola Adeyeye", position: "Creative Specialist", image: CreativeSpecialityImage },
         { id: 7, name: "John Doe", position: "John Manager", image: JohnDoeImage }
     ]
-
-    const [screenSize, setScreenSize] = useState(window.screen.width);
-    
-    const divider = (screen_size) => {
-        if (screen_size <= 640 ){
-            setBacklights(Math.ceil(Members.length/1));
-        }else if (screen_size > 640 && screen_size <= 768){
-            setBacklights(Math.ceil(Members.length/2));
-        }else if (screen_size > 768 && screen_size > 1024){
-            setBacklights(Math.ceil(Members.length/3));
-        }else{
-            setBacklights(0);
-        }
-    }
-
-    useEffect(() => {
-        divider(screenSize);
-    }, [divider, screenSize]);
 
   return (
     <div>
@@ -122,10 +101,10 @@ const About = () => {
                                         <img className='h-full w-auto mx-auto' src={member.image} alt=""/>
                                     </div>
                                     <div className='w-[220px] border-t border-[#ACACACB2] mx-auto space-y-8'>
-                                        <div className='w-[110px] h-7 -mt-1 bg-custom-ash group-hover:bg-custom-blue-dark transform -skew-x-[24deg] mx-auto -rotate-[24deg]'></div>
+                                        <div className='w-[110px] h-7 -mt-1 bg-custom-blue-dark md:bg-custom-ash md:group-hover:bg-custom-blue-dark transform -skew-x-[24deg] mx-auto -rotate-[24deg]'></div>
                                         <div className='space-y-1 text-center'>
                                             <h3 className='text-white text-2xl font-bold'>{member.name}</h3>
-                                            <p className='text-custom-ash group-hover:text-custom-blue-dark'>{member.position}</p>
+                                            <p className='text-custom-blue-dark md:text-custom-ash md:group-hover:text-custom-blue-dark'>{member.position}</p>
                                         </div>
                                     </div>
                                     <div className='bg-[#1E1E1E] w-[700px] h-[230px] absolute -left-[185px] right-0 mx-auto -z-[9] -bottom-[25px] sm:hidden'></div>
@@ -134,15 +113,10 @@ const About = () => {
                             ))
                         }
                     </div>
-                    {/* {
-                        Array.apply(null, {length: backlights}).map((e, i)=>(
-                            <div className={`bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[${980+(i*470)}px]`}></div>
-                        ))
-                    } */}
-                    
-                    {
-                        console.log(backlights)
-                    }
+                    <div className="bg-[#1E1E1E] sm:w-full h-[230px] absolute right-0 mx-auto z-[9] top-[980px]"></div>
+                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1450px]"></div>
+                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1920px]"></div>
+                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[2390px]"></div>
                 </div>
                 
             </div>
