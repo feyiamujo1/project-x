@@ -55,12 +55,12 @@ const Navbar = () => {
 
   return (
     <nav className={navbarBg ? "bg-black md:bg-transparent fixed md:absolute top-0 w-full z-[100]" : "fixed md:absolute top-0 w-full z-10"}>
-        <div className='w-11/12 lg:w-[85%] md:border-b md:border-b-[#FFFFFF4D] mx-auto py-4 md:py-0 flex items-center justify-between font-medium'>
-            <div className='h-11 w-20 md:w-24 cursor-pointer flex items-center justify-between'>
+        <div className='w-11/12 lg:w-[85%] md:border-b md:border-b-[#FFFFFF4D] mx-auto py-2.5 md:py-0 flex items-center justify-between font-medium'>
+            <div className='h-10 w-16 md:w-24 cursor-pointer flex items-center justify-between'>
                 <img className='w-full' src={Logo} alt="" />
             </div>
             <ul  id='sidebar' className='absolute top-0 right-0 w-[0%] h-screen overflow-hidden transition-multiple ease-in-out bg-black text-white z-20 space-y-10 md:space-y-0 text-left md:text-center  text-lg flex  md:bg-transparent md:h-fit md:flex md:w-fit md:bg-none md:relative md:z-0 md:overflow-hidden flex-col md:flex-row md:gap-8 md:text-sm'>
-                <span className='md:hidden'><HiIcon.HiX id='closebtn' onClick={HideSideBar} className='text-5xl text-white active:text-custom-blue float-right mt-4 mr-4'/></span>
+                <span className='md:hidden'><HiIcon.HiX id='closebtn' onClick={HideSideBar} className='text-4xl text-white active:text-custom-blue float-right mt-2.5 mr-4'/></span>
                 <li>
                     <NavLink onClick={HideSideBar} to="/" 
                         className={
@@ -90,7 +90,7 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink onClick={HideSideBar} to='/redirect' 
+                    <NavLink onClick={HideSideBar} to='/our-services' 
                     className={
                         ({ isActive }) => isActive ?
                         'active:text-custom-blue  pl-6 md:pt-[33px] md:pb-7 md:px-0 flex items-center gap-4 group md:border-b-[5px] md:border-transparent hover:border-custom-blue cursor-pointer hover:text-custom-blue text-custom-blue md:text-white md:border-custom-blue active-nav'
@@ -134,7 +134,7 @@ const Navbar = () => {
             </ul>
             <div>
                 <p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm'>Contact Us</p>
-                <IoIcon.IoMenu id='menubtn' onClick={showSideBarar} className='text-white text-5xl md:hidden active:text-custom-blue'/>
+                <IoIcon.IoMenu id='menubtn' onClick={showSideBarar} className='text-white text-4xl md:hidden active:text-custom-blue'/>
             </div>
         </div>
     </nav>
