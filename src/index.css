@@ -114,7 +114,13 @@ html {
 .lock-scroll {
   overflow: hidden;
 }
+.expert{
+  line-height: 1.3 !important;
+}
 
+.active-nav svg{
+  fill: #00D3FF;
+}
 
 @tailwind base;
 @tailwind components;

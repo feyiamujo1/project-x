@@ -1,4 +1,3 @@
-import Navbar from "./UI/Navbar"
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import FirstFrameImage from "../../src/assets/images/Frame1.png"
 import SecondFrameImage from "../../src/assets/images/Frame2.png"
@@ -12,7 +11,6 @@ import SecondNewsImage from "../../src/assets/images/Rectangle33.png"
 import ThirdNewsImage from "../../src/assets/images/Rectangle34.png"
 import BgVideo from "../../src/assets/video/website_header.MP4"
 import CampaignHoldings from "./UI/CampaignHoldings"
-import Footer from "./UI/Footer"
 import Partners from "./UI/Partners"
 import { useRef } from "react"
 
@@ -26,8 +24,7 @@ const Home = () => {
   return (
     <div>
         <div className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center  relative">
-            <Navbar />
-            <video className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
+            <video id="backgroundVideo" className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
                 <source src={BgVideo} type="video/mp4" />
             </video>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
@@ -414,7 +411,6 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <Footer />
     </div>
   )
 }
