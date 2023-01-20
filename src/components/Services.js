@@ -12,7 +12,7 @@ import Service7Image from '../../src/assets/images/service7.png'
 const Services = () => {
   return (
     <div className='bg-black pb-8'>
-        <div className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-36 space-y-10 border-b border-[#ACACAC66]">
+        <div className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-[72px] md:pt-36 space-y-10 border-b border-[#ACACAC66]">
             <div className='hidden md:block'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p>
             </div>

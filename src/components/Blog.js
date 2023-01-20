@@ -9,15 +9,15 @@ import BlogImage4 from '../../src/assets/images/blogimage4.png'
 const Blog = () => {
   return (
     <div className='bg-black pb-8'>
-        <div className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-36 space-y-10">
+        <div className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-28 md:pt-36 space-y-10">
             <div className='hidden md:block'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Blog</p>
             </div>
-            <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">Blog</h1>
-            <div className='space-y-10 py-5'>
+            <h1 className="font-extrabold abt -mt-10 md:mt-0 text-4xl md:text-5xl text-white">Blog</h1>
+            <div className='space-y-10'>
                 <div className='space-y-3'>
                     <h2 className='text-custom-blue font-bold text-3xl '>End  of the Year (2022) Celebrations</h2>
-                    <p className='text-white text-sm leading-4'>22nd of December, 2022</p>
+                    <p className=' text-sm leading-4 text-custom-ash'>22nd of December, 2022</p>
                 </div>
                 <div className='space-y-10'>
                     <p className='text-white'>

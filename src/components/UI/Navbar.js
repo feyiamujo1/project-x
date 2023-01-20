@@ -1,7 +1,7 @@
 import Logo from '../../../src/assets/images/logo.png'
 import * as IoIcon from "react-icons/io5"
 import * as HiIcon from "react-icons/hi"
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 
 const Navbar = () => {
@@ -10,15 +10,17 @@ const Navbar = () => {
         document.body.classList.toggle('lock-scroll');
     }
     const HideSideBar = () =>{
-        document.getElementById("sidebar").style.width = "0%";
-        document.body.classList.toggle('lock-scroll');
+        if (window.screen.width < 768){
+            document.getElementById("sidebar").style.width = "0%";
+            document.body.classList.toggle('lock-scroll');
+        }
     }
     
     // Set Nav bg color
     const [navbarBg, setNavbarbg] = useState(false);
 
     const changeBackground = () => {
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 80 && window.screen.width < 768) {
             setNavbarbg(true)
         } else {
             setNavbarbg(false)
@@ -48,7 +50,7 @@ const Navbar = () => {
     <nav className={navbarBg ? "bg-black md:bg-transparent fixed md:absolute top-0 w-full z-[100]" : "fixed md:absolute top-0 w-full z-10"}>
         <div className='w-11/12 lg:w-[85%] md:border-b md:border-b-[#FFFFFF4D] mx-auto py-2.5 md:py-0 flex items-center justify-between font-medium'>
             <div className='h-10 w-16 md:w-24 cursor-pointer flex items-center justify-between'>
-                <img className='w-full' src={Logo} alt="" />
+                <Link to='/'><img className='w-full' src={Logo} alt="" /></Link>
             </div>
             <ul  id='sidebar' className='absolute top-0 right-0 w-[0%] h-screen overflow-auto box-border pb-20 md:pb-0 transition-multiple ease-in-out bg-black text-white z-20 space-y-10 md:space-y-0 text-left md:text-center  text-lg flex  md:bg-transparent md:h-fit md:flex md:w-fit md:bg-none md:relative md:z-0 md:overflow-hidden flex-col md:flex-row md:gap-8 md:text-sm'>
                 <span className='md:hidden'><HiIcon.HiX id='closebtn' onClick={HideSideBar} className='cursor-pointer text-4xl text-white active:text-custom-blue float-right mt-3 mr-4'/></span>
