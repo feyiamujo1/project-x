@@ -16,9 +16,9 @@ const Services = () => {
             <div className='hidden md:block'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p>
             </div>
-            <div className='space-y-4'>
+            <div className='space-y-2'>
                 <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">Our Services</h1>
-                <p className='text-white max-w-[600px] text-sm md:text-lg leading-4 md:leading-5'>
+                <p className='text-white max-w-[600px] text-sm md:text-lg leading-4 md:leading-5 font-light'>
                     We can create custom display that convey your brand messages and also help your company standout.
                 </p>
             </div>

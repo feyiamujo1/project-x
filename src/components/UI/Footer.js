@@ -35,19 +35,19 @@ const Footer = () => {
                             </svg>
                             <p className='group-active:text-custom-blue md:group-hover:text-custom-blue'>Our Platform</p>
                         </Link>
-                        <Link to='our-services' className='flex flex-row gap-4 items-start md:items-start group cursor-pointer md:w-fit'>
+                        <Link to='/our-services' className='flex flex-row gap-4 items-start md:items-start group cursor-pointer md:w-fit'>
                             <svg className='w-6 h-4 mt-1 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg" >
                                 <path d="M16 10V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3l3 3 3-3h3a2 2 0 0 0 2-2ZM3 4a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm1 3a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2H4Z"/>
                             </svg>
                             <p className='group-active:text-custom-blue md:group-hover:text-custom-blue'>Our Services</p>
                         </Link>
-                        <Link to='redirect' className='flex flex-row gap-[17px] items-start md:items-center group cursor-pointer md:w-fit'>
+                        <Link to='/blog' className='flex flex-row gap-[17px] items-start md:items-center group cursor-pointer md:w-fit'>
                             <svg className='w-6 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M.166 4A11.954 11.954 0 0 0 8 .943 11.954 11.954 0 0 0 15.834 4c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C3.34 15.67 0 11.225 0 6c0-.682.057-1.35.166-2Zm11.541 3.707a1 1 0 0 0-1.414-1.414L7 9.586 5.707 8.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z" />
                             </svg>
                             <p className='group-active:text-custom-blue -mt-0.5 md:group-hover:text-custom-blue'>Blog</p>
                         </Link>
-                        <Link to='redirect' className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit'>
+                        <Link to='/redirect' className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit'>
                             <svg className='w-6 h-4 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M16 8A8 8 0 1 1-.001 8 8 8 0 0 1 16 8ZM8 5a1 1 0 0 0-.867.5 1 1 0 1 1-1.731-1A3 3 0 1 1 9 8.83V9a1 1 0 0 1-2 0V8a1 1 0 0 1 1-1 1 1 0 0 0 0-2Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
                             </svg>

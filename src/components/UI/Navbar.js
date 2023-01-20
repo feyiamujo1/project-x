@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className='h-10 w-16 md:w-24 cursor-pointer flex items-center justify-between'>
                 <img className='w-full' src={Logo} alt="" />
             </div>
-            <ul  id='sidebar' className='absolute top-0 right-0 w-[0%] h-screen overflow-hidden transition-multiple ease-in-out bg-black text-white z-20 space-y-10 md:space-y-0 text-left md:text-center  text-lg flex  md:bg-transparent md:h-fit md:flex md:w-fit md:bg-none md:relative md:z-0 md:overflow-hidden flex-col md:flex-row md:gap-8 md:text-sm'>
+            <ul  id='sidebar' className='absolute top-0 right-0 w-[0%] h-screen overflow-scroll box-border pb-20 md:pb-0 transition-multiple ease-in-out bg-black text-white z-20 space-y-10 md:space-y-0 text-left md:text-center  text-lg flex  md:bg-transparent md:h-fit md:flex md:w-fit md:bg-none md:relative md:z-0 md:overflow-hidden flex-col md:flex-row md:gap-8 md:text-sm'>
                 <span className='md:hidden'><HiIcon.HiX id='closebtn' onClick={HideSideBar} className='text-4xl text-white active:text-custom-blue float-right mt-2.5 mr-4'/></span>
                 <li>
                     <NavLink onClick={HideSideBar} to="/" 
