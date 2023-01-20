@@ -6,28 +6,19 @@ import { useState } from 'react'
 
 const Navbar = () => {
     const showSideBarar = () => {
-       if (window.screen.width >= 640 && window.screen.width <= 768){
-        document.getElementById("sidebar").style.width = "50%";
-        
-       }else if (window.screen.width < 640){
         document.getElementById("sidebar").style.width = "60%";
-        
-       }
-       document.body.classList.toggle('lock-scroll');
+        document.body.classList.toggle('lock-scroll');
     }
     const HideSideBar = () =>{
-        if (window.screen.width < 768){
-            document.getElementById("sidebar").style.width = "0%";
-            document.body.classList.toggle('lock-scroll');
-        }
-        
+        document.getElementById("sidebar").style.width = "0%";
+        document.body.classList.toggle('lock-scroll');
     }
     
     // Set Nav bg color
     const [navbarBg, setNavbarbg] = useState(false);
 
     const changeBackground = () => {
-        if (window.scrollY >= 80 && window.screen.width < 768) {
+        if (window.scrollY >= 80) {
             setNavbarbg(true)
         } else {
             setNavbarbg(false)
@@ -59,8 +50,8 @@ const Navbar = () => {
             <div className='h-10 w-16 md:w-24 cursor-pointer flex items-center justify-between'>
                 <img className='w-full' src={Logo} alt="" />
             </div>
-            <ul  id='sidebar' className='absolute top-0 right-0 w-[0%] h-screen overflow-scroll box-border pb-20 md:pb-0 transition-multiple ease-in-out bg-black text-white z-20 space-y-10 md:space-y-0 text-left md:text-center  text-lg flex  md:bg-transparent md:h-fit md:flex md:w-fit md:bg-none md:relative md:z-0 md:overflow-hidden flex-col md:flex-row md:gap-8 md:text-sm'>
-                <span className='md:hidden'><HiIcon.HiX id='closebtn' onClick={HideSideBar} className='text-4xl text-white active:text-custom-blue float-right mt-2.5 mr-4'/></span>
+            <ul  id='sidebar' className='absolute top-0 right-0 w-[0%] h-screen overflow-auto box-border pb-20 md:pb-0 transition-multiple ease-in-out bg-black text-white z-20 space-y-10 md:space-y-0 text-left md:text-center  text-lg flex  md:bg-transparent md:h-fit md:flex md:w-fit md:bg-none md:relative md:z-0 md:overflow-hidden flex-col md:flex-row md:gap-8 md:text-sm'>
+                <span className='md:hidden'><HiIcon.HiX id='closebtn' onClick={HideSideBar} className='cursor-pointer text-4xl text-white active:text-custom-blue float-right mt-3 mr-4'/></span>
                 <li>
                     <NavLink onClick={HideSideBar} to="/" 
                         className={
@@ -134,7 +125,7 @@ const Navbar = () => {
             </ul>
             <div>
                 <p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm'>Contact Us</p>
-                <IoIcon.IoMenu id='menubtn' onClick={showSideBarar} className='text-white text-4xl md:hidden active:text-custom-blue'/>
+                <IoIcon.IoMenu id='menubtn' onClick={showSideBarar} className='cursor-pointer text-white text-4xl md:hidden active:text-custom-blue'/>
             </div>
         </div>
     </nav>
