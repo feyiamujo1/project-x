@@ -18,29 +18,27 @@ const Services = () => {
             </div>
             <div className='space-y-4'>
                 <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">Our Services</h1>
-                <p className='text-white max-w-[600px] text-lg md:text-xl'>
+                <p className='text-white max-w-[600px] text-sm md:text-lg leading-4 md:leading-5'>
                     We can create custom display that convey your brand messages and also help your company standout.
-                    {/* WE CAN CREATE CUSTOM DISPLAY THAT CONVEY YOUR BRAND MESSAGES AND ALSO HELP YOUR COMPANY stand out. */}
                 </p>
             </div>
         </div>
         <div className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-10 border-b border-[#ACACAC66]'>
-                <h2 className='text-custom-blue-dark font-bold text-3xl'>Iconic Structure</h2>
+                <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Iconic Structure</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service1Image} alt="" />
                     <p className='text-white'>
                     The iconic platforms is the modern form of advertising which has to do with the digital and creative forms of advertising in OOH. This kind of platform are especially made for bigger brands that know the 
                     effectiveness on their BRANDS . The most important of the iconic platform is that it must be LIT to show the beauty of the brands 
-                    and tell a story of the brands. This takes creativity of outdoors to another level of thinking outside the box for your clients so they can reach their consumer audience perfection what their brands is about 
-                    and what they can derive.
+                    and tell a story of the brands.
                     </p>
                 </div>
             </div>
         </div>
         <div className='relative'>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66] relative z-10'>
-                <h2 className='text-white font-bold text-3xl text-right'>Media Planning</h2>
+                <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Planning</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
                         At Eyekontact our approach to media planning is to understand our client brands’ marketing, adevertising and media goals. We incorporate the four core steps in media planning; market analysis, establishment of media 
@@ -53,7 +51,7 @@ const Services = () => {
         </div>
         <div className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66]'>
-                <h2 className='text-custom-blue-dark font-bold text-3xl'>Branding</h2>
+                <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Branding</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service3Image} alt="" />
                     <p className='text-white'>
@@ -64,7 +62,7 @@ const Services = () => {
         </div>
         <div className='relative'>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66] relative z-10'>
-                <h2 className='text-white font-bold text-3xl text-right'>Media Buying</h2>
+                <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Buying</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
                         We put media planning into action, focusing on buying the right mix of media to deliver on the campaign goals effectively.
@@ -76,7 +74,7 @@ const Services = () => {
         </div>
         <div className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66]'>
-                <h2 className='text-custom-blue-dark font-bold text-3xl'>Digital Marketing</h2>
+                <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Digital Marketing</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service5Image} alt="" />
                     <p className='text-white'>
@@ -87,7 +85,7 @@ const Services = () => {
         </div>
         <div className='relative'>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66] relative z-10'>
-                <h2 className='text-white font-bold text-3xl text-right'>Creative Design</h2>
+                <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Creative Design</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
                     Eyekontact creative design produces iconic, unique and memorable design that stand out to our customers for easy identification of their brand and products.
@@ -99,7 +97,7 @@ const Services = () => {
         </div>
         <div className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66]'>
-                <h2 className='text-custom-blue-dark font-bold text-3xl'>PR Activation</h2>
+                <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>PR Activation</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service7Image} alt="" />
                     <p className='text-white'>

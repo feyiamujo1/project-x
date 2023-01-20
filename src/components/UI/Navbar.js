@@ -104,7 +104,7 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink onClick={HideSideBar} to="/redirect" 
+                    <NavLink onClick={HideSideBar} to="/blog" 
                         className={
                             ({ isActive }) => isActive ?
                             'active:text-custom-blue  pl-6 md:pt-[33px] md:pb-7 md:px-0 flex items-center gap-4 group md:border-b-[5px] md:border-transparent hover:border-custom-blue cursor-pointer hover:text-custom-blue text-custom-blue md:text-white md:border-custom-blue active-nav'
