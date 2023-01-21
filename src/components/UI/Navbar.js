@@ -6,11 +6,16 @@ import { useState } from 'react'
 
 const Navbar = () => {
     const showSideBarar = () => {
-        document.getElementById("sidebar").style.width = "60%";
-        document.body.classList.toggle('lock-scroll');
+        if (window.innerWidth < 640){
+            document.getElementById("sidebar").style.width = "60%";
+            document.body.classList.toggle('lock-scroll');
+        }else if(window.innerWidth >= 640 && window.innerWidth < 768){
+            document.getElementById("sidebar").style.width = "50%";
+            document.body.classList.toggle('lock-scroll');
+        }
     }
     const HideSideBar = () =>{
-        if (window.screen.width < 768){
+        if (window.innerWidth < 768){
             document.getElementById("sidebar").style.width = "0%";
             document.body.classList.toggle('lock-scroll');
         }
@@ -20,7 +25,7 @@ const Navbar = () => {
     const [navbarBg, setNavbarbg] = useState(false);
 
     const changeBackground = () => {
-        if (window.scrollY >= 80 && window.screen.width < 768) {
+        if (window.scrollY >= 80 && window.innerWidth < 768) {
             setNavbarbg(true)
         } else {
             setNavbarbg(false)
