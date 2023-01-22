@@ -26,7 +26,7 @@ const Services = () => {
             </div>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
                 <div className="w-fit -mt-14 md:mt-0">
-                    <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">Services</h1>
+                    <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">Our Services</h1>
                     {/* <p className="text-white text-sm sm:text-xl text-right font-semibold -mt-3 sm:mt-0">Limited</p> */}
                 </div>
                 <div>
@@ -40,7 +40,7 @@ const Services = () => {
                 </div>
             </div>
         </div>
-        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-10 pt-[55px] space-y-10 border-b border-[#ACACAC66]">
+        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-10 pt-[55px] space-y-10 border-b border-[#acacac4e]">
             <div className='block -mt-10'>
                 {/* <p className='flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p> */}
             </div>
@@ -49,24 +49,24 @@ const Services = () => {
                 <p className='text-white max-w-[600px] text-sm md:text-lg leading-4 md:leading-5 font-light'>
                     We can create custom display that convey your brand messages and also help your company standout.
                 </p> */}
-                <h2 className='text-white text-center font-bold text-3xl '>We provide top notch services in these areas</h2>
+                <h2 className='text-white text-center font-bold text-3xl mx-auto max-w-xl md:text-left md:ml-0'>We provide Top Notch services in these areas:</h2>
             </div>
         </div>
         <div  className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-10 border-b border-[#ACACAC66]'>
+            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-10 border-b-[0.1px] border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Iconic Structure</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service1Image} alt="" />
                     <p className='text-white'>
-                    The iconic platforms is the modern form of advertising which has to do with the digital and creative forms of advertising in OOH. This kind of platform are especially made for bigger brands that know the 
-                    effectiveness on their BRANDS . The most important of the iconic platform is that it must be LIT to show the beauty of the brands 
-                    and tell a story of the brands.
+                        The iconic platforms is the modern form of advertising which has to do with the digital and creative forms of advertising in OOH. This kind of platform are especially made for bigger brands that know the 
+                        effectiveness on their BRANDS . The most important of the iconic platform is that it must be LIT to show the beauty of the brands 
+                        and tell a story of the brands.
                     </p>
                 </div>
             </div>
         </div>
         <div className='relative'>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66] relative z-10'>
+            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Planning</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
@@ -79,7 +79,7 @@ const Services = () => {
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
         <div className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66]'>
+            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Branding</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service3Image} alt="" />
@@ -90,7 +90,7 @@ const Services = () => {
             </div>
         </div>
         <div className='relative'>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66] relative z-10'>
+            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Buying</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
@@ -102,7 +102,7 @@ const Services = () => {
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
         <div className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66]'>
+            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Digital Marketing</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service5Image} alt="" />
@@ -113,7 +113,7 @@ const Services = () => {
             </div>
         </div>
         <div className='relative'>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66] relative z-10'>
+            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Creative Design</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
@@ -125,7 +125,7 @@ const Services = () => {
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
         <div className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#ACACAC66]'>
+            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>PR Activation</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service7Image} alt="" />

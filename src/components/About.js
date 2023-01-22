@@ -62,13 +62,17 @@ const About = () => {
 
                 {/* <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">About Us</h1> */}
                 <div className='flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-10 xl:gap-14 z-[10]'>
-                    <div className='w-fit md:w-[500px]'>
+                    <div className='w-fit md:w-[500px] space-y-14 md:space-y-0'>
+                        <p className='md:hidden block text-white'>
+                            {/* We are an OOH advertising agency , known for iconic creativity and innovations.  */}
+                            We create , manage and execute high-impact campaigns for clients who wants to get their ads campaign in front of the right audience
+                        </p>
                         <img className='hidden md:block' src={AboutImage} alt='' />
                         <img className='md:hidden block w-full h-full' src={AboutImageMobile} alt='' />
                     </div>
                     <div className='text-white space-y-5 md:space-y-3 w-full md:w-1/2'>
-                        <p>
-                            We are an OOH advertising agency , known for iconic creativity and innovations. 
+                        <p className='hidden md:block'>
+                            {/* We are an OOH advertising agency , known for iconic creativity and innovations.  */}
                             We create , manage and execute high-impact campaigns for clients who wants to get their ads campaign in front of the right audience
                         </p>
                         <h2 className='font-bold text-2xl'>Our Mission</h2>
