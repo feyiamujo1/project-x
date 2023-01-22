@@ -13,7 +13,7 @@ import BgVideo from "../../src/assets/video/websiteheader.mp4"
 import CampaignHoldings from "./UI/CampaignHoldings"
 import Partners from "./UI/Partners"
 import { useEffect, useRef } from "react"
-import HomeImage from '../../src/assets/images/about_image.png'
+import HomeImage from '../../src/assets/images/thumbnail.JPG'
 
 const Home = () => {
     
