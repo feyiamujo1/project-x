@@ -20,7 +20,7 @@ const Services = () => {
   return (
     <div className='bg-black pb-8'>
         
-        <div className="w-full h-[90vh] sm:h-screen bg-hero-image bg-cover bg-no-repeat bg-center relative">
+        <div className="w-full h-[90vh] sm:h-screen bg-intro-image bg-cover bg-no-repeat bg-center relative">
             <div className='hidden md:block absolute top-32 left-[7.3%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p>
             </div>
@@ -31,7 +31,7 @@ const Services = () => {
                 </div>
                 <div>
                     <p className="w-11/12 md:w-[550px] text-white text-center text-sm sm:text-base font-normal absolute left-0 right-0 mx-auto bottom-[110px] md:bottom-24 md:right-[50%] md:translate-x-2/4 md:left-auto">
-                        We can create custom display that convey your brand messages and also help your company standout.
+                        We create custom display that convey your brand messages and also help your company standout.
                     </p>
                     {/* <p className="text-white text-xs sm:text-sm font-light absolute bottom-4 right-[5%] md:right-[2%]">RC 722750</p> */}
                     <div className="w-full absolute left-0 right-0 bottom-10 md:bottom-8 flex flex-row justify-center items-center">
@@ -40,18 +40,19 @@ const Services = () => {
                 </div>
             </div>
         </div>
-        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-[72px] md:pt-36 space-y-10 border-b border-[#ACACAC66]">
-            <div className='hidden md:block'>
-                <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p>
+        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-10 pt-[55px] space-y-10 border-b border-[#ACACAC66]">
+            <div className='block -mt-10'>
+                {/* <p className='flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p> */}
             </div>
             <div className='space-y-2'>
-                <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">Our Services</h1>
+                {/* <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">Our Services</h1>
                 <p className='text-white max-w-[600px] text-sm md:text-lg leading-4 md:leading-5 font-light'>
                     We can create custom display that convey your brand messages and also help your company standout.
-                </p>
+                </p> */}
+                <h2 className='text-white text-center font-bold text-3xl '>We provide top notch services in these areas</h2>
             </div>
         </div>
-        <div className='bg-black '>
+        <div  className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-10 border-b border-[#ACACAC66]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Iconic Structure</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>

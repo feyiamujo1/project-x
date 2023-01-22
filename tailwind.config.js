@@ -19,7 +19,8 @@ module.exports = {
       },
       backgroundImage:{
         'hero-image':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/3.jpg")',
-        // 'intro-image' : 'url("../src/assets/images/intro-pexels-rodnae-productions-5915208.jpg")'
+        'intro-image' : 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/kate-trysh-Dnkr_lmdKi8-unsplash1.jpg")',
+        'blog-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/windows-MYomVPpR5FU-unsplash.jpg")'
       },
       transitionProperty: {
         'multiple': 'width, opacity',

@@ -16,7 +16,7 @@ const Blog = () => {
     };
   return (
     <div className='bg-black pb-8'>
-        <div className="w-full h-[90vh] sm:h-screen bg-hero-image bg-cover bg-no-repeat bg-center relative">
+        <div className="w-full h-[90vh] sm:h-screen bg-blog-image bg-cover bg-no-repeat bg-center relative">
             <div className='hidden md:block absolute top-32 left-[7.3%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Blog</p>
             </div>
@@ -36,11 +36,10 @@ const Blog = () => {
                 </div>
             </div>
         </div>
-        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-28 md:pt-36 space-y-10">
-            <div className='hidden md:block'>
+        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-[55px] space-y-10">
+            {/* <div className='hidden md:block'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Blog</p>
-            </div>
-            <h1 className="font-extrabold abt -mt-10 md:mt-0 text-4xl md:text-5xl text-white">Blog</h1>
+            </div> */}
             <div className='space-y-10'>
                 <div className='space-y-3'>
                     <h2 className='text-custom-blue font-bold text-3xl '>End  of the Year (2022) Celebrations</h2>

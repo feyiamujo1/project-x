@@ -13,6 +13,7 @@ import BgVideo from "../../src/assets/video/websiteheader.mp4"
 import CampaignHoldings from "./UI/CampaignHoldings"
 import Partners from "./UI/Partners"
 import { useEffect, useRef } from "react"
+import HomeImage from '../../src/assets/images/about_image.png'
 
 const Home = () => {
     
@@ -40,9 +41,12 @@ const Home = () => {
   return (
     <div>
         <div className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center relative">
-            <video  ref={videoElement} className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
+            <video  ref={videoElement} poster={HomeImage} className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
                 <source src={BgVideo} type="video/mp4" />
             </video>
+            {/* <div className="w-full h-[90vh] sm:h-screen absolute bg-black z-[-101] brightness-[1] left-0 right-0 mx-auto">
+
+            </div> */}
             {/* {id="backgroundVideo"} */}
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
                 <div className="w-fit -mt-14 md:mt-0">

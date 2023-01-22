@@ -39,7 +39,7 @@ const About = () => {
             </div>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
                 <div className="w-fit -mt-14 md:mt-0">
-                    <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">about us</h1>
+                    <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">About Us</h1>
                     {/* <p className="text-white text-sm sm:text-xl text-right font-semibold -mt-3 sm:mt-0">Limited</p> */}
                 </div>
                 <div>
@@ -53,14 +53,14 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div className='bg-black'>
-            <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto min-h-[90vh] md:min-h-screen relative pb-16 pt-28 md:pt-36 space-y-10">
+        <div ref={firstContainer} className='bg-black'>
+            <div className="w-11/12 lg:w-[85%] mx-auto min-h-[90vh] md:min-h-screen relative pb-16 pt-16  space-y-10">
 
-                <div className='hidden md:block'>
+                {/* <div className='hidden md:block'>
                     <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> About Us</p>
-                </div>
+                </div> */}
 
-                <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">About Us</h1>
+                {/* <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">About Us</h1> */}
                 <div className='flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-10 xl:gap-14 z-[10]'>
                     <div className='w-fit md:w-[500px]'>
                         <img className='hidden md:block' src={AboutImage} alt='' />
