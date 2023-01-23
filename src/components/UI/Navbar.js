@@ -123,15 +123,29 @@ const Navbar = () => {
                             :
                             'active:text-custom-blue  pl-6 md:pt-[33px] md:pb-7 md:px-0 flex items-center gap-4 group md:border-b-[5px] md:border-transparent hover:border-custom-blue cursor-pointer hover:text-custom-blue'
                         }>
+                        <svg xmlns="http://www.w3.org/2000/svg" className=' w-6 h-5 p-0 -ml-1 block fill-white group-active:fill-custom-blue md:hidden' viewBox="0 0 1024 1024">
+                            <path className='block md:hidden' d="M789.333 853.333H234.667l-128 128V256c0-70.4 57.6-128 128-128h554.666c70.4 0 128 57.6 128 128v469.333c0 70.4-57.6 128-128 128z"/><path className='block md:hidden' fill="#000" d="M469.333 426.667h85.334v234.666h-85.334zM469.333 320a42.667 42.667 0 1 0 85.334 0 42.667 42.667 0 1 0-85.334 0Z"/>
+                        </svg>
+                        <span className='pl-1 md:pl-0'>About Us</span>
+                    </NavLink>
+                </li>
+                <li className='block md:hidden'>
+                    <NavLink onClick={HideSideBar} to="/contact-us" 
+                        className={
+                            ({ isActive }) => isActive ?
+                            'active:text-custom-blue  pl-6 md:pt-[33px] md:pb-7 md:px-0 flex items-center gap-4 group md:border-b-[5px] md:border-transparent hover:border-custom-blue cursor-pointer hover:text-custom-blue text-custom-blue md:text-white md:border-custom-blue active-nav'
+                            :
+                            'active:text-custom-blue  pl-6 md:pt-[33px] md:pb-7 md:px-0 flex items-center gap-4 group md:border-b-[5px] md:border-transparent hover:border-custom-blue cursor-pointer hover:text-custom-blue'
+                        }>
                         <svg className='w-6 h-4 p-0 block fill-white group-active:fill-custom-blue md:hidden' xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M16 8A8 8 0 1 1-.001 8 8 8 0 0 1 16 8ZM8 5a1 1 0 0 0-.867.5 1 1 0 1 1-1.731-1A3 3 0 1 1 9 8.83V9a1 1 0 0 1-2 0V8a1 1 0 0 1 1-1 1 1 0 0 0 0-2Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
                         </svg>
-                        About Us
+                        Contact Us
                     </NavLink>
                 </li>
             </ul>
             <div>
-                <p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm'>Contact Us</p>
+                <Link className='hidden md:block' to="/contact-us"><p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm'>Contact Us</p></Link>
                 <IoIcon.IoMenu id='menubtn' onClick={showSideBarar} className='cursor-pointer text-white text-4xl md:hidden active:text-custom-blue'/>
             </div>
         </div>

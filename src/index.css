@@ -132,7 +132,9 @@ html {
   }
 }
 
-
+.stubborn:hover svg{
+  fill: #00D3FF;
+}
 
 @tailwind base;
 @tailwind components;

@@ -21,15 +21,13 @@ const Footer = () => {
                 <h1 className="font-extrabold text-5xl">Hello.</h1>
                 <div className=''>
                     <div className='space-y-6 md:w-[160px] md:mx-auto'>
-                        <Link to="/" className='flex flex-row gap-5 items-start md:items-center group cursor-pointer md:w-fit box-border'>
-                            {/* <Link to='/'> */}
-                                <svg className='w-5 p-0 fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg" data-name="Flat Color" viewBox="0 0 24 24">
-                                    <path d="m21.71 11.29-9-9a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0-.21 1.09A1 1 0 0 0 3 13h1v7.3A1.77 1.77 0 0 0 5.83 22H8.5a1 1 0 0 0 1-1v-4.9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1V21a1 1 0 0 0 1 1h2.67A1.77 1.77 0 0 0 20 20.3V13h1a1 1 0 0 0 .92-.62 1 1 0 0 0-.21-1.09Z"/>
-                                </svg>
-                                <p className='group-active:text-custom-blue mt-1.5 md:group-hover:text-custom-blue'>Home</p>
-                            {/* </Link> */}
+                        <Link to="/" className='flex flex-row gap-5 items-center md:items-center group cursor-pointer md:w-fit box-border'>
+                            <svg className='w-5 p-0 fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue -mb-1' xmlns="http://www.w3.org/2000/svg" data-name="Flat Color" viewBox="0 0 24 24">
+                                <path d="m21.71 11.29-9-9a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0-.21 1.09A1 1 0 0 0 3 13h1v7.3A1.77 1.77 0 0 0 5.83 22H8.5a1 1 0 0 0 1-1v-4.9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1V21a1 1 0 0 0 1 1h2.67A1.77 1.77 0 0 0 20 20.3V13h1a1 1 0 0 0 .92-.62 1 1 0 0 0-.21-1.09Z"/>
+                            </svg>
+                            <p className='group-active:text-custom-blue mt-1.5 md:group-hover:text-custom-blue'>Home</p>
                         </Link>
-                        <Link to="/redirect" className='flex flex-row gap-4 items-start md:items-center group cursor-pointer md:w-fit'>
+                        <Link to="/redirect" className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit'>
                             <svg className='w-6 h-4 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg">
                                 <path className='w-full' d="M3 0a1 1 0 0 1 1 1v1h1a1 1 0 0 1 0 2H4v1a1 1 0 0 1-2 0V4H1a1 1 0 0 1 0-2h1V1a1 1 0 0 1 1-1Zm0 10a1 1 0 0 1 1 1v1h1a1 1 0 0 1 0 2H4v1a1 1 0 1 1-2 0v-1H1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 1-1Zm7-10a1 1 0 0 1 .967.744L12.146 5.2 15.5 7.134a1 1 0 0 1 0 1.732l-3.354 1.935-1.18 4.455a1 1 0 0 1-1.933 0L7.854 10.8 4.5 8.866a1 1 0 0 1 0-1.732l3.354-1.935L9.034.744A1 1 0 0 1 10 0Z"/>
                             </svg>
@@ -47,7 +45,13 @@ const Footer = () => {
                             </svg>
                             <p className='group-active:text-custom-blue -mt-0.5 md:group-hover:text-custom-blue'>Blog</p>
                         </Link>
-                        <Link to='/redirect' className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit'>
+                        <Link to='/about-us' className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit stubborn'>
+                            <svg className=' w-6 h-5 p-0 -ml-1 block fill-white group-active:fill-custom-blue' viewBox="0 0 1024 1024">
+                                <path className='group-active:fill-custom-blue' d="M789.333 853.333H234.667l-128 128V256c0-70.4 57.6-128 128-128h554.666c70.4 0 128 57.6 128 128v469.333c0 70.4-57.6 128-128 128z"/><path fill="#000" d="M469.333 426.667h85.334v234.666h-85.334zM469.333 320a42.667 42.667 0 1 0 85.334 0 42.667 42.667 0 1 0-85.334 0Z"/>
+                            </svg>
+                            <p className='group-active:text-custom-blue md:group-hover:text-custom-blue pl-1'>About Us</p>
+                        </Link>
+                        <Link to='/contact-us' className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit'>
                             <svg className='w-6 h-4 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M16 8A8 8 0 1 1-.001 8 8 8 0 0 1 16 8ZM8 5a1 1 0 0 0-.867.5 1 1 0 1 1-1.731-1A3 3 0 1 1 9 8.83V9a1 1 0 0 1-2 0V8a1 1 0 0 1 1-1 1 1 0 0 0 0-2Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
                             </svg>
@@ -85,7 +89,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='pt-14 w-11/12 lg:w-[85%] mx-auto'>
-            <p className='text-white text-center mx-auto'>&#169; 2023 EyeKontact Limited, All Rights Reserved</p>
+            <p className='text-white text-center mx-auto'>&#169; 2023 Eyekontact Limited, All Rights Reserved</p>
         </div>
     </div>
   )

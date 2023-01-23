@@ -20,7 +20,8 @@ module.exports = {
       backgroundImage:{
         'hero-image':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/3.jpg")',
         'intro-image' : 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/kate-trysh-Dnkr_lmdKi8-unsplash1.jpg")',
-        'blog-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/windows-MYomVPpR5FU-unsplash.jpg")'
+        'blog-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/windows-MYomVPpR5FU-unsplash.jpg")',
+        'contact-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/petr-machacek-BeVGrXEktIk-unsplash.jpg")'
       },
       transitionProperty: {
         'multiple': 'width, opacity',

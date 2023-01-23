@@ -50,7 +50,7 @@ const Home = () => {
             {/* {id="backgroundVideo"} */}
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
                 <div className="w-fit -mt-14 md:mt-0">
-                    <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">EyeKontact</h1>
+                    <h1 className="text-white font-extrabold text-[52px] sm:text-8xl">Eyekontact</h1>
                     <p className="text-white text-sm sm:text-xl text-right font-semibold -mt-3 sm:mt-0">Limited</p>
                 </div>
                 <div>
@@ -103,22 +103,22 @@ const Home = () => {
                     <div className="m-scroll__title">
                         <div className="marquee-two mt-[72px] md:mt-[90px]">
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Think EyeKontact &nbsp;
+                                Think Eyekontact &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Think EyeKontact &nbsp;
+                                Think Eyekontact &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Think EyeKontact &nbsp;
+                                Think Eyekontact &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Think EyeKontact &nbsp;
+                                Think Eyekontact &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Think EyeKontact &nbsp;
+                                Think Eyekontact &nbsp;
                             </h1>
                             <h1 className="text-[#FFFFFF80] font-black text-[78px] md:text-8xl  right-marquee">
-                                Think EyeKontact &nbsp;
+                                Think Eyekontact &nbsp;
                             </h1>
                         </div>
                     </div>
