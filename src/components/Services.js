@@ -70,7 +70,7 @@ const Services = () => {
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Planning</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
-                        At Eyekontact our approach to media planning is to understand our client brands’ marketing, adevertising and media goals. We incorporate the four core steps in media planning; market analysis, establishment of media 
+                        At Eyekontact our approach to media planning is to understand our client brands’ marketing, advertising and media goals. We incorporate the four core steps in media planning; market analysis, establishment of media 
                         objectives, media strategy development and implementation and evaluation and follow up.
                     </p>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service2Image} alt="" />
@@ -117,7 +117,7 @@ const Services = () => {
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Creative Design</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
-                    Eyekontact creative design produces iconic, unique and memorable design that stand out to our customers for easy identification of their brand and products.
+                        Eyekontact creative design produces iconic, unique and memorable design that stand out to our customers for easy identification of their brand and products.
                     </p>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service6Image} alt="" />
                 </div>

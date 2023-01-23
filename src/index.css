@@ -136,6 +136,20 @@ html {
   fill: #00D3FF;
 }
 
+/* Css for autofill background issshh */
+input-webkit-autofill,
+input-webkit-autofill:hover,
+input-webkit-autofill:focus{
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #000 !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: poppins;
+  font-size: inherit;
+  cursor: black;
+  background-color: #fff
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

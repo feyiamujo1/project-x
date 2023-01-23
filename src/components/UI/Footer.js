@@ -76,9 +76,8 @@ const Footer = () => {
             <div className='space-y-4'>
                 <p>Get in touch...</p>
                 <div className='flex flex-row w-fit gap-4 items-center group cursor-pointer'>
-                    <svg className='w-6 h-4 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.003 5.884 10 9.882l7.997-3.998A2 2 0 0 0 16 4H4a2 2 0 0 0-1.997 1.884Z"/>
-                        <path d="m18 8.118-8 4-8-4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.118Z"/>
+                    <svg className='w-5 h-5 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' viewBox="0 0 512 512">
+                        <path d="M452.29 74.535H59.71C26.728 74.535 0 101.263 0 134.236v243.527c0 32.974 26.728 59.702 59.71 59.702h392.58c32.973 0 59.71-26.728 59.71-59.702V134.236c0-32.973-26.736-59.701-59.71-59.701zm31.2 319.314-11.366 13.46-159.167-129.902-24.65 23.454c-18.268 16.776-46.345 16.776-64.614 0l-24.65-23.454L39.876 407.309l-11.366-13.46 149.44-136.517L27.531 115.968l8.893-11.783L256 270.56l219.575-166.375 8.886 11.783-150.41 141.364L483.49 393.849z"/>
                     </svg>
                     <p className='group-active:text-custom-blue md:group-hover:text-custom-blue'>eyekontactlimited@gmail.com</p>
                 </div>
