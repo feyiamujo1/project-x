@@ -54,23 +54,23 @@ const About = () => {
             </div>
         </div>
         <div ref={firstContainer} className='bg-black'>
-            <div className="w-11/12 lg:w-[85%] mx-auto min-h-[90vh] md:min-h-screen relative pb-16 pt-16  space-y-10">
+            <div className="w-11/12 lg:w-[85%] mx-auto md:h-[600px] relative pb-16 pt-16 space-y-10">
 
                 {/* <div className='hidden md:block'>
                     <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> About Us</p>
                 </div> */}
 
                 {/* <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">About Us</h1> */}
-                <div className='flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-10 xl:gap-14 z-[10]'>
-                    <div className='w-fit md:w-[500px] space-y-14 md:space-y-0'>
+                <div className='flex flex-col md:flex-row w-full gap-10'>
+                    <div className='w-fit space-y-14 md:space-y-0'>
                         <p className='md:hidden block text-white'>
                             {/* We are an OOH advertising agency , known for iconic creativity and innovations.  */}
                             We create , manage and execute high-impact campaigns for clients who wants to get their ads campaign in front of the right audience
                         </p>
-                        <img className='hidden md:block' src={AboutImage} alt='' />
+                        <img className='hidden md:block w-[810px] lg:w-[910px] h-[590px]' src={AboutImage} alt='' />
                         <img className='md:hidden block w-full h-full' src={AboutImageMobile} alt='' />
                     </div>
-                    <div className='text-white space-y-5 md:space-y-3 w-full md:w-1/2'>
+                    <div className='text-white space-y-5 md:space-y-3 w-full'>
                         <p className='hidden md:block'>
                             {/* We are an OOH advertising agency , known for iconic creativity and innovations.  */}
                             We create , manage and execute high-impact campaigns for clients who wants to get their ads campaign in front of the right audience
@@ -90,13 +90,13 @@ const About = () => {
                 </div>
                 
             </div>
-            <div className='w-full h-20 bg-white hidden md:block -mt-28'>
+            {/* <div className='w-full h-20 bg-white hidden md:block -mt-28'>
 
-            </div>
+            </div> */}
         </div>
-        <div className="w-11/12 lg:w-[85%] mx-auto py-16 bg-white space-y-14">
+        <div className="w-11/12 lg:w-[85%] mx-auto py-28 bg-white space-y-12">
             <h1 className="font-extrabold text-3xl md:text-5xl max-w-[600px] expert">We are Experts in Out of Homes Advertising.</h1>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-28 gap-y-6'>
                 <div className='space-y-3'>
                     <h2 className='font-extrabold text-3xl md:text-5xl text-custom-blue-dark'>16+</h2>
                     <p className='text-custom-ash text-xl font-medium border-t pt-2 border-[#ACACACB2]'>Years of Experience</p>
@@ -116,11 +116,11 @@ const About = () => {
                 <div className='space-y-12'>
                     <h1 className="font-extrabold text-white text-4xl w-fit mx-auto">Our <span className='text-custom-blue'>Founder</span></h1>
                     <div className='w-fit mx-auto cursor-pointer group'>
-                        <div className='w-[340px] h-[370px] box-border text-center'>
+                        <div className='w-[370px] h-[410px] box-border text-center'>
                             <img className='h-full w-auto mx-auto' src={Members[0].image} alt=""/>
                         </div>
                         <div className='w-[270px] border-t border-[#ACACACB2] mx-auto space-y-10'>
-                            <div className='w-[110px] h-7 -mt-1 bg-custom-ash group-hover:bg-custom-blue-dark transform -skew-x-[24deg] mx-auto -rotate-[24deg]'></div>
+                            <div className='w-[110px] h-7 -mt-1 bg-custom-blue-dark transform -skew-x-[24deg] mx-auto -rotate-[24deg]'></div>
                             <div className='space-y-2 text-center'>
                                 <h3 className='text-white text-[28px] font-bold'>{Members[0].name}</h3>
                                 <p className='text-custom-ash group-hover:text-custom-blue-dark'>{Members[0].position}</p>
@@ -151,10 +151,10 @@ const About = () => {
                             ))
                         }
                     </div>
-                    <div className="bg-[#1E1E1E] sm:w-full h-[230px] absolute right-0 mx-auto z-[9] top-[980px]"></div>
-                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1450px]"></div>
-                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1920px]"></div>
-                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[2390px]"></div>
+                    <div className="bg-[#1E1E1E] sm:w-full h-[230px] absolute right-0 mx-auto z-[9] top-[1020px]"></div>
+                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1490px]"></div>
+                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1960px]"></div>
+                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[2430px]"></div>
                 </div>
                 
             </div>

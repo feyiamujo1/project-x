@@ -16,7 +16,7 @@ const Blog = () => {
     };
   return (
     <div className='bg-black pb-8'>
-        <div className="w-full h-[90vh] sm:h-screen bg-blog-image bg-cover bg-no-repeat bg-center relative">
+        <div className="w-full h-[90vh] sm:h-screen bg-blog-image bg-cover bg-no-repeat bg-top relative">
             <div className='hidden md:block absolute top-32 left-[7.3%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Blog</p>
             </div>
@@ -27,7 +27,7 @@ const Blog = () => {
                 </div>
                 <div>
                     <p className="w-11/12 md:w-[550px] text-white text-center text-sm sm:text-base font-normal absolute left-0 right-0 mx-auto bottom-[110px] md:bottom-24 md:right-[50%] md:translate-x-2/4 md:left-auto">
-                    Read about our recent updates, activities and breakthroughs as we provide more OOH services and opportunities.
+                        Read about our recent updates, activities and breakthroughs as we provide more OOH services and opportunities.
                     </p>
                     {/* <p className="text-white text-xs sm:text-sm font-light absolute bottom-4 right-[5%] md:right-[2%]">RC 722750</p> */}
                     <div className="w-full absolute left-0 right-0 bottom-10 md:bottom-8 flex flex-row justify-center items-center">

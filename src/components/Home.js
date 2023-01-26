@@ -134,21 +134,17 @@ const Home = () => {
                             <img className="w-full" src={FirstFrameImage} alt='' />
                         </div>
                         <p className="w-full md:w-2/3 text-base leading-8 md:text-justify">
-                            We specialize in out of homes advertising and marketing communication and provide solutions 
-                            for our customers in form of our media platform across Nigeria. 
-                            We also provide our client with strategic board awareness insight, creative support and channel to deliver with their
-                            brand message from start to finish. We have won several awards in recognition of our innovative ideas and disruptive 
-                            concept delivered across the country. <br></br> With our vast experience, we intend to expand your market visibility to creating 
-                            bond and affinity for your brand through provision of excellent innovative and environmentally friendly integrated 
-                            marketing communication advertising services.
+                            Through our media network across Nigeria, we provide our customers options and are experts in out-of-home marketing and advertising communication. 
+                            Additionally, we provide our clients creative help, strategic board awareness expertise, and channels to fully convey their brand message. 
+                            As a result of the unique concepts and disruptive ideas we have spread across the nation, we have received several honours.
+                            With our extensive experience, we aim to increase your brand's affinity and relationship with consumers by offering top-notch, cutting-edge, and environmentally friendly integrated marketing communication advertising services.
                         </p>
                     </div>
                     <div className="w-full flex flex-col-reverse md:flex-row gap-4 md:gap-10 items-start">
                         <p className="w-full md:w-2/3 text-base leading-8 md:text-justify">
-                        At Eyekontact we ensure that customers have a positive experience of communication regardless of their locations , we have an 
-                        overall marketing strategy that focuses on reaching the target audience from multiple platforms and channels. Our type of strategy 
-                        includes both traditional marketing and digital marketing channels infused within the entire customer journey. We also play into key 
-                        content like: Media planning, Media buying, Pr activation, creative design and branding .
+                            Eyekontact makes sure that consumers, wherever they may be, have a great communication experience. As part of our entire marketing strategy, 
+                            we aim to reach the target demographic through a variety of platforms and channels. We employ a form of approach that integrates conventional and digital marketing channels across the whole client experience. 
+                            We also contribute to important material such as media purchasing, planning, activating PR, creative design, and branding.
                         </p>
                         <div className="w-full md:w-1/3">
                             <img className="w-full" src={SecondFrameImage} alt='' />
@@ -160,11 +156,9 @@ const Home = () => {
                         </div>
                         <div className="w-full md:w-2/3 space-y-5 text-base">
                             <p className="leading-8 md:text-justify">
-                                Eyekontact limited is one of Nigeria’s leading advertising companies which was incorporated in December 2007. 
-                                We specialise in out-of-home (OOH) advertising and marketing communication which provides solutions for our customers 
-                                inform of out media platforms across Nigeria. We believe in the power of OOH advertising and we will serve you the most 
-                                cost effective ways to reach your target audience in strategic locations.
-                                If you have an idea that needs to be seen , or a product that needs to be sold , we can and will help. Plan your next campaign with us.
+                            One of Nigeria's top advertising firms, Eyekontact Limited, was established in December 2007. We specialize in out-of-home (OOH) advertising and marketing communication, which offers our customers in Nigeria 
+                            alternatives for keeping up with our media platforms. We are firm believers in the effectiveness of OOH advertising and will offer you the most affordable means of reaching your target market in key areas. 
+                            We can and will support you if you have a product that needs to be sold or an idea that needs to be noticed. With our help, plan your upcoming campaign.
                             </p>
                             <div className="relative w-fit md:border-2 bg-custom-blue md:bg-white md:border-black rounded-full cursor-pointer mx-auto md:ml-0">
                                 <div className="hidden md:block absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
