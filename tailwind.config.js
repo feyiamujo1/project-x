@@ -15,6 +15,7 @@ module.exports = {
         'notification-white': '#BABABA',
         'notification-green': '#52FF00',
         'notification-red': '#FF0000',
+        'custom-brown': '#6B7280',
         'dark-bg':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6))',
       },
       boxShadow:{
@@ -26,7 +27,7 @@ module.exports = {
         'intro-image' : 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/kate-trysh-Dnkr_lmdKi8-unsplash1.jpg")',
         'blog-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/pexels-luke-barky-2899737.jpg")',
         'contact-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/petr-machacek-BeVGrXEktIk-unsplash.jpg")',
-        'login-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/chris-johnson-9HD_xuvymWo-unsplash.jpg")'
+        'login-image': 'linear-gradient(rgba(0, 13, 26, 0.3),rgba(0, 13, 26, 0.6)), url("../src/assets/images/chris-johnson-9HD_xuvymWo-unsplash.jpg")'
       },
       transitionProperty: {
         'multiple': 'width, opacity',

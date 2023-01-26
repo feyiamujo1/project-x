@@ -70,8 +70,7 @@ const Home = () => {
                 <div className="w-fit space-y-4 text-center">
                     <h1 className="text-white font-extrabold text-4xl sm:text-5xl mx-auto">Our Holdings</h1>
                     <p className="text-white text-base md:text-sm font-normal w-full md:w-[480px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua.
+                        Bringing your brand to life in the great outdoors. Don't just advertise, make a statement with Eyekontact Limited.
                     </p>
                 </div>
                 <CampaignHoldings />

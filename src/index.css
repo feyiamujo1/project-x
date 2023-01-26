@@ -51,6 +51,24 @@ html:focus-within {
   bottom: -25px;
 }
 
+.quote:before {
+	position: absolute;
+	color: #fff;
+	font-size: 70px;
+  width: 55px;
+  height: 55px;
+  font-family: sans-serif;
+  content: '“';
+  background: #000;
+  border-radius: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-25%);
+  bottom: -25px;
+}
+
 .m-scroll {
   display: flex;
   width: 100%;
@@ -150,27 +168,9 @@ html:focus-within {
 .login_input {
   -webkit-background-clip: text !important;
   background-clip:  text !important;
-  border: transparent !important;
-  outline: transparent !important;
-}
-.login_input:focus{
-  border: transparent !important;
-  outline: transparent !important;
-  border-radius: 10px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-}
-.login_input:focus{
-  border: transparent !important;
-  outline: transparent !important;
-  border-radius: 10px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
 }
 input, input:focus,input:hover, input:active{
-  outline:none;
+  box-shadow: 0 0 0 rgb(255, 255, 255) !important;
 }
 
 @tailwind base;

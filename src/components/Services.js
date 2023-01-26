@@ -56,12 +56,13 @@ const Services = () => {
         <div  className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-10 border-b-[0.1px] border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Iconic Structure</h2>
-                <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
+                <div className='flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service1Image} alt="" />
                     <p className='text-white'>
-                        The iconic platforms is the modern form of advertising which has to do with the digital and creative forms of advertising in OOH. This kind of platform are especially made for bigger brands that know the 
-                        effectiveness on their BRANDS . The most important of the iconic platform is that it must be LIT to show the beauty of the brands 
-                        and tell a story of the brands.
+                        Introducing our newest addition to our portfolio of advertising structures - an iconic and highly visible structure that is sure to make a lasting 
+                        impression on your target audience. Our state-of-the-art structure, located in the heart of the city, is designed to showcase your brand and message in 
+                        a bold and striking way. Whether you're looking to create brand awareness, generate leads, or increase sales, our iconic structure is the perfect solution 
+                        for your outdoor advertising needs.
                     </p>
                 </div>
             </div>
@@ -69,10 +70,11 @@ const Services = () => {
         <div className='relative'>
             <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Planning</h2>
-                <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
+                <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <p className='text-white'>
-                        At Eyekontact our approach to media planning is to understand our client brands’ marketing, advertising and media goals. We incorporate the four core steps in media planning; market analysis, establishment of media 
-                        objectives, media strategy development and implementation and evaluation and follow up.
+                        Our outdoor media planning services are designed to help businesses reach their target audience and achieve their advertising goals. We specialize in strategic 
+                        planning and placement of out-of-home (OOH) advertisements, including billboards, bus shelters, and transit ads. With our extensive knowledge of the OOH landscape, 
+                        we are able to identify the most impactful locations to deliver your message and maximize your advertising budget.
                     </p>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service2Image} alt="" />
                 </div>
@@ -82,10 +84,12 @@ const Services = () => {
         <div className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Branding</h2>
-                <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
+                <div className='flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service3Image} alt="" />
                     <p className='text-white'>
-                        Our strategy towards branding is developing brand recognition, customers loyalty and builds lasting relationships with our amiable clients.
+                        At Eyekontact, we understand the power of branding in outdoor advertising. Whether it's a billboard, bus shelter, or street furniture, we help companies create impactful 
+                        campaigns that not only grab attention, but also leave a lasting impression on viewers. Our team of experts specialize in crafting powerful and unique brand messages that 
+                        resonate with your target audience and helps you to stand out in a crowded market.
                     </p>
                 </div>
             </div>
@@ -93,9 +97,11 @@ const Services = () => {
         <div className='relative'>
             <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Buying</h2>
-                <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
+                <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <p className='text-white'>
-                        We put media planning into action, focusing on buying the right mix of media to deliver on the campaign goals effectively.
+                        Outdoor advertising is a powerful way to reach your target audience, but placing your ads in the right locations and at the right times is key to success. That's why we offer 
+                        comprehensive media buying services. Our experts will use their knowledge of the industry and audience insights to create a strategic media plan that gets your ads in front of 
+                        the right people at the right time, delivering maximum impact and return on investment.
                     </p>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service4Image} alt="" />
                 </div>
@@ -105,10 +111,12 @@ const Services = () => {
         <div className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Digital Marketing</h2>
-                <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
+                <div className='flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service5Image} alt="" />
                     <p className='text-white'>
-                        We put media planning into action, focusing on buying the right mix of media to deliver on the campaign goals effectively.
+                        Maximize your reach and engagement with our digital marketing services. We specialize in creating dynamic and effective campaigns that 
+                        utilize the latest technologies and platforms to connect you with your target audience. From digital billboards to mobile advertising, 
+                        we offer a wide range of solutions to help you stand out in the digital landscape and drive results.
                     </p>
                 </div>
             </div>
@@ -116,9 +124,12 @@ const Services = () => {
         <div className='relative'>
             <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Creative Design</h2>
-                <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
+                <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <p className='text-white'>
-                        Eyekontact creative design produces iconic, unique and memorable design that stand out to our customers for easy identification of their brand and products.
+                        Our team of experienced designers utilizes the latest technology and design trends to craft campaigns that capture attention and drive 
+                        results. From concept to delivery, we work closely with our clients to understand their unique goals and create designs that resonate 
+                        with their target audience. Whether you're looking to launch a new product, increase brand awareness, or drive sales, we have the 
+                        creativity and expertise to help you achieve your objectives.
                     </p>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service6Image} alt="" />
                 </div>
@@ -128,10 +139,13 @@ const Services = () => {
         <div className='bg-black '>
             <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>PR Activation</h2>
-                <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
+                <div className='flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service7Image} alt="" />
                     <p className='text-white'>
-                        We do PR activation through campaigns, events and interact which your brand generates awareness and builds lasting connections with target audience.
+                    Unleash the power of public relations with our outdoor advertising company. We specialize in creating unique and impactful PR activations 
+                    that capture the attention of your target audience and drive results. Whether it's a large-scale event or a grassroots campaign, our team of 
+                    experts will work with you to create a strategy that resonates with your brand and amplifies your message. Let us help you create buzz and build 
+                    brand awareness with our effective PR solutions.
                     </p>
                 </div>
             </div>

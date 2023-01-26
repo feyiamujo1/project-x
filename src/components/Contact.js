@@ -90,7 +90,7 @@ const Contact = () => {
                             </div>
                             <div class="relative w-[48%] mb-[20px] box-border">
                                 <label className='text-white font-medium' >Last Name</label>
-                                <input className='w-full py-[10px] px-[5px] rounded border-none outline-none '   type='text' id='lastname_inputfield' required/>
+                                <input className='w-full py-[10px] px-[5px] rounded border-none outline-none'   type='text' id='lastname_inputfield' required/>
                             </div>
                         </div>
                         <div className='flex justify-between'>
