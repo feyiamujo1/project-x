@@ -32,7 +32,7 @@ const About = () => {
     };
     document.title = 'About Us';
   return (
-    <div>
+    <div className='scroll-smooth'>
         <div className="w-full h-[90vh] sm:h-screen bg-hero-image bg-cover bg-no-repeat bg-center relative">
             <div className='hidden md:block absolute top-32 left-[10%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> About Us</p>

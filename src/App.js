@@ -5,7 +5,7 @@ import UserRoute from "./components/UserRoute";
 
 function App() {
   return (
-    <div className="">
+    <div className="scroll-smooth">
         {/* <Navbar /> */}
         
         <ScrollToTop>

@@ -39,7 +39,7 @@ const Home = () => {
     console.log(videoElement);
 
   return (
-    <div>
+    <div className='scroll-smooth'>
         <div className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center relative">
             <video  ref={videoElement} poster={HomeImage} className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
                 <source src={BgVideo} type="video/mp4" />

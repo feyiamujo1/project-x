@@ -19,7 +19,7 @@ const Services = () => {
     };
     // left-[10%]
   return (
-    <div className='bg-black pb-8'>
+    <div className='bg-black pb-8 scroll-smooth'>
         
         <div className="w-full h-[90vh] sm:h-screen bg-intro-image bg-cover bg-no-repeat bg-center relative">
             <div className='hidden md:block absolute top-32 left-[10%]'>
