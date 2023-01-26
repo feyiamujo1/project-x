@@ -17,13 +17,13 @@ const About = () => {
     
     const Members = [
         { id: 0, name: "Adeniyi Ganiyu", position: "Managing Director", image: ManagingDirectorImage },
-        { id: 1, name: "Lucky Nwaka", position: "Operation Manager", image: OperationManager },
-        { id: 2, name: "Faith Ikejiaku", position: "Executive Assistant", image: ExecutiveAssistantImage },
+        { id: 1, name: "Lucky Nwaka", position: "Asset Manager", image: OperationManager },
+        { id: 2, name: "Faith Ikejiaku", position: "Customer Service Manager", image: ExecutiveAssistantImage },
         { id: 3, name: "Daniel Olarewaju", position: "Office Assistant", image: OfficeAssistantImage},
         { id: 4, name: "Enare Ejim", position: "Innovation Manager", image: InnovationManagerImage},
         { id: 5, name: "Gbemisola Bello", position: "Marketing Manager", image: MarketingManagerImage },
-        { id: 6, name: "Abiola Adeyeye", position: "Creative Specialist", image: CreativeSpecialityImage },
-        { id: 7, name: "John Doe", position: "John Manager", image: JohnDoeImage }
+        { id: 6, name: "Abiola Adeyeye", position: "Creative Executive", image: CreativeSpecialityImage },
+        { id: 7, name: "Ibrahim Abiodun", position: "Operation Executive", image: JohnDoeImage }
     ]
 
     const firstContainer = useRef(null);
@@ -54,25 +54,17 @@ const About = () => {
             </div>
         </div>
         <div ref={firstContainer} className='bg-black'>
-            <div className="w-11/12 lg:w-[80%] mx-auto md:h-[600px] relative pb-16 pt-16 space-y-10">
-
-                {/* <div className='hidden md:block'>
-                    <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> About Us</p>
-                </div> */}
-
-                {/* <h1 className="font-extrabold abt -mt-10 text-4xl md:text-5xl text-white">About Us</h1> */}
-                <div className='flex flex-col md:flex-row w-full gap-10'>
+            <div className="w-11/12 lg:w-[80%] mx-auto md:h-[600px] lg:h-[560px] relative pb-16 pt-16 space-y-10">
+                <div className='flex flex-col md:flex-row w-full gap-10 lg:gap-16'>
                     <div className='w-fit space-y-14 md:space-y-0'>
                         <p className='md:hidden block text-white'>
-                            {/* We are an OOH advertising agency , known for iconic creativity and innovations.  */}
                             We create , manage and execute high-impact campaigns for clients who wants to get their ads campaign in front of the right audience
                         </p>
-                        <img className='hidden md:block w-[810px] lg:w-[910px] h-[590px]' src={AboutImage} alt='' />
+                        <img className='hidden md:block w-[810px] lg:w-[940px] h-[600px]' src={AboutImage} alt='' />
                         <img className='md:hidden block w-full h-full' src={AboutImageMobile} alt='' />
                     </div>
                     <div className='text-white space-y-5 md:space-y-3 w-full'>
                         <p className='hidden md:block'>
-                            {/* We are an OOH advertising agency , known for iconic creativity and innovations.  */}
                             We create , manage and execute high-impact campaigns for clients who wants to get their ads campaign in front of the right audience
                         </p>
                         <h2 className='font-bold text-2xl'>Our Mission</h2>
@@ -94,7 +86,7 @@ const About = () => {
 
             </div> */}
         </div>
-        <div className="w-11/12 lg:w-[80%] mx-auto py-28 bg-white space-y-12">
+        <div className="w-11/12 lg:w-[80%] mx-auto py-32 bg-white space-y-12">
             <h1 className="font-extrabold text-3xl md:text-5xl max-w-[600px] expert">We are Experts in Out of Homes Advertising.</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-28 gap-y-6'>
                 <div className='space-y-3'>
@@ -123,7 +115,7 @@ const About = () => {
                             <div className='w-[110px] h-7 -mt-1 bg-custom-blue-dark transform -skew-x-[24deg] mx-auto -rotate-[24deg]'></div>
                             <div className='space-y-2 text-center'>
                                 <h3 className='text-white text-[28px] font-bold'>{Members[0].name}</h3>
-                                <p className='text-custom-ash group-hover:text-custom-blue-dark'>{Members[0].position}</p>
+                                <p className=' text-custom-blue-dark'>{Members[0].position}</p>
                             </div>
                         </div>
                     </div>
