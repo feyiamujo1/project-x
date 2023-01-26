@@ -16,7 +16,7 @@ const Blog = () => {
     };
   return (
     <div className='bg-black pb-8 scroll-smooth'>
-        <div className="w-full h-[90vh] sm:h-screen bg-blog-image bg-cover bg-no-repeat bg-top relative">
+        <div className="w-full h-[90vh] sm:h-screen bg-blog-image bg-cover bg-no-repeat bg-center relative">
             <div className='hidden md:block absolute top-32 left-[10%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Blog</p>
             </div>

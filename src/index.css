@@ -5,10 +5,15 @@ body {
   font-family: Poppins, sans-serif;
   /* height:100vh;
   width:100vw; */
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll; */
+  /* scroll-behavior: smooth !important; */
+  /* overflow-y: scroll; */
 }
 html, body {
-  overflow-y: auto;
-  scroll-behavior: smooth !important;
+  /* overflow-y: auto; */
+  /* scroll-behavior: smooth !important; */
 }
 html:focus-within {
   scroll-behavior: smooth;
@@ -142,35 +147,7 @@ html:focus-within {
   fill: #00D3FF;
 }
 
-/* Css for autofill background issshh
-input-webkit-autofill,
-input-webkit-autofill:hover,
-input-webkit-autofill:focus{
-  transition: background-color 5000s;
-  -webkit-text-fill-color: #000 !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-family: poppins;
-  font-size: inherit;
-  cursor: black !important;
-  background-color: #fff !important;
-} */
-/* 
-input:autofill {
-  border: none;
-  outline: none;
-  background-color: #fff !important;
-  font-size: 16px;
-}
-input:-webkit-autofill{
-  border: none;
-  outline: none;
-  background-color: #fff !important;
-} */
-
 .login_input {
-  /* color: $input-text-color !important; */
-  /* -webkit-text-fill-color: $input-text-color !important; */
   -webkit-background-clip: text !important;
   background-clip:  text !important;
   border: transparent !important;
@@ -179,24 +156,18 @@ input:-webkit-autofill{
 .login_input:focus{
   border: transparent !important;
   outline: transparent !important;
-  /* : 0px; */
   border-radius: 10px;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
-  /* border-bottom-style: groove; */
-  /* background-color: #eee; */
 }
 .login_input:focus{
   border: transparent !important;
   outline: transparent !important;
-  /* : 0px; */
   border-radius: 10px;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
-  /* border-bottom-style: groove; */
-  /* background-color: #eee; */
 }
 input, input:focus,input:hover, input:active{
   outline:none;
@@ -205,3 +176,9 @@ input, input:focus,input:hover, input:active{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html, body {
+    scroll-behavior: smooth;
+  }
+}

@@ -24,8 +24,7 @@ module.exports = {
       backgroundImage:{
         'hero-image':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/3.jpg")',
         'intro-image' : 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/kate-trysh-Dnkr_lmdKi8-unsplash1.jpg")',
-        'blog-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/pexels-edmond-dantès-8553867.jpg")',
-        'blog-image-two': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url(../src/assets/images/pexels-gustavo-fring-4173169.jpg)',
+        'blog-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/pexels-luke-barky-2899737.jpg")',
         'contact-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/petr-machacek-BeVGrXEktIk-unsplash.jpg")',
         'login-image': 'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6)), url("../src/assets/images/chris-johnson-9HD_xuvymWo-unsplash.jpg")'
       },
