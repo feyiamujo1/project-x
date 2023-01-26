@@ -17,7 +17,7 @@ const Blog = () => {
   return (
     <div className='bg-black pb-8'>
         <div className="w-full h-[90vh] sm:h-screen bg-blog-image bg-cover bg-no-repeat bg-top relative">
-            <div className='hidden md:block absolute top-32 left-[7.3%]'>
+            <div className='hidden md:block absolute top-32 left-[10%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Blog</p>
             </div>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
@@ -36,7 +36,7 @@ const Blog = () => {
                 </div>
             </div>
         </div>
-        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-16 pt-[55px] space-y-10">
+        <div ref={firstContainer} className="w-11/12 lg:w-[80%] mx-auto pb-16 pt-[55px] space-y-10">
             {/* <div className='hidden md:block'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Blog</p>
             </div> */}

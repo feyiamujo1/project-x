@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <nav className={navbarBg ? "bg-black md:bg-transparent fixed md:absolute top-0 w-full z-[100]" : "fixed md:absolute top-0 w-full z-10"}>
-        <div className='w-11/12 lg:w-[85%] md:border-b md:border-b-[#FFFFFF4D] mx-auto py-2.5 md:py-0 flex items-center justify-between font-medium'>
+        <div className='w-11/12 lg:w-[80%] md:border-b md:border-b-[#FFFFFF4D] mx-auto py-2.5 md:py-0 flex items-center justify-between font-medium'>
             <div className='h-10 w-16 md:w-24 cursor-pointer flex items-center justify-between'>
                 <Link to='/'><img className='w-full' src={Logo} alt="" /></Link>
             </div>

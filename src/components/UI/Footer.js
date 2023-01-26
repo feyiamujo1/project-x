@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <div className={path === "/" ? 'py-14 bg-black' : 'py-14 bg-[#1E1E1E]'}>
-        <div className='w-11/12 lg:w-[85%] mx-auto space-y-10 text-white'>
+        <div className='w-11/12 lg:w-[80%] mx-auto space-y-10 text-white'>
             <div className="grid md:grid-cols-3 space-y-6">
                 <h1 className="font-extrabold text-5xl">Hello.</h1>
                 <div className=''>

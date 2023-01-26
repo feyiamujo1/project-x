@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div>
         <div className="w-full h-[90vh] sm:h-screen bg-contact-image bg-cover bg-no-repeat bg-[80%] md:bg-center relative">
-            <div className='hidden md:block absolute top-32 left-[7.3%]'>
+            <div className='hidden md:block absolute top-32 left-[10%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Contact Us</p>
             </div>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
@@ -36,7 +36,7 @@ const Contact = () => {
             </div>
         </div>
         <div ref={firstContainer} className='bg-black'>
-            <div className="w-11/12 lg:w-[85%] mx-auto min-h-[90vh] md:min-h-screen relative pb-16 pt-16 space-y-10 flex flex-col md:justify-between md:flex-row">
+            <div className="w-11/12 lg:w-[80%] mx-auto min-h-[90vh] md:min-h-screen relative pb-16 pt-16 space-y-10 flex flex-col md:justify-between md:flex-row">
                 <div className='space-y-10 md:w-[48%]'>
                     <div className='space-y-5'>
                         <h2 className='text-3xl font-semibold text-custom-blue'>

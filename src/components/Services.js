@@ -17,11 +17,12 @@ const Services = () => {
     const ScrollToView = () => {
         firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     };
+    // left-[10%]
   return (
     <div className='bg-black pb-8'>
         
         <div className="w-full h-[90vh] sm:h-screen bg-intro-image bg-cover bg-no-repeat bg-center relative">
-            <div className='hidden md:block absolute top-32 left-[7.3%]'>
+            <div className='hidden md:block absolute top-32 left-[10%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p>
             </div>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
@@ -40,7 +41,7 @@ const Services = () => {
                 </div>
             </div>
         </div>
-        <div ref={firstContainer} className="w-11/12 lg:w-[85%] mx-auto pb-10 pt-[55px] space-y-10 border-b border-[#acacac4e]">
+        <div ref={firstContainer} className="w-11/12 lg:w-[80%] mx-auto pb-10 pt-[55px] space-y-10 border-b border-[#acacac4e]">
             <div className='block -mt-10'>
                 {/* <p className='flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p> */}
             </div>
@@ -53,7 +54,7 @@ const Services = () => {
             </div>
         </div>
         <div  className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-10 border-b-[0.1px] border-[#acacac4e]'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-10 border-b-[0.1px] border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Iconic Structure</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service1Image} alt="" />
@@ -66,7 +67,7 @@ const Services = () => {
             </div>
         </div>
         <div className='relative'>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Planning</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
@@ -79,7 +80,7 @@ const Services = () => {
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
         <div className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e]'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Branding</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service3Image} alt="" />
@@ -90,7 +91,7 @@ const Services = () => {
             </div>
         </div>
         <div className='relative'>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Media Buying</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
@@ -102,7 +103,7 @@ const Services = () => {
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
         <div className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e]'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>Digital Marketing</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service5Image} alt="" />
@@ -113,7 +114,7 @@ const Services = () => {
             </div>
         </div>
         <div className='relative'>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
                 <h2 className='text-center text-custom-blue md:text-white font-bold text-3xl md:text-right'>Creative Design</h2>
                 <div className='flex flex-col-reverse md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <p className='text-white'>
@@ -125,7 +126,7 @@ const Services = () => {
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
         <div className='bg-black '>
-            <div className='space-y-10 w-11/12 lg:w-[85%] mx-auto py-14 border-b border-[#acacac4e]'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e]'>
                 <h2 className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>PR Activation</h2>
                 <div className='flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8'>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service7Image} alt="" />

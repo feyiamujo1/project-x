@@ -66,7 +66,7 @@ const Home = () => {
             </div>
         </div>
          <div ref={ref} className="w-full bg-black py-16 mt-10 rounded-[32px] space-y-6">
-            <div className='w-11/12 lg:w-[85%] h-full mx-auto flex flex-col items-center justify-center space-y-14'>
+            <div className='w-11/12 lg:w-[80%] h-full mx-auto flex flex-col items-center justify-center space-y-14'>
                 <div className="w-fit space-y-4 text-center">
                     <h1 className="text-white font-extrabold text-4xl sm:text-5xl mx-auto">Our Holdings</h1>
                     <p className="text-white text-base md:text-sm font-normal w-full md:w-[480px]">
@@ -126,7 +126,7 @@ const Home = () => {
             </div>
         </div>
         <div className="w-full py-16">
-            <div className='w-11/12 lg:w-[85%] mx-auto space-y-10'>
+            <div className='w-11/12 lg:w-[80%] mx-auto space-y-10'>
                 <h1 className="text-black font-extrabold text-4xl md:text-5xl">what we do.</h1>
                 <div className="space-y-10 md:space-y-16">
                     <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start ">
@@ -255,7 +255,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-11/12 lg:w-[85%] mx-auto space-y-10'>
+            <div className='w-11/12 lg:w-[80%] mx-auto space-y-10'>
                 <div className="space-y-3">
                     <h2 className="font-extrabold text-white text-center text-lg md:text-base tracking-[0.45em]">WHAT SETS US APART</h2>
                     <p className="text-white font-bold w-full text-lg md:text-3xl md:max-w-[800px] lg:w-10/12 mx-auto text-center md:leading-[50px]">
@@ -281,7 +281,7 @@ const Home = () => {
             </div>
         </div>
         <div className="w-full py-16 space-y-10">
-            <div className='w-11/12 lg:w-[85%] mx-auto space-y-12'>
+            <div className='w-11/12 lg:w-[80%] mx-auto space-y-12'>
                 <div className="space-y-4">
                     <h2 className="font-extrabold text-custom-blue text-base tracking-[0.45em]">TRUSTED PARTNERS</h2>
                     <p className="text-black font-extrabold text-3xl md:text-5xl max-w-[870px]"> <span className="text-custom-black">since 2007</span>, more than 100 brands have trusted us.</p>
@@ -317,7 +317,7 @@ const Home = () => {
             </div>
         </div>
         <div className="w-full py-14">
-            <div className='w-11/12 lg:w-[85%] mx-auto space-y-10'>
+            <div className='w-11/12 lg:w-[80%] mx-auto space-y-10'>
                 <h1 className="text-black font-extrabold text-4xl md:text-5xl">some icing on the cake.</h1>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
                     <div className="space-y-8">
@@ -363,7 +363,7 @@ const Home = () => {
             </div>
         </div>
         <div className="w-full pb-14">
-            <div className='w-11/12 lg:w-[85%] mx-auto space-y-10'>
+            <div className='w-11/12 lg:w-[80%] mx-auto space-y-10'>
                 <h1 className="text-black font-extrabold text-4xl md:text-5xl">recent news.</h1>
                 <div className="space-y-5">
                     <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start">

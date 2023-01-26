@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div>
         <div className="w-full h-[90vh] sm:h-screen bg-hero-image bg-cover bg-no-repeat bg-center relative">
-            <div className='hidden md:block absolute top-32 left-[7.3%]'>
+            <div className='hidden md:block absolute top-32 left-[10%]'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> About Us</p>
             </div>
             <div className='w-11/12 h-full mx-auto py-4 flex flex-col items-center gap-4 md:gap-0 justify-center'>
@@ -54,7 +54,7 @@ const About = () => {
             </div>
         </div>
         <div ref={firstContainer} className='bg-black'>
-            <div className="w-11/12 lg:w-[85%] mx-auto md:h-[600px] relative pb-16 pt-16 space-y-10">
+            <div className="w-11/12 lg:w-[80%] mx-auto md:h-[600px] relative pb-16 pt-16 space-y-10">
 
                 {/* <div className='hidden md:block'>
                     <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> About Us</p>
@@ -94,7 +94,7 @@ const About = () => {
 
             </div> */}
         </div>
-        <div className="w-11/12 lg:w-[85%] mx-auto py-28 bg-white space-y-12">
+        <div className="w-11/12 lg:w-[80%] mx-auto py-28 bg-white space-y-12">
             <h1 className="font-extrabold text-3xl md:text-5xl max-w-[600px] expert">We are Experts in Out of Homes Advertising.</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-28 gap-y-6'>
                 <div className='space-y-3'>
@@ -112,7 +112,7 @@ const About = () => {
             </div>
         </div>
         <div className="bg-black overflow-hidden relative">
-            <div className='w-11/12 lg:w-[85%] mx-auto py-16 space-y-16'>
+            <div className='w-11/12 lg:w-[80%] mx-auto py-16 space-y-16'>
                 <div className='space-y-12'>
                     <h1 className="font-extrabold text-white text-4xl w-fit mx-auto">Our <span className='text-custom-blue'>Founder</span></h1>
                     <div className='w-fit mx-auto cursor-pointer group'>
