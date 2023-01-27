@@ -1,8 +1,10 @@
 import Logo from '../../../src/assets/images/logo.png'
 import * as IoIcon from "react-icons/io5"
 import * as HiIcon from "react-icons/hi"
-import { Link, NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Navbar = () => {
     const showSideBarar = () => {
@@ -50,9 +52,19 @@ const Navbar = () => {
     //     document.removeEventListener("mousedown", handler);
     //     }
     // });
+    const location = useLocation().pathname;
+    useEffect(() => {
+        AOS.init({ once: true });
+        console.log(location);
+    }, [location]);
 
   return (
-    <nav className={navbarBg ? "bg-black md:bg-transparent fixed md:absolute top-0 w-full z-[100]" : "fixed md:absolute top-0 w-full z-10"}>
+    <nav 
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1250"
+        data-aos-delay="500"
+        className={navbarBg ? "bg-black md:bg-transparent fixed md:absolute top-0 w-full z-[100]" : "fixed md:absolute top-0 w-full z-10"}>
         <div className='w-11/12 lg:w-[80%] md:border-b md:border-b-[#FFFFFF4D] mx-auto py-2.5 md:py-0 flex items-center justify-between font-medium'>
             <div className='h-10 w-16 md:w-24 cursor-pointer flex items-center justify-between'>
                 <Link to='/'><img className='w-full' src={Logo} alt="" /></Link>

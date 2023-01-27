@@ -8,6 +8,9 @@ import BridgePanelImage from "../../../src/assets/images/bridge.png"
 import FenceDrapeImage from "../../../src/assets/images/fence_drape.png"
 import WallWrapImage from "../../../src/assets/images/wallwrap.png"
 import WhiteLogo from "../../../src/assets/images/logo_white.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react"
 
 const CampaignHoldings = () => {
     const Campaigns = [
@@ -21,12 +24,20 @@ const CampaignHoldings = () => {
       { id: 7, name: "Wallwrap", image: WallWrapImage, vacant: 54, deployed: 4 },
       { id: 8, name: "Fence Drape", image: FenceDrapeImage, vacant: 0, deployed: 17 },
     ]
+    useEffect(() => {
+      AOS.init({ once: true });
+    }, []);
+
   return (
     <div className="w-full space-y-4">
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {Campaigns.map((campaign) => 
+        {Campaigns.map((campaign, index) => 
         (
-          <div className="text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer active:bg-custom-blue md:hover:bg-custom-blue group" key={campaign.id}> {/* confirm style first campaign.id === 8 ? campaignStyle + " sm:col-span-2 md:col-span-1" : campaignStyle*/}
+          <div 
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-delay={`${100*index}`} 
+            className="text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer active:bg-custom-blue md:hover:bg-custom-blue group" key={campaign.id}> {/* confirm style first campaign.id === 8 ? campaignStyle + " sm:col-span-2 md:col-span-1" : campaignStyle*/}
             <div className="mx-auto w-fit">
               <img className="w-[70px] h-[65px]" src={campaign.image} alt="" />
             </div>
@@ -66,7 +77,11 @@ const CampaignHoldings = () => {
           </div>
         )
         )}
-        <div className="space-y-7 md:col-span-3 p-6 border border-custom-white rounded-2xl group active:bg-custom-blue md:hover:bg-custom-blue cursor-pointer"> {/*sm:col-span-2 */}
+        <div 
+          data-aos="fade-up" 
+          data-aos-duration="1500"
+          data-aos-delay="300"
+          className="space-y-7 md:col-span-3 p-6 border border-custom-white rounded-2xl group active:bg-custom-blue md:hover:bg-custom-blue cursor-pointer"> {/*sm:col-span-2 */}
           <div className="">
               <img className="mx-auto" src={WhiteLogo} alt="" />
           </div>
