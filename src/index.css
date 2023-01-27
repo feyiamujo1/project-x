@@ -11,10 +11,14 @@ body {
   /* scroll-behavior: smooth !important; */
   /* overflow-y: scroll; */
 }
-html, body {
+/* html, body { */
   /* overflow-y: auto; */
   /* scroll-behavior: smooth !important; */
+/* } */
+*{
+  box-sizing: border-box;
 }
+
 html:focus-within {
   scroll-behavior: smooth;
 }

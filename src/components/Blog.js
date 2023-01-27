@@ -71,7 +71,7 @@ const Blog = () => {
                     Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat pellentesque leo. Feugiat mattis 
                     viverra nisi lectus laoreet. Sed dapibus a a posuere eget. Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                     </p>
-                    <div className='flex flex-col md:flex-row gap-10'>
+                    <div className='flex flex-col md:flex-row gap-10 overflow-hidden'>
                         <div 
                             data-aos="fade-right" 
                             data-aos-duration="1000"
@@ -92,7 +92,7 @@ const Blog = () => {
                     <p 
                         data-aos="fade-up" 
                         data-aos-duration="1000"
-                        data-aos-delay="1000"
+                        data-aos-delay={ window.innerWidth < 768? "0": "1000"}
                         className='text-white'>
                     Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus laoreet 
                     lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. Lorem ipsum dolor 
@@ -100,11 +100,11 @@ const Blog = () => {
                     Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat pellentesque leo. Feugiat mattis 
                     viverra nisi lectus laoreet. Sed dapibus a a posuere eget. Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
                     </p>
-                    <div className='flex flex-col md:flex-row gap-10'>
+                    <div className='flex flex-col md:flex-row gap-10 overflow-hidden'>
                         <div 
                             data-aos="fade-right" 
                             data-aos-duration="1000"
-                            data-aos-delay="1000"
+                            data-aos-delay={ window.innerWidth < 768? "0": "1000"}
                             className='space-y-5'>
                             <img className='w-full sm:w-8/12 md:w-full mx-auto' src={BlogImage4} alt="" />
                             <p className='text-white text-sm text-center italic font-extralight'>Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed</p>
@@ -112,7 +112,7 @@ const Blog = () => {
                         <div 
                             data-aos="fade-left" 
                             data-aos-duration="1000"
-                            data-aos-delay="1000"
+                            data-aos-delay={ window.innerWidth < 768? "0": "1000"}
                             className='space-y-5'>
                             <img className='w-full sm:w-8/12 md:w-full mx-auto' src={BlogImage3} alt="" />
                             <p className='text-white text-sm text-center italic font-extralight'>Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed</p>
@@ -123,7 +123,7 @@ const Blog = () => {
             <div 
                 data-aos="zoom-in" 
                 data-aos-duration="1000"
-                data-aos-delay="1000"
+                data-aos-delay={ window.innerWidth < 768? "0": "1000"}
                 className='flex flex-row gap-2 justify-center'>
                 <p className='text-black border border-custom-blue bg-custom-blue cursor-pointer hover:text-white w-[50px] h-[46px] rounded-md flex justify-center items-center'>1</p>
                 <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>2</p>

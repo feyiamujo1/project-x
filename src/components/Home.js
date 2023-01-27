@@ -16,6 +16,7 @@ import { useEffect, useRef } from "react"
 import HomeImage from '../../src/assets/images/thumbnail.JPG'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom"
 
 const Home = () => {
     
@@ -42,17 +43,10 @@ const Home = () => {
 
   return (
     <div className='scroll-smooth'>
-        <div 
-            // data-aos="zoom-in" 
-            // data-aos-duration="900"
-            className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center relative">
+        <div className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center relative">
             <video  ref={videoElement} poster={HomeImage} className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
                 <source src={BgVideo} type="video/mp4" />
             </video>
-            {/* <div className="w-full h-[90vh] sm:h-screen absolute bg-black z-[-101] brightness-[1] left-0 right-0 mx-auto">
-
-            </div> */}
-            {/* {id="backgroundVideo"} */}
             <div 
                 data-aos="zoom-in" 
                 data-aos-duration="1500"
@@ -77,17 +71,13 @@ const Home = () => {
          <div ref={ref} className="w-full bg-black py-16 mt-10 rounded-[32px] space-y-6">
             <div 
                 className='w-11/12 lg:w-[80%] h-full mx-auto flex flex-col items-center justify-center space-y-14'>
-                <div className="w-fit space-y-4 text-center">
-                    <h1 
-                        data-aos="fade-up" 
-                        data-aos-duration="1300"
-                        data-aos-delay="200"
-                        className="text-white font-extrabold text-4xl sm:text-5xl mx-auto">Our Holdings</h1>
-                    <p  
-                        data-aos="fade-up" 
-                        data-aos-duration="1500"
-                        data-aos-delay="300" 
-                        className="text-white text-base md:text-sm font-normal w-full md:w-[480px]">
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1300"
+                    data-aos-delay="100"
+                    className="w-fit space-y-4 text-center">
+                    <h1 className="text-white font-extrabold text-4xl sm:text-5xl mx-auto">Our Holdings</h1>
+                    <p className="text-white text-base md:text-sm font-normal w-full md:w-[480px]">
                         Bringing your brand to life in the great outdoors. Don't just advertise, make a statement with Eyekontact Limited.
                     </p>
                 </div>
@@ -146,7 +136,7 @@ const Home = () => {
             </div>
         </div>
         <div className="w-full py-16">
-            <div className='w-11/12 lg:w-[80%] mx-auto space-y-10'>
+            <div className='w-11/12 lg:w-[80%] mx-auto space-y-10 overflow-hidden'>
                 <h1 
                     data-aos="fade-right" 
                     data-aos-duration="1000"
@@ -154,67 +144,48 @@ const Home = () => {
                         what we do.
                     </h1>
                 <div className="space-y-10 md:space-y-16">
-                    {/* 
-                            With our extensive experience, we aim to increase your brand's affinity and relationship with consumers by offering top-notch, cutting-edge, and environmentally 
-                            friendly integrated marketing communication advertising services.
-                            As a result of the unique concepts and disruptive ideas we spread across the nation, we have received several honours for our incredible work.
-                            Eyekontact makes sure that consumers, wherever they may be, have a great communication experience. We also contribute to important material such as media purchasing, planning, activating PR, creative design, and branding.
-                            As one of Nigeria's top advertising firms, Eyekontact Limited, was established in December 2007. We specialize in out-of-home (OOH) advertising and marketing communication, which offers our customers in Nigeria 
-                            alternatives for keeping up with our media platforms.
-                        */}
-                    <div className="w-full h-fit flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 md:h-[230px] items-start ">
-                        <div 
-                            data-aos="fade-right" 
-                            data-aos-duration="1000"
-                            className="w-full md:w-[65%] md:h-[100%] lg:w-[60%]">
+                    <div 
+                        data-aos="fade-up" 
+                        data-aos-duration="2000"
+                        className="w-full h-fit flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 md:h-[230px] items-start ">
+                        <div className="w-full md:w-[65%] md:h-[100%] lg:w-[60%]">
                             <img className="w-full h-full md:min-h-full md:w-full" src={FirstFrameImage} alt='' />
                         </div>
-                        <p 
-                            data-aos="fade-left" 
-                            data-aos-duration="1000"
-                            className="w-full text-base leading-8 md:text-justify">
+                        <p className="w-full text-base leading-8 md:text-justify">
                             Through our media network across Nigeria, we provide our customers options and are experts in out-of-home (OOH) marketing and advertising communication. 
                             Additionally, we provide our clients creative help, strategic board awareness expertise, and channels to fully convey their brand message. 
                         </p>
                     </div>
-                    <div className="w-full h-fit flex flex-col-reverse md:flex-row gap-4 md:gap-8 lg:gap-16 md:h-[230px] items-start">
-                        <p 
-                            data-aos="fade-right" 
-                            data-aos-duration="1000"
-                            className="w-full text-base leading-8 md:text-justify">
+                    <div 
+                        data-aos="fade-up" 
+                        data-aos-duration="2000"
+                        className="w-full h-fit flex flex-col-reverse md:flex-row gap-4 md:gap-8 lg:gap-16 md:h-[230px] items-start">
+                        <p className="w-full text-base leading-8 md:text-justify">
                             As part of our entire marketing strategy, we aim to reach the target demographic through a variety of platforms and channels. We employ a form of approach 
                             that integrates conventional and digital marketing channels across the whole client experience. 
                         </p>
-                        
-                        <div 
-                            data-aos="fade-left" 
-                            data-aos-duration="1000"
-                            className="w-full md:w-[65%] md:h-[100%] lg:w-[60%]">
+                        <div className="w-full md:w-[65%] md:h-[100%] lg:w-[60%]">
                             <img className="w-full h-full md:min-h-full md:w-full" src={SecondFrameImage} alt='' />
                         </div>
                     </div>
-                    <div className="w-full flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 md:h-[230px] items-start">
-                        <div 
-                            data-aos="fade-right" 
-                            data-aos-duration="1000"
-                            className="w-full md:w-[65%] md:h-[100%] lg:w-[60%]">
+                    <div 
+                        data-aos="fade-up" 
+                        data-aos-duration="2000"
+                        className="w-full flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 md:h-[230px] items-start">
+                        <div className="w-full md:w-[65%] md:h-[100%] lg:w-[60%]">
                             <img className="w-full h-full md:min-h-full md:w-full" src={ThirdFrameImage} alt='' />
                         </div>
                         <div className="w-full space-y-5 text-base">
-                            <p 
-                                data-aos="fade-left" 
-                                data-aos-duration="1000"
-                                className="leading-8 md:text-justify">
+                            <p className="leading-8 md:text-justify">
                                     We are firm believers in the effectiveness of OOH advertising and will offer you the most affordable means of reaching your target market in key areas. 
-                                    We can and will support you if you have a product that needs to be sold or an idea that needs to be noticed. With our help, plan your upcoming campaign.
+                                    We can and will support you if you have a product that needs to be sold or an idea that needs to be noticed.
                             </p>
-                            <div 
-                                data-aos="fade-up" 
-                                data-aos-duration="1000"
-                                className="relative w-fit md:border-2 bg-custom-blue md:bg-white md:border-black rounded-full cursor-pointer mx-auto md:ml-0 md:mb-10">
-                                <div className="hidden md:block absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
-                                <p className="py-[8px] hidden md:block pr-5 pl-12 font-semibold">Contact Us</p>
-                                <p className="py-2 p-4 font-semibold text-white md:hidden">Contact Us</p>
+                            <div className="relative w-fit md:border-2 bg-custom-blue md:bg-white md:border-black rounded-full cursor-pointer mx-auto md:ml-0 md:mb-10">
+                                <Link to='/contact-us'>
+                                    <div className="hidden md:block absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
+                                    <p className="py-[8px] hidden md:block pr-5 pl-12 font-semibold">Contact Us</p>
+                                    <p className="py-2 p-4 font-semibold text-white md:hidden">Contact Us</p>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -375,7 +346,7 @@ const Home = () => {
         <div className="w-full py-14 bg-[#00D3FF]">
             <div className='w-11/12 mx-auto space-y-14'>
                 <div 
-                    data-aos="flip-up" 
+                    data-aos="zoom-in" 
                     data-aos-duration="1000"
                     className="space-y-3 relative blockquote leading-[5.5rem]">
                     <p className="text-black font-extrabold text-5xl md:text-6xl text-center testimonials">Testimonials</p>
@@ -414,7 +385,7 @@ const Home = () => {
                     className="text-black font-extrabold text-4xl md:text-5xl">some icing on the cake.</h1>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
                     <div 
-                        data-aos="flip-right" 
+                        data-aos="zoom-in-up" 
                         data-aos-duration="1500"
                         className="space-y-8">
                         <div className="rounded-xl">
@@ -430,7 +401,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div 
-                        data-aos="flip-right" 
+                        data-aos="zoom-in-up" 
                         data-aos-duration="1500"
                         data-aos-delay="250"
                         className="space-y-8">
@@ -447,7 +418,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div 
-                        data-aos="flip-right" 
+                        data-aos="zoom-in-up" 
                         data-aos-duration="1500"
                         data-aos-delay="500"
                         className="space-y-8">
@@ -475,7 +446,7 @@ const Home = () => {
                 <div className="space-y-5">
                     <div 
                         data-aos="fade-up" 
-                        data-aos-duration="1500" 
+                        data-aos-duration="2000"
                         className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start">
                         <div className="w-full md:w-1/3">
                             <img className="w-full" src={FirstNewsImage} alt='' />
@@ -485,8 +456,7 @@ const Home = () => {
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas 
                             mauris at risus. Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus 
                             laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat 
-                            pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
-                            Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
+                            pellentesque leo.
                             </p>
                             <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
                                 <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
@@ -497,7 +467,7 @@ const Home = () => {
                     </div>
                     <div 
                         data-aos="fade-up" 
-                        data-aos-duration="1500" 
+                        data-aos-duration="2000"
                         className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start border-t border-b border-[#0000001F] py-5">
                         <div className="w-full md:w-1/3">
                             <img className="w-full" src={SecondNewsImage} alt='' />
@@ -507,8 +477,7 @@ const Home = () => {
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas 
                             mauris at risus. Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus 
                             laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat 
-                            pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
-                            Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
+                            pellentesque leo. 
                             </p>
                             <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
                                 <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
@@ -519,7 +488,7 @@ const Home = () => {
                     </div>
                     <div 
                         data-aos="fade-up" 
-                        data-aos-duration="1500" 
+                        data-aos-duration="2000"
                         className="w-full flex flex-col md:flex-row gap-4 md:gap-10 items-start">
                         <div className="w-full md:w-1/3">
                             <img className="w-full" src={ThirdNewsImage} alt='' />
@@ -529,8 +498,7 @@ const Home = () => {
                             Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas 
                             mauris at risus. Sapien sapien vitae velit erat ut ultrices imperdiet ac sit. Gravida tellus 
                             laoreet lectus scelerisque risus nulla sed dolor amet. Blandit et ullamcorper a non lacus erat 
-                            pellentesque leo. Feugiat mattis viverra nisi lectus laoreet. Sed dapibus a a posuere eget. 
-                            Lorem ipsum dolor sit amet consectetur. Enim quis turpis sed sodales in. Ornare non maecenas mauris at risus. 
+                            pellentesque leo.
                             </p>
                             <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
                                 <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>

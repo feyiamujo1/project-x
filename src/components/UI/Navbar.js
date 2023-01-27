@@ -55,7 +55,6 @@ const Navbar = () => {
     const location = useLocation().pathname;
     useEffect(() => {
         AOS.init({ once: true });
-        console.log(location);
     }, [location]);
 
   return (
@@ -157,7 +156,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div>
-                <Link className='hidden md:block' to="/contact-us"><p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm'>Contact Us</p></Link>
+                <Link className='hidden md:block' to="/contact-us"><p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm hover:text-white'>Contact Us</p></Link>
                 <IoIcon.IoMenu id='menubtn' onClick={showSideBarar} className='cursor-pointer text-white text-4xl md:hidden active:text-custom-blue'/>
             </div>
         </div>

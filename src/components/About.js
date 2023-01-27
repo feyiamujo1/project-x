@@ -121,7 +121,7 @@ const About = () => {
 
             </div> */}
         </div>
-        <div className="w-11/12 lg:w-[80%] mx-auto py-32 bg-white space-y-12">
+        <div className="w-11/12 lg:w-[80%] mx-auto py-16 md:py-32 bg-white space-y-12">
             <h1 
                 data-aos="fade-right" 
                 data-aos-duration="1000" 
@@ -188,7 +188,6 @@ const About = () => {
                                 <div 
                                     data-aos="zoom-in" 
                                     data-aos-duration="1000"
-                                    // data-aos-delay={`${50*id}`} 
                                     key={member.id} className='w-fit mx-auto cursor-pointer group z-50 relative'>
                                     <div className='w-[270px] h-[300px] box-border text-center'>
                                         <img className='h-full w-auto mx-auto' src={member.image} alt=""/>

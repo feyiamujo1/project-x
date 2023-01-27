@@ -36,7 +36,7 @@ const CampaignHoldings = () => {
           <div 
             data-aos="fade-up" 
             data-aos-duration="1000"
-            data-aos-delay={`${100*index}`} 
+            data-aos-delay={ window.innerWidth < 768? "0": `${100*index}`}
             className="text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer active:bg-custom-blue md:hover:bg-custom-blue group" key={campaign.id}> {/* confirm style first campaign.id === 8 ? campaignStyle + " sm:col-span-2 md:col-span-1" : campaignStyle*/}
             <div className="mx-auto w-fit">
               <img className="w-[70px] h-[65px]" src={campaign.image} alt="" />

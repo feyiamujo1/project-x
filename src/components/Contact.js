@@ -60,17 +60,18 @@ const Contact = () => {
                         </h2>
                         <p 
                             data-aos="fade-up" 
-                            data-aos-duration="800"
+                            data-aos-duration="1000"
                             className='text-white'>
                             Whether it’s feedback or a question, the Eyekontact team is here to help. 
                             Contact us by sending an email or filling our contact form. 
                             For a personal discussion with our team, visit or call our office.
                         </p>
                     </div>
-                    <div className='space-y-5'>
+                    <div 
+                        data-aos="fade-up" 
+                        data-aos-duration="1000"
+                        className='space-y-5'>
                         <div 
-                            data-aos="fade-up" 
-                            data-aos-duration="800"
                             className='flex flex-row w-fit gap-4 items-center group cursor-pointer'>
                             <svg className='w-7 h-7 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M21 15v3.93a2 2 0 0 1-2.29 2A18 18 0 0 1 3.14 5.29 2 2 0 0 1 5.13 3H9a1 1 0 0 1 1 .89 10.74 10.74 0 0 0 1 3.78 1 1 0 0 1-.42 1.26l-.86.49a1 1 0 0 0-.33 1.46 14.08 14.08 0 0 0 3.69 3.69 1 1 0 0 0 1.46-.33l.49-.86a1 1 0 0 1 1.3-.38 10.74 10.74 0 0 0 3.78 1 1 1 0 0 1 .89 1Z"/>
@@ -78,8 +79,6 @@ const Contact = () => {
                             <p className='text-white group-active:text-custom-blue md:group-hover:text-custom-blue ml-1 -mb-1'>+234901234567</p>
                         </div>
                         <div 
-                            data-aos="fade-up" 
-                            data-aos-duration="800"
                             className='flex flex-row w-fit gap-4 items-center group cursor-pointer'>
                             <svg className='w-7 h-7 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' viewBox="0 0 512 512">
                                 <path d="M452.29 74.535H59.71C26.728 74.535 0 101.263 0 134.236v243.527c0 32.974 26.728 59.702 59.71 59.702h392.58c32.973 0 59.71-26.728 59.71-59.702V134.236c0-32.973-26.736-59.701-59.71-59.701zm31.2 319.314-11.366 13.46-159.167-129.902-24.65 23.454c-18.268 16.776-46.345 16.776-64.614 0l-24.65-23.454L39.876 407.309l-11.366-13.46 149.44-136.517L27.531 115.968l8.893-11.783L256 270.56l219.575-166.375 8.886 11.783-150.41 141.364L483.49 393.849z"/>
@@ -87,30 +86,22 @@ const Contact = () => {
                             <p className='text-white group-active:text-custom-blue md:group-hover:text-custom-blue ml-1.5 -mb-1'>eyekontactlimited@gmail.com</p>
                         </div>
                         <div 
-                            data-aos="fade-up" 
-                            data-aos-duration="800"
                             className='flex flex-row w-fit gap-6 items-center group cursor-pointer'>
                             <LocationIcon className='w-7 h-7 fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' />
                             <p className='text-white group-active:text-custom-blue md:group-hover:text-custom-blue'>No 49A, Adeniyi Jones, Ikeja Lagos, Nigeria.</p>
                         </div>
                         <div className='space-y-5'>
                             <div 
-                                data-aos="fade-up" 
-                                data-aos-duration="800"
                                 className=' flex flex-row w-fit gap-6 items-center group cursor-pointer' >
                                 <LinkedInIcon className='w-7 h-7 fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue cursor-pointer' />
                                 <p className='text-white group-active:text-custom-blue md:group-hover:text-custom-blue'>@Eyekontact</p>
                             </div>
                             <div 
-                                data-aos="fade-up" 
-                                data-aos-duration="800"
                                 className=' flex flex-row w-fit gap-6 items-center group cursor-pointer' >
                                 <IgIcon className='w-8 h-8 -ml-0.5 fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue cursor-pointer' />
                                 <span className='text-white group-active:text-custom-blue md:group-hover:text-custom-blue -ml-1'>@Eyekontact</span>
                             </div>
                             <div 
-                                data-aos="fade-up" 
-                                data-aos-duration="800"
                                 className=' flex flex-row w-fit gap-5 items-center group cursor-pointer' >
                                 <FbIcon className='w-7 h-7 fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue cursor-pointer' />
                                 <span className='text-white group-active:text-custom-blue md:group-hover:text-custom-blue'>@Eyekontact</span>
@@ -119,10 +110,11 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='w-full md:w-[50%]'>
-                    <form className='w-full'>
+                    <form 
+                        data-aos="fade-up" 
+                        data-aos-duration="1000" 
+                        className='w-full'>
                         <div 
-                            data-aos="fade-up" 
-                            data-aos-duration="800"
                             className='flex justify-between'>
                             <div class="relative w-[48%] mb-[20px] box-border">
                                 <label className='text-white font-medium' >First Name</label>
@@ -134,8 +126,6 @@ const Contact = () => {
                             </div>
                         </div>
                         <div 
-                            data-aos="fade-up" 
-                            data-aos-duration="700"
                             className='flex justify-between'>
                             <div class="relative w-[48%] mb-[20px] box-border">
                                 <label className='text-white font-medium' >Email</label>
@@ -147,22 +137,16 @@ const Contact = () => {
                             </div>
                         </div>
                         <div 
-                            data-aos="fade-up" 
-                            data-aos-duration="700"
                             className='relative w-full mb-[20px] box-border'>
                             <label className='text-white font-medium' >Subject</label>
                             <input className='w-full py-[10px] px-[5px] rounded border-none outline-none '   type='text' id='subject_inputfield' required/>
                         </div>
                         <div 
-                            data-aos="fade-up" 
-                            data-aos-duration="700"
                             className='relative w-full mb-[20px] box-border'>
                             <label className='text-white font-medium' >Message</label>
                             <textarea className='w-full rounded' rows={2} required id='message_textarea'/> 
                         </div>
                         <input 
-                            data-aos="fade-up" 
-                            data-aos-duration="700"
                             className='w-full py-3 border-none outline-none text-white bg-custom-blue-dark cursor-pointer rounded' type="button" id='send_message_button' value="Send Message"/>
                     </form>
                 </div>
