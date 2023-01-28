@@ -17,6 +17,8 @@ import HomeImage from '../../src/assets/images/thumbnail.JPG'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom"
+import Footer from "./UI/Footer"
+import Navbar from "./UI/Navbar"
 
 const Home = () => {
     
@@ -43,6 +45,7 @@ const Home = () => {
 
   return (
     <div className='scroll-smooth'>
+        <Navbar />
         <div className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center relative">
             <video  ref={videoElement} poster={HomeImage} className="w-screen h-[90vh] sm:h-screen absolute object-cover z-[-100] brightness-[0.35]" preload="auto" autoPlay loop muted playsInline>
                 <source src={BgVideo} type="video/mp4" />
@@ -510,6 +513,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

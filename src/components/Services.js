@@ -9,6 +9,8 @@ import Service6Image from '../../src/assets/images/service6.png'
 import Service7Image from '../../src/assets/images/service7.png'
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import { useEffect, useRef } from 'react'
+import Footer from "./UI/Footer"
+import Navbar from "./UI/Navbar"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,6 +26,7 @@ const Services = () => {
     }, []);
   return (
     <div className='bg-black pb-8 scroll-smooth'>
+        <Navbar />
         <div className="w-full h-[90vh] sm:h-screen bg-intro-image bg-cover bg-no-repeat bg-center relative">
             <div
                 data-aos="fade-down" 
@@ -199,7 +202,7 @@ const Services = () => {
                 </div>
             </div>
         </div>
-
+        <Footer />
     </div>
   )
 }

@@ -5,8 +5,8 @@ import Services from "./Services"
 import Blog from "./Blog"
 import About from "./About"
 import RedirectPage from "./RedirectPage"
-import Footer from "./UI/Footer"
-import Navbar from "./UI/Navbar"
+// import Footer from "./UI/Footer"
+// import Navbar from "./UI/Navbar"
 import ScrollToTop from "./UI/ScrollToTop"
 // import { Scrollbar } from "smooth-scrollbar/scrollbar"
 //style={{width:"100vw", height:"100vh", overflowY:"auto"}}
@@ -16,7 +16,7 @@ const UserRoute = () => {
   return (
     <div id="my-scrollbar" > 
         <ScrollToTop>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about-us" element={<About />} />
@@ -25,7 +25,7 @@ const UserRoute = () => {
               <Route path="/contact-us" element={<Contact />} />
               <Route path="/redirect" element={<RedirectPage />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </ScrollToTop>
         
     </div>

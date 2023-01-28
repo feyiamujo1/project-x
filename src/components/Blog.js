@@ -6,6 +6,8 @@ import BlogImage3 from '../../src/assets/images/blogimage3.png'
 import BlogImage4 from '../../src/assets/images/blogimage4.png'
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import { useEffect, useRef } from 'react'
+import Footer from "./UI/Footer"
+import Navbar from "./UI/Navbar"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,6 +22,7 @@ const Blog = () => {
     }, []);
   return (
     <div className='bg-black pb-8 scroll-smooth'>
+        <Navbar />
         <div className="w-full h-[90vh] sm:h-screen bg-blog-image bg-cover bg-no-repeat bg-center relative">
             <div 
                 data-aos="fade-down" 
@@ -131,7 +134,7 @@ const Blog = () => {
                 <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>4</p>
             </div>
         </div>
-        
+        <Footer />
     </div>
   )
 }

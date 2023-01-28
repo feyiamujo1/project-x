@@ -6,6 +6,8 @@ import {ReactComponent as FbIcon} from '../../src/assets/images/fb.svg'
 import {ReactComponent as IgIcon} from '../../src/assets/images/instagram-logo-fill-svgrepo-com.svg'
 import {ReactComponent as LinkedInIcon} from '../../src/assets/images/linkedinn.svg'
 import { useEffect, useRef } from "react"
+import Footer from "./UI/Footer"
+import Navbar from "./UI/Navbar"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,6 +22,7 @@ const Contact = () => {
     }, []);
   return (
     <div className='scroll-smooth'>
+        <Navbar />
         <div className="w-full h-[90vh] sm:h-screen bg-contact-image bg-cover bg-no-repeat bg-[80%] md:bg-center relative">
             <div 
                 data-aos="fade-down" 
@@ -152,7 +155,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        
+        <Footer />
     </div>
   )
 }
