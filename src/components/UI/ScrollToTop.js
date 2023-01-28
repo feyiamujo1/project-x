@@ -7,7 +7,7 @@ function ScrollToTop({ children }) {
     const navType = useNavigationType();
     useEffect(() => {
         if (navType !== "POP") {
-            window.location.reload(true);
+            window.location.reload();
             window.scrollTo({ top: 0, behavior: 'smooth' }, 0);
         }
       }, [location, navType]);

@@ -7,7 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Navbar = () => {
-    const showSideBarar = () => {
+    const showSideBar = () => {
         if (window.innerWidth < 640){
             document.getElementById("sidebar").style.width = "60%";
             document.body.classList.toggle('lock-scroll');
@@ -20,6 +20,8 @@ const Navbar = () => {
         if (window.innerWidth < 768){
             document.getElementById("sidebar").style.width = "0%";
             document.body.classList.toggle('lock-scroll');
+        }else{
+            
         }
     }
     
@@ -157,7 +159,7 @@ const Navbar = () => {
             </ul>
             <div>
                 <Link className='hidden md:block' to="/contact-us"><p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm hover:text-white'>Contact Us</p></Link>
-                <IoIcon.IoMenu id='menubtn' onClick={showSideBarar} className='cursor-pointer text-white text-4xl md:hidden active:text-custom-blue'/>
+                <IoIcon.IoMenu id='menubtn' onClick={showSideBar} className='cursor-pointer text-white text-4xl md:hidden active:text-custom-blue'/>
             </div>
         </div>
     </nav>
