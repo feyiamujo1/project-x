@@ -18,6 +18,7 @@ const Navbar = () => {
     }
     const HideSideBar = () =>{
         if (window.innerWidth < 768){
+            
             document.getElementById("sidebar").style.width = "0%";
             document.body.classList.toggle('lock-scroll');
         }else{
@@ -54,9 +55,10 @@ const Navbar = () => {
     //     document.removeEventListener("mousedown", handler);
     //     }
     // });
+    
     const location = useLocation().pathname;
     useEffect(() => {
-        AOS.init({ once: true });
+        AOS.init();
     }, [location]);
 
   return (
