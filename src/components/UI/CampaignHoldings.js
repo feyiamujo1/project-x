@@ -8,9 +8,7 @@ import BridgePanelImage from "../../../src/assets/images/bridge.png"
 import FenceDrapeImage from "../../../src/assets/images/fence_drape.png"
 import WallWrapImage from "../../../src/assets/images/wallwrap.png"
 import WhiteLogo from "../../../src/assets/images/logo_white.png"
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react"
 
 const CampaignHoldings = () => {
     const Campaigns = [
@@ -24,9 +22,6 @@ const CampaignHoldings = () => {
       { id: 7, name: "Wallwrap", image: WallWrapImage, vacant: 54, deployed: 4 },
       { id: 8, name: "Fence Drape", image: FenceDrapeImage, vacant: 0, deployed: 17 },
     ]
-    useEffect(() => {
-      AOS.init({ once: true });
-    }, []);
 
   return (
     <div className="w-full space-y-4">

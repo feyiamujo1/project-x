@@ -14,7 +14,6 @@ import CampaignHoldings from "./UI/CampaignHoldings"
 import Partners from "./UI/Partners"
 import { useEffect, useRef } from "react"
 import HomeImage from '../../src/assets/images/thumbnail.JPG'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom"
 import Footer from "./UI/Footer"
@@ -36,10 +35,6 @@ const Home = () => {
         }
         handleVideo();
     }, [videoElement]);
-
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
     
     document.title = 'Home';
 

@@ -11,10 +11,9 @@ import JohnDoeImage from '../../src/assets/images/john.png'
 import DirectionImage from '../../src/assets/images/directions.png'
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import { Link } from 'react-router-dom'
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 import Footer from "./UI/Footer"
 import Navbar from "./UI/Navbar"
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const About = () => {
@@ -35,9 +34,6 @@ const About = () => {
         firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     };
     document.title = 'About Us';
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
   return (
     <div className='scroll-smooth'>
         <Navbar />

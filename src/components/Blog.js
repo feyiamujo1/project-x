@@ -5,10 +5,9 @@ import BlogImage2 from '../../src/assets/images/blogimage2.png'
 import BlogImage3 from '../../src/assets/images/blogimage3.png'
 import BlogImage4 from '../../src/assets/images/blogimage4.png'
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import Footer from "./UI/Footer"
 import Navbar from "./UI/Navbar"
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Blog = () => {
@@ -17,9 +16,6 @@ const Blog = () => {
     const ScrollToView = () => {
         firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     };
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
   return (
     <div className='bg-black pb-8 scroll-smooth'>
         <Navbar />

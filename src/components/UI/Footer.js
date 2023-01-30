@@ -4,7 +4,6 @@ import {ReactComponent as FbIcon} from '../../../src/assets/images/fb.svg'
 import {ReactComponent as IgIcon} from '../../../src/assets/images/instagram-logo-fill-svgrepo-com.svg'
 import {ReactComponent as LinkedInIcon} from '../../../src/assets/images/linkedinn.svg'
 import {ReactComponent as LocationIcon} from '../../../src/assets/images/LocationMarker.svg'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Footer = () => {
@@ -15,10 +14,6 @@ const Footer = () => {
         setPath(location);
        
     }, [location]);
-
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
 
   return (
     <div className={path === "/" ? 'py-14 bg-black' : 'py-14 bg-[#1E1E1E]'}>

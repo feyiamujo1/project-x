@@ -5,10 +5,9 @@ import {ReactComponent as LocationIcon} from '../../src/assets/images/LocationMa
 import {ReactComponent as FbIcon} from '../../src/assets/images/fb.svg'
 import {ReactComponent as IgIcon} from '../../src/assets/images/instagram-logo-fill-svgrepo-com.svg'
 import {ReactComponent as LinkedInIcon} from '../../src/assets/images/linkedinn.svg'
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 import Footer from "./UI/Footer"
 import Navbar from "./UI/Navbar"
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Contact = () => {
@@ -17,9 +16,6 @@ const Contact = () => {
     const ScrollToView = () => {
         firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     };
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
   return (
     <div className='scroll-smooth'>
         <Navbar />
