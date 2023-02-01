@@ -291,7 +291,7 @@ const Home = () => {
                         className="text-white font-bold w-full text-lg md:text-3xl md:max-w-[800px] lg:w-10/12 mx-auto text-center md:leading-[50px]">
                         We are a strategic partner to our amazing clients. We will help you to 
                         <span className="text-custom-blue"> ideate</span> and <span className="text-custom-blue">implement </span>
-                        your product from conception to iterative development support and growth, we're always working proactively for you.
+                        your brand activation from conception to iterative development support and growth, we're always working proactively for you.
                     </p>
                 </div>
                 <div className="text-white flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
@@ -331,7 +331,7 @@ const Home = () => {
                     <p 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className="text-black font-extrabold text-3xl md:text-5xl max-w-[870px]"> <span className="text-custom-black">since 2007</span>, more than 100 brands have trusted us.</p>
+                    className="text-black font-extrabold text-3xl md:text-5xl max-w-[870px]"> <span className="text-custom-black">since 2007</span>, more than 100 reputable brands have trusted us.</p>
                 </div>
             </div>
             <div 
@@ -354,7 +354,7 @@ const Home = () => {
                         data-aos="fade-up" 
                         data-aos-duration="1000"
                         data-aos-delay="300"
-                        className="w-full sm:w-[600px] text-lg mx-auto text-center sm:text-2xl text-white">
+                        className="w-full sm:w-[600px] text-lg mx-auto text-center sm:text-2xl text-black">
                         This team is just terrific! from beginning 
                         to the end, we appreciate the high level of 
                         professionalism and customer service that we 

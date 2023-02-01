@@ -178,26 +178,6 @@ const Services = () => {
             </div>
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
-        <div className='bg-black overflow-hidden'>
-            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e]'>
-                <h2 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='text-custom-blue-dark font-bold text-3xl text-center md:text-left'>PR Activation</h2>
-                <div 
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
-                    className='flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16'>
-                    <img className='w-full md:w-[310px] lg:w-[360px]' src={Service7Image} alt="" />
-                    <p className='text-white leading-8 md:text-justify'>
-                        Unleash the power of public relations with our outdoor advertising company. We specialize in creating unique and impactful PR activations 
-                        that capture the attention of your target audience and drive results. Whether it's a large-scale event or a grassroots campaign, our team of 
-                        experts will work with you to create a strategy that resonates with your brand and amplifies your message. Let us help you create buzz and build 
-                        brand awareness with our effective PR solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
         <Footer />
     </div>
   )
