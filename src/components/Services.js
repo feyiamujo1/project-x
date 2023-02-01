@@ -6,7 +6,7 @@ import Service3Image from '../../src/assets/images/service3.png'
 import Service4Image from '../../src/assets/images/service4.png'
 import Service5Image from '../../src/assets/images/service5.png'
 import Service6Image from '../../src/assets/images/service6.png'
-import Service7Image from '../../src/assets/images/service7.png'
+// import Service7Image from '../../src/assets/images/service7.png'
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import { useRef } from 'react'
 import Footer from "./UI/Footer"
