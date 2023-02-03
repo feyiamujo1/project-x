@@ -6,6 +6,7 @@ import Blog from "./Blog"
 import About from "./About"
 import RedirectPage from "./RedirectPage"
 import ScrollToTop from "./UI/ScrollToTop"
+import Holdings from "./Holdings"
 
 
 const UserRoute = () => {
@@ -19,6 +20,7 @@ const UserRoute = () => {
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact-us" element={<Contact />} />
               <Route path="/redirect" element={<RedirectPage />} />
+              <Route path="/holdings" element={<Holdings />} />
           </Routes>
         </ScrollToTop>
         

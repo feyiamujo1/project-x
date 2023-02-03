@@ -11,13 +11,14 @@ import JohnDoeImage from '../../src/assets/images/john.png'
 import DirectionImage from '../../src/assets/images/directions.png'
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import { Link } from 'react-router-dom'
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import Footer from "./UI/Footer"
 import Navbar from "./UI/Navbar"
 import 'aos/dist/aos.css';
+import Modal from './UI/Modal'
 
 const About = () => {
-    
+    const [memberId, SetmemberId] = useState(null);
     const Members = [
         { id: 0, name: "Adeniyi Ganiyu", position: "Managing Director", image: ManagingDirectorImage },
         { id: 1, name: "Lucky Nwaka", position: "Asset Manager", image: OperationManager },
@@ -34,8 +35,21 @@ const About = () => {
         firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     };
     document.title = 'About Us';
+
+    const [showModal, setShowModal] = useState(false);
+    const DisplayModal = () =>{
+        setShowModal(true);
+        // document.body.classList.toggle('lock-scroll');
+        
+    }
+    const HideModal = () =>{
+        setShowModal(false);
+        SetmemberId(null);
+        // document.body.classList.toggle('lock-scroll');
+    }
+
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth '>
         <Navbar />
         <div className="w-full h-[90vh] sm:h-screen bg-hero-image bg-cover bg-no-repeat bg-center relative">
             <div 
@@ -162,7 +176,7 @@ const About = () => {
                         data-aos="zoom-in" 
                         data-aos-duration="1000"
                         data-aos-delay="300"
-                        className='w-fit mx-auto cursor-pointer group'>
+                        className='w-fit mx-auto cursor-pointer group' onClick={() => {SetmemberId(0); DisplayModal();}}>
                         <div className='w-[370px] h-[410px] box-border text-center'>
                             <img className='h-full w-auto mx-auto' src={Members[0].image} alt=""/>
                         </div>
@@ -176,18 +190,19 @@ const About = () => {
                     </div>
                 </div>
                 <div className='space-y-12 z-10 pb-20'>
+                    <Modal showModal={showModal} HideModal={HideModal} member_id={memberId} />
                     <h1 
                         data-aos="flip-left" 
                         data-aos-duration="1500"
                         className="font-extrabold text-white text-4xl w-fit text-center mx-auto">Our <span className='text-custom-blue'>Amazing Crew</span></h1>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-14 z-10'>
+                    <div className='relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-14 z-10'>
                         {
                             Members.map((member, id) => (
                                 id !== 0 ?
                                 <div 
                                     data-aos="zoom-in" 
                                     data-aos-duration="1000"
-                                    key={member.id} className='w-fit mx-auto cursor-pointer group z-50 relative'>
+                                    key={member.id} onClick={() => {SetmemberId(member.id); DisplayModal();}} className='w-fit mx-auto cursor-pointer group z-50 relative'>
                                     <div className='w-[270px] h-[300px] box-border text-center'>
                                         <img className='h-full w-auto mx-auto' src={member.image} alt=""/>
                                     </div>

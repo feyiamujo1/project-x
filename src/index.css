@@ -177,6 +177,12 @@ input, input:focus,input:hover, input:active{
   box-shadow: 0 0 0 rgb(255, 255, 255) !important;
 }
 
+.modal-bg{
+  background-color: rgb(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); 
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
