@@ -109,20 +109,132 @@ const Holdings = () => {
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 bg-[#eeeeee] rounded-2xl'>
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
                     <div className='w-full md:w-[450px]'>
                         <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl'>Gantry</h2>
-                        <p>Location: <span className='font-bold'>Lagos, Ajah</span></p>
-                        <p>Size: <span className='font-bold'>16MX16M</span></p>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
                         <Link to='/our-holdings/1'>
                             <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </ Link>
                     </div>
                 </div>
                 <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:w-[450px]'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:w-[450px]'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:w-[450px]'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:w-[450px]'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:w-[450px]'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:w-[450px]'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:w-[450px]'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                {/* <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col md:flex-row py-5 px-4 gap-4 bg-[#eeeeee] rounded-2xl'>
@@ -138,38 +250,17 @@ const Holdings = () => {
                         </ Link>
                     </div>
                 </div>
-                <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 bg-[#eeeeee] rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
-                    </div>
-                    <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl'>Gantry</h2>
-                        <p>Location: <span className='font-bold'>Lagos, Ajah</span></p>
-                        <p>Size: <span className='font-bold'>16MX16M</span></p>
-                        <Link to='/our-holdings/3'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
-                    </div>
-                </div>
-                <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 bg-[#eeeeee] rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
-                    </div>
-                    <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl'>Gantry</h2>
-                        <p>Location: <span className='font-bold'>Lagos, Ajah</span></p>
-                        <p>Size: <span className='font-bold'>16MX16M</span></p>
-                        <Link to='/our-holdings/4'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
-                    </div>
-                </div>
+                 */}
+            </div>
+            <div 
+                // data-aos="zoom-in" 
+                // data-aos-duration="1000"
+                // data-aos-delay={ window.innerWidth < 768? "0": "1000"}
+                className='flex flex-row gap-2 justify-center'>
+                <p className='text-black border border-custom-blue bg-custom-blue cursor-pointer hover:text-white w-[50px] h-[46px] rounded-md flex justify-center items-center'>1</p>
+                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>2</p>
+                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>3</p>
+                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>4</p>
             </div>
         </div>
         <Footer />

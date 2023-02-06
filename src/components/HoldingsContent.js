@@ -106,14 +106,14 @@ const HoldingsContent = () => {
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 bg-[#eeeeee] rounded-2xl'>
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
                     <div className='w-full md:w-[450px]'>
                         <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl'>Gantry</h2>
-                        <p>Location: <span className='font-bold'>Lagos, Ajah</span></p>
-                        <p>Size: <span className='font-bold'>16MX16M</span></p>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
                         <Link to='/our-holdings/1'>
                             <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </ Link>
@@ -122,15 +122,15 @@ const HoldingsContent = () => {
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 bg-[#eeeeee] rounded-2xl'>
+                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
                     <div className='w-full md:w-[450px]'>
                         <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl'>Gantry</h2>
-                        <p>Location: <span className='font-bold'>Lagos, Ajah</span></p>
-                        <p>Size: <span className='font-bold'>16MX16M</span></p>
-                        <Link to='/our-holdings/2'>
+                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
+                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <Link to='/our-holdings/1'>
                             <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </ Link>
                     </div>
