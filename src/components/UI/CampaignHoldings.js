@@ -9,6 +9,7 @@ import FenceDrapeImage from "../../../src/assets/images/fence_drape.png"
 import WallWrapImage from "../../../src/assets/images/wallwrap.png"
 import WhiteLogo from "../../../src/assets/images/logo_white.png"
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom"
 
 const CampaignHoldings = () => {
     const Campaigns = [
@@ -32,7 +33,7 @@ const CampaignHoldings = () => {
             data-aos="fade-up" 
             data-aos-duration="1000"
             data-aos-delay={ window.innerWidth < 768? "0": `${100*index}`}
-            className="text-white p-6 border border-custom-white rounded-2xl space-y-6 group cursor-pointer active:bg-custom-blue md:hover:bg-custom-blue group" key={campaign.id}> {/* confirm style first campaign.id === 8 ? campaignStyle + " sm:col-span-2 md:col-span-1" : campaignStyle*/}
+            className="text-white p-6 border border-custom-white rounded-2xl space-y-6 cursor-pointer" key={campaign.id}> {/* confirm style first campaign.id === 8 ? campaignStyle + " sm:col-span-2 md:col-span-1" : campaignStyle*/}
             <div className="mx-auto w-fit">
               <img className="w-[70px] h-[65px]" src={campaign.image} alt="" />
             </div>
@@ -54,10 +55,9 @@ const CampaignHoldings = () => {
                       <div className="w-3 h-3 bg-notification-red rounded-full relative"></div>
                     </div>
                   }
-                  
                 </div>
                 <div className="w-full text-center">
-                  <p className="group-active:text-black md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.vacant}</span> Available</p>
+                  <p className=""><span className="font-bold">{campaign.vacant}</span> Available</p>
                 </div>
               </div>
               <div className="flex flex-row items-center">
@@ -67,6 +67,11 @@ const CampaignHoldings = () => {
                 <div className="w-full text-center">
                   <p className="text-notification-white group-active:text-black md:group-hover:text-black group-hover:font-bold"><span className="font-bold">{campaign.deployed}</span> Deployed</p>
                 </div>
+              </div>
+              <div>
+                <Link className="w-fit" to='#'>
+                  <p className={campaign.vacant > 0 ? "py-4 w-full bg-custom-blue-dark rounded-md text-center": "py-4 w-full bg-custom-brown rounded-md text-center opacity-25"}>Book Now</p>
+                </Link>
               </div>
             </div>
           </div>

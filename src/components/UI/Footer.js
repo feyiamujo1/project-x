@@ -34,11 +34,11 @@ const Footer = () => {
                             </svg>
                             <p className='group-active:text-custom-blue mt-1.5 md:group-hover:text-custom-blue'>Home</p>
                         </Link>
-                        <Link to="/redirect" className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit'>
+                        <Link to="/our-holdings" className='flex flex-row gap-4 items-center md:items-center group cursor-pointer md:w-fit'>
                             <svg className='w-6 h-4 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg">
                                 <path className='w-full' d="M3 0a1 1 0 0 1 1 1v1h1a1 1 0 0 1 0 2H4v1a1 1 0 0 1-2 0V4H1a1 1 0 0 1 0-2h1V1a1 1 0 0 1 1-1Zm0 10a1 1 0 0 1 1 1v1h1a1 1 0 0 1 0 2H4v1a1 1 0 1 1-2 0v-1H1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 1-1Zm7-10a1 1 0 0 1 .967.744L12.146 5.2 15.5 7.134a1 1 0 0 1 0 1.732l-3.354 1.935-1.18 4.455a1 1 0 0 1-1.933 0L7.854 10.8 4.5 8.866a1 1 0 0 1 0-1.732l3.354-1.935L9.034.744A1 1 0 0 1 10 0Z"/>
                             </svg>
-                            <p className='group-active:text-custom-blue md:group-hover:text-custom-blue'>Our Platform</p>
+                            <p className='group-active:text-custom-blue md:group-hover:text-custom-blue'>Our Holdings</p>
                         </Link>
                         <Link to='/our-services' className='flex flex-row gap-4 items-start md:items-start group cursor-pointer md:w-fit'>
                             <svg className='w-6 h-4 mt-1 p-0 block fill-white group-active:fill-custom-blue md:group-hover:fill-custom-blue' xmlns="http://www.w3.org/2000/svg" >

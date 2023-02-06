@@ -439,7 +439,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className="w-full pb-14">
+        <div className="w-full pb-16">
             <div className='w-11/12 lg:w-[80%] mx-auto space-y-10'>
                 <h1 
                     data-aos="fade-right" 

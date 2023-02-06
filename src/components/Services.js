@@ -21,7 +21,7 @@ const Services = () => {
         firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     };
   return (
-    <div className='bg-black pb-8 scroll-smooth'>
+    <div className='bg-black scroll-smooth'>
         <Navbar />
         <div className="w-full h-[90vh] sm:h-screen bg-intro-image bg-cover bg-no-repeat bg-center relative">
             <div
@@ -157,8 +157,8 @@ const Services = () => {
                 </div>
             </div>
         </div>
-        <div className='relative overflow-hidden'>
-            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 border-b border-[#acacac4e] relative z-10'>
+        <div className='relative overflow-hidden mb-16'>
+            <div className='space-y-10 w-11/12 lg:w-[80%] mx-auto py-14 relative z-10'>
                 <h2 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
@@ -168,17 +168,17 @@ const Services = () => {
                     data-aos-duration="2000"
                     className='flex flex-col-reverse md:flex-row gap-6 md:gap-8 lg:gap-16'>
                     <p className='text-white md:text-justify leading-8'>
-                            Our team of experienced designers utilizes the latest technology and design trends to craft campaigns that capture attention and drive 
-                            results. From concept to delivery, we work closely with our clients to understand their unique goals and create designs that resonate 
-                            with their target audience. Whether you're looking to launch a new product, increase brand awareness, or drive sales, we have the 
-                            creativity and expertise to help you achieve your objectives.
+                        Our team of experienced designers utilizes the latest technology and design trends to craft campaigns that capture attention and drive 
+                        results. From concept to delivery, we work closely with our clients to understand their unique goals and create designs that resonate 
+                        with their target audience. Whether you're looking to launch a new product, increase brand awareness, or drive sales, we have the 
+                        creativity and expertise to help you achieve your objectives.
                     </p>
                     <img className='w-full md:w-[310px] lg:w-[360px]' src={Service6Image} alt="" />
                 </div>
             </div>
             <div className='h-[90%] w-full bg-[#1E1E1E] absolute z-[8] top-0 bottom-0 left-0 right-0 m-auto'></div>
         </div>
-        <Footer />
+        <Footer className="" />
     </div>
   )
 }
