@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {BiUserCircle} from 'react-icons/bi'
 import {BiLock} from 'react-icons/bi'
 import { useNavigate } from 'react-router-dom';
-import Logo from '../../src/assets/images/logo.png'
+// import Logo from '../../src/assets/images/logo.png'
 // import {AiFillEyeInvisible} from 'react-icons/ai'
 // import {AiFillEye} from 'react-icons/ai'
 
@@ -19,12 +19,17 @@ const Login = () => {
         })
     }
   return (
-    <div className='relative h-screen w-full flex items-center justify-center md:justify-between bg-wave-image bg-no-repeat bg-center bg-cover'>
-        <div className='h-full w-full  lg:max-w-[650px] pt-12 flex items-center justify-center'>
-            <div className='flex  flex-col gap-4 justify-center h-[410px] w-11/12 sm:w-10/12 lg:w-9/12  bg-[#fff] shadow-custom-dark p-10 rounded-md'>
+    <div className='relative bg-[#f0f0f0] h-screen w-full flex items-center justify-center md:justify-between'>
+        {/* <div className='absolute w-full top-0'>
+            <div className='w-11/12 lg:w-[80%] mx-auto pt-3 flex items-center backdrop:blur-lg'>
+                <img className='w-16 cursor-pointer mb-4' src={Logo} alt="" />
+            </div>
+        </div> */}
+        <div className='h-full w-full pt-12 flex items-center justify-center'>
+            <div className='flex  flex-col gap-4 justify-center h-[410px] w-11/12 sm:max-w-[400px] md:max-w-[500px]  bg-[#f3f3f3] shadow-custom-dark p-10 rounded-md'>
                 <div>
-                <img className='w-16 cursor-pointer mx-auto mb-4' src={Logo} alt="" />
-                <h1 className='text-4xl  font-semibold mb-3 w-fit mx-auto'>Staff Login</h1>
+                
+                <h1 className='text-4xl font-bold mb-3 w-fit text-custom-blue-dark'>Login</h1>
                 {/* <h3 className={err ? error_notification : normal_notification}>{errorMessage}</h3> */}
                 </div>
                 <form onSubmit={submitHandler} className='flex flex-col gap-4'>
@@ -48,8 +53,20 @@ const Login = () => {
                 </form>
             </div>
         </div>
-        <div className='md:w-[900px] h-screen bg-login-image bg-no-repeat bg-center bg-cover hidden md:flex '>
-            <p>Creativity is intelligence having fun!</p>
+        <div className='md:w-[800px] h-screen bg-login-image bg-no-repeat bg-bottom bg-cover hidden md:flex flex-row justify-center items-end md:py-10 md:px-6 lg:p-10'>
+            
+            <div className='space-y-5 mb-5'>
+                <p className='font-bold text-3xl text-white text-transparent bg-clip-text bg-gradient-to-tl from-custom-blue-dark to-white'>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-8 h-8 fill-custom-blue-dark" viewBox="0 0 24 27"><path d="M14.017 18v-7.391C14.017 4.905 17.748 1.039 23 0l.995 2.151C21.563 3.068 20 5.789 20 8h4v10h-9.983ZM0 18v-7.391C0 4.905 3.748 1.038 9 0l.996 2.151C7.563 3.068 6 5.789 6 8h3.983v10H0Z"/></svg>
+                    </span> 
+                    Creativity is intelligence having fun!
+
+                </p>
+                <p className='text-white text-sm font-semibold'>
+                    Albert Einstein
+                </p>
+            </div>
         </div>
     </div>
   )

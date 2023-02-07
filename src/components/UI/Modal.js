@@ -36,7 +36,7 @@ const Modal = (props) => {
                 <div 
                     data-aos="zoom-in" 
                     data-aos-duration="1100"
-                    className='w-11/12 h-fit min-h-[480px] sm:w-[340px] sm:h-[500px] relative flex justify-center items-center bg-black shadow-xl backdrop:blur-sm  py-10'>
+                    className='w-11/12 h-fit min-h-[480px] sm:w-[340px] sm:h-[500px] relative flex justify-center items-center bg-black shadow-xl backdrop:blur-sm py-10'>
                     <MdCancel onClick={props.HideModal} className='absolute top-4 right-4 text-white bg-black rounded-full text-4xl  hover:text-custom-blue-dark cursor-pointer' />
                     <img className='h-[500px] sm:h-[430px] w-fit' src={Members[props.member_id].image} alt="" />
                     <div className='bg-[#FFFAFA] absolute w-full h-fit bottom-0 p-6 space-y-1'>
