@@ -69,7 +69,7 @@ const CampaignHoldings = () => {
                 </div>
               </div>
               <div>
-                <Link className="w-fit" to='#'>
+                <Link to="/our-holdings" className="w-fit">
                   <p className={campaign.vacant > 0 ? "py-4 w-full bg-custom-blue-dark rounded-md text-center": "py-4 w-full bg-custom-brown rounded-md text-center opacity-25"}>Book Now</p>
                 </Link>
               </div>

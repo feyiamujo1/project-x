@@ -38,5 +38,5 @@ module.exports = {
       'poppins': ['Poppins', 'sans-serif'],
     }
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('@tailwindcss/line-clamp')],
 }

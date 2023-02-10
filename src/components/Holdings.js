@@ -6,6 +6,9 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import GantryImage from "../../src/assets/images/live-gantry.png"
+import { IoLocationSharp } from "react-icons/io5"
+import { SlSizeFullscreen } from "react-icons/sl"
+import CountDownTimer from './UI/CountDownTimer';
 
 const Holdings = () => {
     document.title = 'Holdings';
@@ -27,7 +30,18 @@ const Holdings = () => {
         console.log(holdingsDetails);
     }
 
+    // Custom date for now sha
+    const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+    const NOW_IN_MS = new Date().getTime();
 
+    const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
+    // const [availabilityDate, setAvailabilityDate] = useState(new Date().getTime());
+
+    // const onDatePicked = (e) =>{
+    //     setAvailabilityDate(e.target.value);
+    //     console.log(availabilityDate);
+    // }
 
   return (
     <div className='bg-black scroll-smooth'>
@@ -68,189 +82,148 @@ const Holdings = () => {
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     onSubmit={HandleSubmit}
-                    className='grid gap-2 sm:grid-cols-3 sm:gap-x-0 sm:gap-y-4 md:gap-0 md:grid-cols-4 max-w-[800px] mx-auto'>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base p-3 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">-Select Outlet-</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Gantry">Gantry</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Unipoles">Unipoles</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Bus Shelte">Bus Shelter</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="LED">LED</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Murals">Murals</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Lampost">Lampost</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Bridge Panels">Bridge Panels</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Wallwrap">Wallwrap</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Fence Drape">Fence Drape</option>
+                    className='grid gap-2 sm:grid-cols-4 sm:gap-x-0 sm:gap-y-4 md:gap-0 md:grid-cols-5 max-w-[900px] mx-auto'>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="available">Available</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="unavailable">Not Available</option>
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base p-3' name="state" id='state' onChange={HandleChange} value={holdingsDetails["state"]} required>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">-Select State-</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">Lagos</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">Abuja</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">Ondo</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">Ogun</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">Oyo</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">Oyo</option>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select Outlet-</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Gantry">Gantry</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Unipoles">Unipoles</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bus Shelte">Bus Shelter</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="LED">LED</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Murals">Murals</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Lampost">Lampost</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bridge Panels">Bridge Panels</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Wallwrap">Wallwrap</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Fence Drape">Fence Drape</option>
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base p-3 space-y-2' name="area" id='area' onChange={HandleChange} value={holdingsDetails["area"]}>
-                        <option className='hover:bg-custom-blue hover:text-white' value="">-Choose Area-</option>    
-                        <option className='hover:bg-custom-blue hover:text-white' value="Gantry">Ikeja</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Unipoles">Ebute Meta</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Bus Shelte">Ikorodu</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="LED">Main Land</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Murals">Alausa</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Lampost">Mushin</option>
-                        <option className='hover:bg-custom-blue hover:text-white' value="Bridge Panels">Shomolu</option>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4' name="state" id='state' onChange={HandleChange} value={holdingsDetails["state"]} required>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select State-</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Lagos</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Abuja</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Ondo</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Ogun</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Oyo</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Oyo</option>
                     </select>
-                    <button type='button' className='bg-custom-blue font-semibold sm:col-start-2 md:col-auto text-white rounded-xl text-base p-3 space-y-2 hover:bg-custom-brown'>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4 space-y-2' name="area" id='area' onChange={HandleChange} value={holdingsDetails["area"]}>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select Area-</option>    
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Gantry">Ikeja</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Unipoles">Ebute Meta</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bus Shelte">Ikorodu</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="LED">Main Land</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Murals">Alausa</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Lampost">Mushin</option>
+                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bridge Panels">Shomolu</option>
+                    </select>
+                    <button type='button' className='bg-custom-blue font-semibold sm:col-start-2 md:col-auto sm:col-span-2 text-white rounded-xl text-base py-3 px-4 space-y-2 hover:bg-custom-brown'>
                         Filter
                     </button>
                 </form>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:max-h-[450px]'>
+                        <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
+                        <CountDownTimer targetDate={dateTimeAfterThreeDays} />
                         <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <div className='flex flex-col md:flex-row justify-between gap-2 w-full'>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><IoLocationSharp /><span className='font-bold text-white'>Lagos, Ajah</span></p>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
+                        </div>
+                        <div className=''>
+                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
-                    </div>
-                </div>
-                <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
-                    </div>
-                    <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
-                        <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">View Details</p>
+                        </Link>
                     </div>
                 </div>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:max-h-[450px]'>
+                        <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
+                        <CountDownTimer targetDate={dateTimeAfterThreeDays} />
                         <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <div className='flex flex-col md:flex-row justify-between gap-2 w-full'>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><IoLocationSharp /><span className='font-bold text-white'>Lagos, Ajah</span></p>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
+                        </div>
+                        <div className=''>
+                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">View Details</p>
+                        </Link>
                     </div>
                 </div>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:max-h-[450px]'>
+                        <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
+                        <CountDownTimer targetDate={new Date().getTime()} />
                         <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <div className='flex flex-col md:flex-row justify-between gap-2 w-full'>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><IoLocationSharp /><span className='font-bold text-white'>Lagos, Ajah</span></p>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
+                        </div>
+                        <div className=''>
+                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </Link>
                     </div>
                 </div>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:max-h-[450px]'>
+                        <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
+                        <CountDownTimer targetDate={new Date().getTime()} />
                         <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <div className='flex flex-col md:flex-row justify-between gap-2 w-full'>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><IoLocationSharp /><span className='font-bold text-white'>Lagos, Ajah</span></p>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
+                        </div>
+                        <div className=''>
+                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </Link>
                     </div>
                 </div>
-                <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
-                    </div>
-                    <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
-                        <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
-                    </div>
-                </div>
-                <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
-                    </div>
-                    <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
-                        <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
-                    </div>
-                </div>
-                <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
-                    </div>
-                    <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
-                        <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
-                    </div>
-                </div>
-                {/* <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 bg-[#eeeeee] rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
-                    </div>
-                    <div className='flex flex-col justify-end gap-2 w-full'>
-                        <h2 className='font-bold text-xl'>Gantry</h2>
-                        <p>Location: <span className='font-bold'>Lagos, Ajah</span></p>
-                        <p>Size: <span className='font-bold'>16MX16M</span></p>
-                        <Link to='/our-holdings/2'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
-                    </div>
-                </div>
-                 */}
             </div>
             <div 
                 // data-aos="zoom-in" 
