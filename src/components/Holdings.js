@@ -83,11 +83,11 @@ const Holdings = () => {
                     data-aos-duration="1000"
                     onSubmit={HandleSubmit}
                     className='grid gap-2 sm:grid-cols-4 sm:gap-x-0 sm:gap-y-4 md:gap-0 md:grid-cols-5 max-w-[900px] mx-auto'>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="available">Available</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="unavailable">Not Available</option>
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select Outlet-</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Gantry">Gantry</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Unipoles">Unipoles</option>
@@ -99,7 +99,7 @@ const Holdings = () => {
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Wallwrap">Wallwrap</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Fence Drape">Fence Drape</option>
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4' name="state" id='state' onChange={HandleChange} value={holdingsDetails["state"]} required>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4' name="state" id='state' onChange={HandleChange} value={holdingsDetails["state"]} required>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select State-</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Lagos</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Abuja</option>
@@ -108,7 +108,7 @@ const Holdings = () => {
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Oyo</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Oyo</option>
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base py-3 px-4 space-y-2' name="area" id='area' onChange={HandleChange} value={holdingsDetails["area"]}>
+                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4 space-y-2' name="area" id='area' onChange={HandleChange} value={holdingsDetails["area"]}>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select Area-</option>    
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Gantry">Ikeja</option>
                         <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Unipoles">Ebute Meta</option>

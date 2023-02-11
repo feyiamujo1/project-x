@@ -5,7 +5,9 @@ import Navbar from './UI/Navbar'
 import DirectionImage from '../../src/assets/images/directions.png'
 // import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import GantryImage from "../../src/assets/images/live-gantry.png"
-import { HiLocationMarker } from 'react-icons/hi'
+import { IoLocationSharp } from "react-icons/io5"
+import { SlSizeFullscreen } from "react-icons/sl"
+import CountDownTimer from './UI/CountDownTimer'
 
 const HoldingsContent = () => {
     document.title = 'Holdings';
@@ -45,24 +47,38 @@ const HoldingsContent = () => {
                 </div>
             </div> */}
         </div>
-        <div className="w-11/12 lg:w-[80%] mx-auto pt-16 flex flex-col md:flex-row justify-between gap-6">
+        <div className="w-11/12 lg:w-[80%] mx-auto pt-16 flex flex-col md:flex-row justify-between gap-12 lg:gap-20">
             <div className='space-y-5'>
-                <h2 
-                data-aos="fade-up" 
-                data-aos-duration="1000"
-                className='font-semibold text-2xl text-custom-blue'>Description</h2>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='space-y-4'>
-                    <p className='text-white text-2xl'>Gantry</p>
-                    <div className='text-white flex items-center gap-x-2'>
-                        <span><HiLocationMarker className="text-lg text-custom-blue-dark"/></span> Ajah, Lagos State
-                    </div>
-                    <p className='text-white'><span className='text-custom-blue-dark font-semibold'>Size:</span> 16MX16M</p>
+                    <p className='text-custom-blue text-2xl font-semibold'>Gantry</p>
+                    <h2 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='font-bold text-base text-white'>Description</h2>
+                <p 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className=' text-custom-ash text-sm'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col justify-between gap-3 w-full'>
+                    <p className='text-custom-ash flex flex-row w-fit gap-2'><IoLocationSharp className='text-lg'/><span className='font-bold text-white'>Lagos, Ajah</span></p>
+                    <p className='text-custom-ash flex flex-row w-fit gap-2'><SlSizeFullscreen className='text-lg'/><span className='font-bold text-white'>16MX16M</span></p>   
+                </div>
                 </div>
             </div>
-            <div>
+            <div className='space-y-6'>
+                <h2 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='text-custom-blue text-base font-semibold'>Fill the form below to book this outlet</h2>
                 <form 
                     data-aos="fade-up" 
                     data-aos-duration="1000" 
@@ -98,41 +114,59 @@ const HoldingsContent = () => {
                 </form>
             </div>
         </div>
-        <div className="w-11/12 lg:w-[80%] mx-auto py-16 space-y-6">
+        <div className="w-11/12 lg:w-[80%] mx-auto py-16 space-y-12">
             <h2 data-aos="fade-up" 
                 data-aos-duration="1000"
                 className='font-semibold text-2xl text-custom-blue text-center'>Related Holdings</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:max-h-[450px]'>
+                        <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
+                        <CountDownTimer targetDate={new Date().getTime()} />
                         <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <div className='flex flex-col md:flex-row justify-between gap-2 w-full'>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><IoLocationSharp /><span className='font-bold text-white'>Lagos, Ajah</span></p>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
+                        </div>
+                        <div className=''>
+                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">View Details</p>
+                        </Link>
                     </div>
                 </div>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    className='flex flex-col md:flex-row py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
-                    <div className='w-full md:w-[450px]'>
-                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='w-full md:max-h-[450px]'>
+                        <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
                     <div className='flex flex-col justify-end gap-2 w-full'>
+                        <CountDownTimer targetDate={new Date().getTime()} />
                         <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
-                        <p className='text-custom-ash'>Location: <span className='font-bold text-white'>Lagos, Ajah</span></p>
-                        <p className='text-custom-ash'>Size: <span className='font-bold text-white'>16MX16M</span></p>
+                        <div className='flex flex-col md:flex-row justify-between gap-2 w-full'>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><IoLocationSharp /><span className='font-bold text-white'>Lagos, Ajah</span></p>
+                            <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
+                        </div>
+                        <div className=''>
+                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
-                        </ Link>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">View Details</p>
+                        </Link>
                     </div>
                 </div>
             </div>
