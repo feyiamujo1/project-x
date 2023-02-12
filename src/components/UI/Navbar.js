@@ -153,14 +153,14 @@ const Navbar = () => {
                             'active:text-custom-blue  pl-6 md:pt-[33px] md:pb-7 md:px-0 flex items-center gap-4 group md:border-b-[5px] md:border-transparent hover:border-custom-blue cursor-pointer hover:text-custom-blue'
                         }>
                         <svg className='w-6 h-4 p-0 block fill-white group-active:fill-custom-blue group-hover:fill-custom-blue md:hidden' xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1-.001 8 8 8 0 0 1 16 8ZM8 5a1 1 0 0 0-.867.5 1 1 0 1 1-1.731-1A3 3 0 1 1 9 8.83V9a1 1 0 0 1-2 0V8a1 1 0 0 1 1-1 1 1 0 0 0 0-2Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
+                            <path fillRule="evenodd" d="M16 8A8 8 0 1 1-.001 8 8 8 0 0 1 16 8ZM8 5a1 1 0 0 0-.867.5 1 1 0 1 1-1.731-1A3 3 0 1 1 9 8.83V9a1 1 0 0 1-2 0V8a1 1 0 0 1 1-1 1 1 0 0 0 0-2Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clipRule="evenodd"/>
                         </svg>
                         Contact Us
                     </NavLink>
                 </li>
             </ul>
             <div>
-                <Link className='hidden md:block' to="/contact-us"><p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm hover:text-white'>Contact Us</p></Link>
+                <Link className='hidden md:block' to="/contact-us"><p className='hidden md:block px-5 py-4 rounded-xl bg-custom-blue cursor-pointer text-sm hover:text-white hover:bg-custom-brown'>Contact Us</p></Link>
                 <IoIcon.IoMenu id='menubtn' onClick={showSideBar} className='cursor-pointer text-white text-4xl md:hidden active:text-custom-blue'/>
             </div>
         </div>

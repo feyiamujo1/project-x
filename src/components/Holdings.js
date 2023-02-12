@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import DirectionImage from '../../src/assets/images/directions.png'
 import Footer from "./UI/Footer"
 import Navbar from "./UI/Navbar"
@@ -9,6 +9,7 @@ import GantryImage from "../../src/assets/images/live-gantry.png"
 import { IoLocationSharp } from "react-icons/io5"
 import { SlSizeFullscreen } from "react-icons/sl"
 import CountDownTimer from './UI/CountDownTimer';
+import { StateLga } from './data/StateLga';
 
 const Holdings = () => {
     document.title = 'Holdings';
@@ -17,18 +18,31 @@ const Holdings = () => {
         firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     };
 
-    const [holdingsDetails, setHoldingsDetails] = useState({holding:"", state:"", area:""});
+    const [holdingsDetails, setHoldingsDetails] = useState({});
+    const states = Object.keys(StateLga);
+    const [lgas, setLgas] = useState([""]);
+    const [showAvailable, setShowAvailable] = useState(true);
+    const [displayedHolding, setDisplayedHolding] = useState("All")
 
     const HandleChange = (e) =>{
         setHoldingsDetails({
-            ...holdingsDetails,[ e.target.name] : e.target.value
+            ...holdingsDetails, [ e.target.name] : e.target.value
         })
+        // console.log(holdingsDetails);
+        // console.log(e.target.value)
     }
 
-    const HandleSubmit = (e) =>{
-        e.PreventDefault();
-        console.log(holdingsDetails);
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        // console.log(holdingsDetails);
+        setDisplayedHolding(holdingsDetails.holding);
     }
+
+    // useEffect(() => {
+    //     // setDisplayedHolding(holdingsDetails.outlet);
+        
+    // }, [displayedHolding])
+    
 
     // Custom date for now sha
     const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
@@ -36,12 +50,9 @@ const Holdings = () => {
 
     const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
-    // const [availabilityDate, setAvailabilityDate] = useState(new Date().getTime());
-
-    // const onDatePicked = (e) =>{
-    //     setAvailabilityDate(e.target.value);
-    //     console.log(availabilityDate);
-    // }
+    useEffect(() => {
+        setLgas(StateLga[holdingsDetails.state]);
+    }, [holdingsDetails.state])
 
   return (
     <div className='bg-black scroll-smooth'>
@@ -72,7 +83,7 @@ const Holdings = () => {
                 </div>
             </div>
         </div>
-        <div ref={firstContainer} className="w-11/12 lg:w-[80%] mx-auto pb-16 pt-[55px] space-y-10">
+        <div ref={firstContainer} className="w-11/12 lg:w-[80%] pb-16 pt-[55px] space-y-10 mx-auto">
             <div className='space-y-4 py-5 px-4'>
                 <h2 
                     data-aos="fade-up" 
@@ -81,53 +92,64 @@ const Holdings = () => {
                 <form 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
-                    onSubmit={HandleSubmit}
-                    className='grid gap-2 sm:grid-cols-4 sm:gap-x-0 sm:gap-y-4 md:gap-0 md:grid-cols-5 max-w-[900px] mx-auto'>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="available">Available</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="unavailable">Not Available</option>
+                    onSubmit={handleSubmit}
+                    className='grid gap-2 sm:grid-cols-3 sm:gap-3 md:gap-4 md:grid-cols-4 max-w-[900px] mx-auto'>
+                    <select className='border-2 bg-[#ebfcff] cursor-pointer border-transparent hover:border-[#097B93] outline-none rounded-xl text-base h-12 box-border py- px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails.Holdings} required>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="">-Select Outlet-</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Gantry">Gantry</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Unipoles">Unipoles</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Bus Shelte">Bus Shelter</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="LED">LED</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Murals">Murals</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Lampost">Lampost</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Bridge Panels">Bridge Panels</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Wallwrap">Wallwrap</option>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Fence Drape">Fence Drape</option>
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4 space-y-2' name="holding" id='holding' onChange={HandleChange} value={holdingsDetails["holding"]} required>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select Outlet-</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Gantry">Gantry</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Unipoles">Unipoles</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bus Shelte">Bus Shelter</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="LED">LED</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Murals">Murals</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Lampost">Lampost</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bridge Panels">Bridge Panels</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Wallwrap">Wallwrap</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Fence Drape">Fence Drape</option>
+                    <select className='border-2 bg-[#ebfcff] cursor-pointer border-transparent hover:border-[#097B93] outline-none rounded-xl text-base h-12 box-border py-2 px-4' name="state" id='state' onChange={HandleChange} value={holdingsDetails.state}>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="">-Select State-</option>
+                        {
+                            states.map((state, index) =>(
+                                <option key={index} className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value={state}>{state}</option>
+                            )
+                            )
+                        }
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4' name="state" id='state' onChange={HandleChange} value={holdingsDetails["state"]} required>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select State-</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Lagos</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Abuja</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Ondo</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Ogun</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Oyo</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">Oyo</option>
+                    <select className='border-2 bg-[#ebfcff] cursor-pointer border-transparent hover:border-[#097B93] outline-none rounded-xl text-base h-12 box-border py-2 px-4 space-y-2' name="area" id='area' onChange={HandleChange} value={holdingsDetails.area}>
+                        <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="">-Select Area-</option>    
+                        {
+                            lgas?.map((lga, index) =>(
+                                <option key={index} className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value={lga}>{lga}</option>
+                            )
+                            )
+                        }
                     </select>
-                    <select className='border cursor-pointer border-custom-brown hover:border-custom-blue outline-none rounded-xl text-base h-12 box-border py-3 px-4 space-y-2' name="area" id='area' onChange={HandleChange} value={holdingsDetails["area"]}>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="">-Select Area-</option>    
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Gantry">Ikeja</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Unipoles">Ebute Meta</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bus Shelte">Ikorodu</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="LED">Main Land</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Murals">Alausa</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Lampost">Mushin</option>
-                        <option className='hover:bg-custom-blue hover:text-white cursor-pointer' value="Bridge Panels">Shomolu</option>
-                    </select>
-                    <button type='button' className='bg-custom-blue font-semibold sm:col-start-2 md:col-auto sm:col-span-2 text-white rounded-xl text-base py-3 px-4 space-y-2 hover:bg-custom-brown'>
+                    <button type='submit' className='bg-custom-blue font-semibold sm:col-start-2 md:col-auto text-white rounded-xl text-base py-3 px-4 space-y-2 hover:bg-custom-brown'>
                         Filter
                     </button>
                 </form>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
+            <div 
+                data-aos="fade-up" 
+                data-aos-duration="1000"
+                className='flex flex-col gap-4 md:flex-row items-center '>
+                <h2 
+                    className='text-white text-center font-bold text-3xl mx-auto max-w-xl md:text-left md:ml-0 w-fit'>{displayedHolding}</h2>
+                <div 
+                    className=' w-fit flex flex-row rounded-xl overflow-hidden border border-[#4d4d4d]'>
+                    <p onClick={() => {setShowAvailable(true)}} className={ showAvailable ? 'text-white py-2.5 px-4 bg-custom-blue-dark cursor-pointer font-medium rounded-l-md' : 'text-white p-2.5 cursor-pointer py-2.5 px-4 hover:text-white  font-medium opacity-50 hover:opacity-100 bg-[#4d4d4d] hover:bg-transparent'}>Available</p>
+                    <p onClick={() => {setShowAvailable(false)}} className={ showAvailable ?  'text-white p-2.5 cursor-pointer py-2.5 px-4  font-medium opacity-50 hover:opacity-100 rounded-r-md bg-[#4d4d4d] hover:bg-transparent' : 'text-white py-2.5 px-4 bg-custom-blue-dark cursor-pointer font-medium'}>Deployed</p>
+                </div>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 min-h-[500px]'>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='flex justify-end'>
+                        <div className="w-3 h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-red rounded-full relative"></div>
+                    </div>
                     <div className='w-full md:max-h-[450px]'>
                         <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
@@ -139,7 +161,7 @@ const Holdings = () => {
                             <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
                         </div>
                         <div className=''>
-                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                            <p className='md:text-justify text-custom-ash text-sm line-clamp-4 md:line-clamp-3'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
@@ -153,6 +175,10 @@ const Holdings = () => {
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='flex justify-end'>
+                        <div className="w-3 h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-red rounded-full relative"></div>
+                    </div>
                     <div className='w-full md:max-h-[450px]'>
                         <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
@@ -164,7 +190,7 @@ const Holdings = () => {
                             <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
                         </div>
                         <div className=''>
-                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                            <p className='md:text-justify text-custom-ash text-sm line-clamp-4 md:line-clamp-3'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
@@ -178,6 +204,10 @@ const Holdings = () => {
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='flex justify-end'>
+                        <div className="w-3 h-3 bg-notification-green rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-green rounded-full relative"></div>
+                    </div>
                     <div className='w-full md:max-h-[450px]'>
                         <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
@@ -189,7 +219,7 @@ const Holdings = () => {
                             <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
                         </div>
                         <div className=''>
-                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                            <p className='md:text-justify text-custom-ash text-sm line-clamp-4 md:line-clamp-3'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
@@ -203,6 +233,10 @@ const Holdings = () => {
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='flex justify-end'>
+                        <div className="w-3 h-3 bg-notification-green rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-green rounded-full relative"></div>
+                    </div>
                     <div className='w-full md:max-h-[450px]'>
                         <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
@@ -214,7 +248,7 @@ const Holdings = () => {
                             <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
                         </div>
                         <div className=''>
-                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                            <p className='md:text-justify text-custom-ash text-sm line-clamp-4 md:line-clamp-3'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>

@@ -1,8 +1,8 @@
-const DateTimeDisplay = ({ value, type, isDanger }) => {
+const DateTimeDisplay = ({ value, type }) => {
   return (
     <div className="text-center">
-      <p>{value}</p>
-      <span>{type}</span>
+      <p className="font-medium text-2xl">{ value < 10 ? "0"+value: value}</p>
+      <span className="uppercase text-[9px]">{type}</span>
     </div>
   )
 }

@@ -18,7 +18,7 @@ const HoldingsContent = () => {
   return (
     <div className='bg-black scroll-smooth'>
         <Navbar />
-        <div className="w-full h-[90vh] sm:h-screen bg-cover bg-no-repeat bg-center relative" style={{backgroundimage:"url('../../src/assets/images/live-gantry.png')"}}>
+        <div className="w-full h-[90vh] sm:h-screen bg-contain bg-no-repeat bg-center relative bg-[url('/src/assets/images/live-gantry.png')]" > {/*style={{backgroundimage:"url('../../src/assets/images/live-gantry.png')"}}*/}
             <div
                 data-aos="fade-down" 
                 data-aos-duration="1100"
@@ -119,10 +119,14 @@ const HoldingsContent = () => {
                 data-aos-duration="1000"
                 className='font-semibold text-2xl text-custom-blue text-center'>Related Holdings</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
-                <div 
+            <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='flex justify-end'>
+                        <div className="w-3 h-3 bg-notification-green rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-green rounded-full relative"></div>
+                    </div>
                     <div className='w-full md:max-h-[450px]'>
                         <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
@@ -134,13 +138,13 @@ const HoldingsContent = () => {
                             <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
                         </div>
                         <div className=''>
-                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                            <p className='md:text-justify text-custom-ash text-sm line-clamp-4 md:line-clamp-3'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">View Details</p>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </Link>
                     </div>
                 </div>
@@ -148,6 +152,10 @@ const HoldingsContent = () => {
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col py-5 px-4 gap-4 border-[#005466] border-2 rounded-2xl'>
+                    <div className='flex justify-end'>
+                        <div className="w-3 h-3 bg-notification-green rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-green rounded-full relative"></div>
+                    </div>
                     <div className='w-full md:max-h-[450px]'>
                         <img className='w-full h-full rounded-2xl' src={GantryImage} alt=""/>
                     </div>
@@ -159,13 +167,13 @@ const HoldingsContent = () => {
                             <p className='text-custom-ash flex flex-row w-fit items-center gap-1.5'><SlSizeFullscreen /><span className='font-bold text-white'>16MX16M</span></p>   
                         </div>
                         <div className=''>
-                            <p className='text-justify text-custom-ash text-sm line-clamp-none md:line-clamp-3'>
+                            <p className='md:text-justify text-custom-ash text-sm line-clamp-4 md:line-clamp-3'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">View Details</p>
+                            <p className="py-4 max-w-[300px] mx-auto mt-4 bg-custom-blue-dark rounded-xl text-center text-white font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </Link>
                     </div>
                 </div>
