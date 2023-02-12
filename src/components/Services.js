@@ -28,7 +28,7 @@ const Services = () => {
                 data-aos="fade-down" 
                 data-aos-duration="1100"
                 data-aos-delay="500"
-                className='hidden md:block absolute top-32 left-[10%]'>
+                className='hidden md:block absolute top-32 left-[10%] z-50'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> Our Services</p>
             </div>
             <div 

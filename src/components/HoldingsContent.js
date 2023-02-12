@@ -15,6 +15,19 @@ const HoldingsContent = () => {
     // const ScrollToView = () => {
     //     firstContainer.current?.scrollIntoView({behavior: 'smooth'});
     // };
+    // const outlets = [
+    //     {
+    //         id: 0,
+    //         category: "Gantry",
+    //         location: "Lagos, Ajah",
+    //         Size: "16Mx16M",
+    //         availablity_status: true,
+    //         availablity_date: new Date().getTime(),
+    //         image: GantryImage,
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    //     }
+    // ]
+
   return (
     <div className='bg-black scroll-smooth'>
         <Navbar />
@@ -23,7 +36,7 @@ const HoldingsContent = () => {
                 data-aos="fade-down" 
                 data-aos-duration="1100"
                 data-aos-delay="500"
-                className='hidden md:block absolute top-32 left-[10%]'>
+                className='hidden md:block absolute top-32 left-[10%] z-50'>
                 <p className='hidden md:flex flex-row w-fit gap-4 justify-center items-center text-white'><Link to='/' className='hover:text-custom-blue'>Home</Link> <img src={DirectionImage} alt=""/> <Link to='/our-holdings' className='hover:text-custom-blue'>Our Holdings</Link> <img src={DirectionImage} alt=""/> Gantry</p>
             </div>
             <div className='w-full h-full'>
@@ -117,7 +130,7 @@ const HoldingsContent = () => {
         <div className="w-11/12 lg:w-[80%] mx-auto py-16 space-y-12">
             <h2 data-aos="fade-up" 
                 data-aos-duration="1000"
-                className='font-semibold text-2xl text-custom-blue text-center'>Related Holdings</h2>
+                className='font-semibold text-2xl text-custom-blue text-center'>Similar Holdings</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
             <div 
                     data-aos="fade-up" 
