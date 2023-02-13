@@ -2,8 +2,8 @@ import React from 'react'
 
 const AvailableNotice = () => {
   return (
-    <div className="text-right flex justify-center">
-        {/* <p className='text-notification-green py-3 text-center w-fit font-semibold text-sm'>Available!!!</p> */}
+    <div className="">
+        <p className='text-white -mb-1 w-fit font-semibold text-sm mx-auto md:ml-0'>Available Now</p>
         {/* <p className='text-white '>Please select a future date and time.</p> */}
     </div>
   )

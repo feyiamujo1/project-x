@@ -48,7 +48,7 @@ const Login = () => {
                         <input className='text-4xl border-custom-black rounded outline-none checked:bg-custom-blue-dark checked:border-none accent-custom-blue cursor-pointer group-hover:border-custom-brown' id='checkbox' type='checkbox'/>
                         <label className='ml-2.5 text-black font-medium group-hover:text-custom-brown cursor-pointer' htmlFor='checkbox'>Remember me</label>
                         </div>
-                        <button className='bg-custom-blue-dark text-white w-full mt-4 text-lg text-bold py-2.5 rounded-md hover:bg-custom-brown font-semibold'>login</button>
+                        <button className='bg-custom-blue-dark text-black w-full mt-4 text-lg text-bold py-2.5 rounded-md hover:bg-custom-brown font-bold'>login</button>
                     </div>
                 </form>
             </div>

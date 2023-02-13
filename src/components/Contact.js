@@ -146,7 +146,7 @@ const Contact = () => {
                             <textarea className='w-full rounded' rows={2} required id='message_textarea'/> 
                         </div>
                         <input 
-                            className='w-full py-3 border-none outline-none text-white bg-custom-blue-dark cursor-pointer rounded' type="button" id='send_message_button' value="Send Message"/>
+                            className='w-full py-4 border-none outline-none bg-custom-blue-dark cursor-pointer rounded font-bold hover:bg-custom-brown text-black' type="button" id='send_message_button' value="Send Message"/>
                     </form>
                 </div>
             </div>
