@@ -181,6 +181,31 @@ const Holdings = () => {
                     <div className='flex flex-col gap-2 w-full'>
                         <div>
                             <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                            
+                        </div>
+                        <div>
+                            <div className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><IoLocationSharp className='text-[14px] mb-0.5' /><span className='font-bold -ml-1'>Cross River, Calabar</span></div>
+                            <p className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><SlSizeFullscreen className='text-[12px]' /><span className='font-bold'>16MX16M</span></p>
+                        </div>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col text-center md:text-left md:flex-row py-5 px-4 gap-4 h-fit rounded-2xl border-[#005466] border-2 relative'>
+                    <div className='flex absolute z-50 right-7 top-[30px] md:right-3 md:top-3.5 bg-black p-1.5 rounded-full'>
+                        <div className="w-3 h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-red rounded-full relative"></div>
+                    </div>
+                    <div className='w-full md:w-[450px] relative'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col gap-2 w-full'>
+                        <div>
+                            <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
                             <CountDownTimer targetDate={dateTimeAfterThreeDays} />
                         </div>
                         <div>
@@ -189,6 +214,81 @@ const Holdings = () => {
                         </div>
                         <Link to='/our-holdings/1'>
                             <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col text-center md:text-left md:flex-row py-5 px-4 gap-4 h-fit rounded-2xl border-[#005466] border-2 relative'>
+                    <div className='flex absolute z-50 right-7 top-[30px] md:right-3 md:top-3.5 bg-black p-1.5 rounded-full'>
+                        <div className="w-3 h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-red rounded-full relative"></div>
+                    </div>
+                    <div className='w-full md:w-[450px] relative'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col gap-2 w-full'>
+                        <div>
+                            <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                            <CountDownTimer targetDate={dateTimeAfterThreeDays} />
+                        </div>
+                        <div>
+                            <div className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><IoLocationSharp className='text-[14px] mb-0.5' /><span className='font-bold -ml-1'>Cross River, Calabar</span></div>
+                            <p className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><SlSizeFullscreen className='text-[12px]' /><span className='font-bold'>16MX16M</span></p>
+                        </div>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col text-center md:text-left md:flex-row py-5 px-4 gap-4 h-fit rounded-2xl border-[#005466] border-2 relative'>
+                    <div className='flex absolute z-50 right-7 top-[30px] md:right-3 md:top-3.5 bg-black p-1.5 rounded-full'>
+                        <div className="w-3 h-3 bg-notification-green rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-green rounded-full relative"></div>
+                    </div>
+                    <div className='w-full md:w-[450px] relative'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <div>
+                            <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                            <CountDownTimer targetDate={new Date().getTime()} />
+                        </div>
+                        <div>
+                            <div className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><IoLocationSharp className='text-[14px] mb-0.5' /><span className='font-bold -ml-1'>Cross River, Calabar</span></div>
+                            <p className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><SlSizeFullscreen className='text-[12px]' /><span className='font-bold'>16MX16M</span></p>
+                        </div>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-bold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                        </ Link>
+                    </div>
+                </div>
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000"
+                    className='flex flex-col text-center md:text-left md:flex-row py-5 px-4 gap-4 h-fit rounded-2xl border-[#005466] border-2 relative'>
+                    <div className='flex absolute z-50 right-7 top-[30px] md:right-3 md:top-3.5 bg-black p-1.5 rounded-full'>
+                        <div className="w-3 h-3 bg-notification-green rounded-full animate-ping absolute"> </div>
+                        <div className="w-3 h-3 bg-notification-green rounded-full relative"></div>
+                    </div>
+                    <div className='w-full md:w-[450px] relative'>
+                        <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
+                    </div>
+                    <div className='flex flex-col justify-end gap-2 w-full'>
+                        <div>
+                            <h2 className='font-bold text-xl text-custom-blue-dark'>Gantry</h2>
+                            <CountDownTimer targetDate={new Date().getTime()} />
+                        </div>
+                        <div>
+                            <div className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><IoLocationSharp className='text-[14px] mb-0.5' /><span className='font-bold -ml-1'>Cross River, Calabar</span></div>
+                            <p className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><SlSizeFullscreen className='text-[12px]' /><span className='font-bold'>16MX16M</span></p>
+                        </div>
+                        <Link to='/our-holdings/1'>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-bold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </ Link>
                     </div>
                 </div>

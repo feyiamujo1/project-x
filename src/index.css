@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 body {
   margin: 0;
@@ -181,6 +181,61 @@ input, input:focus,input:hover, input:active{
   background-color: rgb(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px); 
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Thin.ttf");
+  font-weight: 100;
+  font-style: thin;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: extralight;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Light.ttf");
+  font-weight: 300;
+  font-style: light;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: semibold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: extrabold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Black.ttf");
+  font-weight: 900;
+  font-style: black;
 }
 
 @tailwind base;

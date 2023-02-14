@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./node_modules/flowbite/**/*.js",
+    "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
@@ -17,6 +16,8 @@ module.exports = {
         'notification-red': '#FF0000',
         'custom-brown': '#6B7280',
         'dark-bg':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6))',
+        "custom-dark": "rgba(0, 13, 26, 0.2)",
+        "custom-dark-image": "rgba(0, 84, 102, 0.4)"
       },
       boxShadow:{
         // 'custom': '0px 0px 5px 5px #e4e4e4',
@@ -35,7 +36,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      'poppins': ['Poppins', 'sans-serif'],
+      'Poppins': ['Poppins', 'sans-serif'],
     }
   },
   plugins: [require('@tailwindcss/line-clamp')],
