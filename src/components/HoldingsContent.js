@@ -10,6 +10,8 @@ import { SlSizeFullscreen } from "react-icons/sl"
 import CountDownTimer from './UI/CountDownTimer'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { useState } from 'react'
+import SampleVideo from "../../src/assets/video/sample_video.mp4"
+import { BsPlayCircle } from "react-icons/bs"
 
 const HoldingsContent = () => {
     document.title = 'Holding Detail';
@@ -40,12 +42,18 @@ const HoldingsContent = () => {
 
     const showNextImage = () =>{
         if (currentSlide < 4){
-            setCurrentSlide(prevState => prevState+1)
+            setCurrentSlide(prevState => prevState+1);
+        }
+        if (currentSlide === 3){
+            setCurrentSlide(0);
         }
     }
     const showPreviousImage = () =>{
         if (currentSlide > 0){
             setCurrentSlide(prevState => prevState-1)
+        }
+        if (currentSlide === 0){
+            setCurrentSlide(3);
         }
     }
   return (
@@ -78,31 +86,41 @@ const HoldingsContent = () => {
                 </div>
             </div> */}
         </div>
-        <div className='h-fit md:pt-0 md:h-screen md:w-11/12 lg:w-[80%] box-border mx-auto flex flex-col-reverse md:flex-row gap-4 md:gap-6 xl:gap-8 justify-center items-center'>
+        <div className='h-fit md:pt-0 md:h-screen md:w-11/12 lg:w-[80%] box-border mx-auto flex flex-col-reverse md:flex-row gap-4 md:gap-6 xl:gap-8 justify-center items-center md:select-none'>
                 <div className='hidden md:flex flex-row md:flex-col gap-6 w-fit mx-auto items-center md:justify-between md:w-[85px] md:h-[85%] xl:w-[100px]'>
-                    <div className='w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative'>
-                        <div className='absolute w-full h-full bg-custom-dark-image z-50'></div>
+                    <div onClick={() => {setCurrentSlide(0)}} className={currentSlide===0 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
+                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
+                        <div className={currentSlide===0 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
+                        <img src={GantryImage} alt='' className="w-full h-full"  />
+                    </div>
+                    <div onClick={() => {setCurrentSlide(1)}} className={currentSlide===1 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
+                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
+                        <div className={currentSlide===1 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
                         <img src={GantryImage} alt='' className="w-full h-full" />
                     </div>
-                    <div className='w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'>
-                        <div className='absolute hidden group-hover:block w-full h-full bg-custom-dark-image z-50'></div>
+                    <div onClick={() => {setCurrentSlide(2)}} className={currentSlide===2 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
+                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
+                        <div className={currentSlide===2 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
                         <img src={GantryImage} alt='' className="w-full h-full" />
                     </div>
-                    <div className='w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'>
-                        <div className='absolute hidden group-hover:block w-full h-full bg-custom-dark-image z-50'></div>
-                        <img src={GantryImage} alt='' className="w-full h-full" />
-                    </div>
-                    <div className='w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'>
-                        <div className='absolute hidden group-hover:block w-full h-full bg-custom-dark-image z-50'></div>
-                        <img src={GantryImage} alt='' className="w-full h-full" />
+                    <div onClick={() => {setCurrentSlide(3)}} className={currentSlide===3 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
+                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
+                        <div className={currentSlide===3 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
+                        <BsPlayCircle className='text-white absolute w-full h-full p-6 z-40' />
+                        <video paused={true} className="w-full h-full">
+                            <source src={SampleVideo} type="video/mp4"/>
+                        </video>
                     </div>
                 </div>
-                <div className='w-full md:h-[85%] box-border relative'>
-                    <img src={GantryImage} alt='' className="w-full min-h-[350px] md:h-full md:rounded-2xl" />
-                    <div className='text-white  absolute w-full h-fit z-50  flex flex-row justify-between top-0 bottom-0 my-auto'>
-                        <IoIosArrowBack className='cursor-pointer text-[40px] hover:text-custom-dark-image' onClick={showPreviousImage} /> 
-                        <IoIosArrowForward className='cursor-pointer text-[40px] hover:text-custom-dark-image' onClick={showNextImage}/>
-                    </div>
+                <div className={'w-full h-[345px] sm:h-[545px] md:h-[85%] box-border relative flex flex-row'}>
+                    <img src={GantryImage} alt='' className={currentSlide===0 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
+                    <img src={GantryImage} alt='' className={currentSlide===1 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
+                    <img src={GantryImage} alt='' className={currentSlide===2 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
+                    <video  loop controls paused={true} playsInline className={currentSlide===3 ? "cursor-pointer w-full min-h-[350px] md:h-full md:rounded-2xl" : "hidden"}>
+                        <source src={SampleVideo} type="video/mp4"/>
+                    </video>
+                    <IoIosArrowBack className='absolute left-0 top-0 bottom-0 my-auto z-50 text-white cursor-pointer text-[40px] active:text-custom-dark-image md:hover:text-custom-dark-image' onClick={showPreviousImage} /> 
+                    <IoIosArrowForward className='absolute right-0 top-0 bottom-0 my-auto z-50 text-white cursor-pointer text-[40px] active:text-custom-dark-image md:hover:text-custom-dark-image' onClick={showNextImage}/>
                 </div>
             </div>
         <div className="w-11/12 lg:w-[80%] mx-auto py-10 flex flex-col md:flex-row justify-between gap-6 xl:gap-12 lg:gap-20">
