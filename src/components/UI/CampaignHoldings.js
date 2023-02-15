@@ -70,7 +70,7 @@ const CampaignHoldings = () => {
               </div>
               <div>
                 <Link to="/our-holdings" className="w-fit">
-                  <p className={campaign.vacant > 0 ? "py-4 w-full bg-custom-blue-dark rounded-md text-center text-black font-semibold cursor-pointer hover:bg-custom-brown": "py-4 w-full bg-custom-brown text-black font-semibold cursor-pointer hover:bg-custom-brown rounded-md text-center opacity-25"}>Book Now</p>
+                  <p className={campaign.vacant > 0 ? "py-4 w-full bg-custom-blue-dark rounded-md text-center text-black font-bold cursor-pointer hover:bg-custom-brown": "py-4 w-full bg-custom-brown text-black font-bold cursor-pointer hover:bg-custom-brown rounded-md text-center opacity-25"}>Book Now</p>
                 </Link>
               </div>
             </div>
@@ -85,8 +85,8 @@ const CampaignHoldings = () => {
           <div className="">
               <img className="mx-auto" src={WhiteLogo} alt="" />
           </div>
-          <p className="text-white font-semibold text-center text-xl group-active:text-black md:group-hover:text-black">Iconic Concept</p>
-          <p className="text-white font-semibold text-center text-base group-active:text-black md:group-hover:text-black">On Request</p>
+          <p className="text-white font-bold text-center text-xl group-active:text-black md:group-hover:text-black">Iconic Concept</p>
+          <p className="text-white font-bold text-center text-base group-active:text-black md:group-hover:text-black">On Request</p>
         </div>
       </div>
       

@@ -185,8 +185,8 @@ const Home = () => {
                             <div className="relative w-fit md:border-2 bg-custom-blue md:bg-white md:border-black rounded-full cursor-pointer mx-auto md:ml-0 md:mb-10">
                                 <Link to='/contact-us'>
                                     <div className="hidden md:block absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black -left-1"></div>
-                                    <p className="py-[8px] hidden md:block pr-5 pl-12 font-semibold">Contact Us</p>
-                                    <p className="py-2 p-4 font-semibold text-white md:hidden">Contact Us</p>
+                                    <p className="py-[8px] hidden md:block pr-5 pl-12 font-bold">Contact Us</p>
+                                    <p className="py-2 p-4 font-bold text-white md:hidden">Contact Us</p>
                                 </Link>
                             </div>
                         </div>
@@ -462,8 +462,8 @@ const Home = () => {
                             </p>
                             <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
                                 <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
-                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold hidden md:block">Read More</p>
-                                <p className="py-2 p-4 font-semibold text-white md:hidden">Read More</p>
+                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-bold hidden md:block">Read More</p>
+                                <p className="py-2 p-4 font-bold text-white md:hidden">Read More</p>
                             </div>
                         </div>
                     </div>
@@ -483,8 +483,8 @@ const Home = () => {
                             </p>
                             <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
                                 <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
-                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold hidden md:block">Read More</p>
-                                <p className="py-2 p-4 font-semibold text-white md:hidden">Read More</p>
+                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-bold hidden md:block">Read More</p>
+                                <p className="py-2 p-4 font-bold text-white md:hidden">Read More</p>
                             </div>
                         </div>
                     </div>
@@ -504,8 +504,8 @@ const Home = () => {
                             </p>
                             <div className="relative w-fit md:border-2 md:border-black rounded-full cursor-pointer bg-custom-blue md:bg-transparent mx-auto  md:mx-0">
                                 <div className="absolute rounded-full h-full w-10 p-2 bg-custom-blue border-2 border-black hidden md:block -left-1"></div>
-                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-semibold hidden md:block">Read More</p>
-                                <p className="py-2 p-4 font-semibold text-white md:hidden">Read More</p>
+                                <p className="py-[8px] pr-4 pl-10 md:pr-6 md:pl-12 font-bold hidden md:block">Read More</p>
+                                <p className="py-2 p-4 font-bold text-white md:hidden">Read More</p>
                             </div>
                         </div>
                     </div>

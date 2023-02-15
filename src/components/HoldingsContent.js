@@ -9,7 +9,7 @@ import { IoLocationSharp } from "react-icons/io5"
 import { SlSizeFullscreen } from "react-icons/sl"
 import CountDownTimer from './UI/CountDownTimer'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
-// import { useState } from 'react'
+import { useState } from 'react'
 
 const HoldingsContent = () => {
     document.title = 'Holding Detail';
@@ -36,7 +36,18 @@ const HoldingsContent = () => {
 
     const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
-    // const [currentSlide, setCurrentSlide] = useState();
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const showNextImage = () =>{
+        if (currentSlide < 4){
+            setCurrentSlide(prevState => prevState+1)
+        }
+    }
+    const showPreviousImage = () =>{
+        if (currentSlide > 0){
+            setCurrentSlide(prevState => prevState-1)
+        }
+    }
   return (
     <div className='bg-black scroll-smooth'>
         <Navbar />
@@ -70,9 +81,7 @@ const HoldingsContent = () => {
         <div className='h-fit md:pt-0 md:h-screen md:w-11/12 lg:w-[80%] box-border mx-auto flex flex-col-reverse md:flex-row gap-4 md:gap-6 xl:gap-8 justify-center items-center'>
                 <div className='hidden md:flex flex-row md:flex-col gap-6 w-fit mx-auto items-center md:justify-between md:w-[85px] md:h-[85%] xl:w-[100px]'>
                     <div className='w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative'>
-                        <div className='absolute w-full h-full bg-custom-dark-image z-50'>
-
-                        </div>
+                        <div className='absolute w-full h-full bg-custom-dark-image z-50'></div>
                         <img src={GantryImage} alt='' className="w-full h-full" />
                     </div>
                     <div className='w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'>
@@ -90,9 +99,9 @@ const HoldingsContent = () => {
                 </div>
                 <div className='w-full md:h-[85%] box-border relative'>
                     <img src={GantryImage} alt='' className="w-full min-h-[350px] md:h-full md:rounded-2xl" />
-                    <div className='text-white absolute w-full h-fit z-50  flex flex-row justify-between top-0 bottom-0 my-auto'>
-                        <IoIosArrowBack className='cursor-pointer text-[40px] bg-custom-dark hover:text-custom-ash' /> 
-                        <IoIosArrowForward className='cursor-pointer text-[40px] bg-custom-dark hover:text-custom-ash' />
+                    <div className='text-white  absolute w-full h-fit z-50  flex flex-row justify-between top-0 bottom-0 my-auto'>
+                        <IoIosArrowBack className='cursor-pointer text-[40px] hover:text-custom-dark-image' onClick={showPreviousImage} /> 
+                        <IoIosArrowForward className='cursor-pointer text-[40px] hover:text-custom-dark-image' onClick={showNextImage}/>
                     </div>
                 </div>
             </div>
@@ -178,7 +187,7 @@ const HoldingsContent = () => {
                             <p className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><SlSizeFullscreen className='text-[12px]' /><span className='font-bold'>16MX16M</span></p>
                         </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-bold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </ Link>
                     </div>
                 </div>
@@ -203,7 +212,7 @@ const HoldingsContent = () => {
                             <p className='text-custom-brown flex flex-row w-fit items-center gap-1.5 text-[13.5px] mx-auto md:mx-0'><SlSizeFullscreen className='text-[12px]' /><span className='font-bold'>16MX16M</span></p>
                         </div>
                         <Link to='/our-holdings/1'>
-                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-semibold cursor-pointer hover:bg-custom-brown">Book Now</p>
+                            <p className="py-4 w-full bg-custom-blue-dark rounded-xl text-center text-black font-bold cursor-pointer hover:bg-custom-brown">Book Now</p>
                         </ Link>
                     </div>
                 </div>

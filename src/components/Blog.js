@@ -124,10 +124,10 @@ const Blog = () => {
                 data-aos-duration="1000"
                 data-aos-delay={ window.innerWidth < 768? "0": "1000"}
                 className='flex flex-row gap-2 justify-center'>
-                <p className='text-black border border-custom-blue bg-custom-blue cursor-pointer w-[50px] h-[46px] rounded-md flex justify-center items-center font-semibold hover:bg-custom-brown hover:border-custom-ash'>1</p>
-                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer font-semibold md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>2</p>
-                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer font-semibold md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>3</p>
-                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer font-semibold md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>4</p>
+                <p className='text-black border border-custom-blue bg-custom-blue cursor-pointer w-[50px] h-[46px] rounded-md flex justify-center items-center font-bold hover:bg-custom-brown hover:border-custom-ash'>1</p>
+                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer font-bold md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>2</p>
+                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer font-bold md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>3</p>
+                <p className='text-white border border-white active:bg-custom-blue active:text-black active:border-custom-blue md:hover:bg-custom-blue cursor-pointer font-bold md:hover:text-black hover:border-custom-blue w-[50px] h-[46px] rounded-md flex justify-center items-center'>4</p>
             </div>
         </div>
         <Footer />
