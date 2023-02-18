@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import {BiUserCircle} from 'react-icons/bi'
 import {BiLock} from 'react-icons/bi'
-import { useNavigate } from 'react-router-dom';
-// import Logo from '../../src/assets/images/logo.png'
+import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../../src/assets/images/logo.png'
 // import {AiFillEyeInvisible} from 'react-icons/ai'
 // import {AiFillEye} from 'react-icons/ai'
+
 
 const Login = () => {
     const navigate = useNavigate();
@@ -19,17 +20,19 @@ const Login = () => {
         })
     }
   return (
-    <div className='relative bg-[#f0f0f0] h-screen w-full flex items-center justify-center md:justify-between'>
-        {/* <div className='absolute w-full top-0'>
+    <div className='w-full h-screen bg-hero-image bg-cover bg-no-repeat bg-center relative'>
+        <div className='absolute w-full top-0'>
             <div className='w-11/12 lg:w-[80%] mx-auto pt-3 flex items-center backdrop:blur-lg'>
-                <img className='w-16 cursor-pointer mb-4' src={Logo} alt="" />
+                <Link to="/" className="w-fit">
+                    <img className='w-16 cursor-pointer mb-4' src={Logo} alt="" />
+                </Link>
+               
             </div>
-        </div> */}
+        </div>
         <div className='h-full w-full pt-12 flex items-center justify-center'>
-            <div className='flex  flex-col gap-4 justify-center h-[410px] w-11/12 sm:max-w-[400px] md:max-w-[500px]  bg-[#f3f3f3] shadow-custom-dark p-10 rounded-md'>
+            <div className='flex flex-col gap-4 justify-center h-[410px] w-11/12 sm:max-w-[400px] md:max-w-[500px]  bg-[#f3f3f3] shadow-custom-dark p-10 rounded-md'>
                 <div>
-                
-                <h1 className='text-4xl font-bold mb-3 w-fit text-custom-blue-dark'>Login</h1>
+                <h1 className='text-4xl font-bold mb-3 w-fit mx-auto'>Login</h1>
                 {/* <h3 className={err ? error_notification : normal_notification}>{errorMessage}</h3> */}
                 </div>
                 <form onSubmit={submitHandler} className='flex flex-col gap-4'>
@@ -45,15 +48,15 @@ const Login = () => {
                     </div>
                     <div>
                         <div className='group cursor-pointer w-fit flex flex-row items-center'>
-                        <input className='text-4xl border-custom-black rounded outline-none checked:bg-custom-blue-dark checked:border-none accent-custom-blue cursor-pointer group-hover:border-custom-brown' id='checkbox' type='checkbox'/>
-                        <label className='ml-2.5 text-black font-medium group-hover:text-custom-brown cursor-pointer' htmlFor='checkbox'>Remember me</label>
+                            <input className='text-4xl text-white border-custom-black rounded outline-none checked:bg-custom-blue-dark checked:border-none accent-custom-blue cursor-pointer group-hover:border-custom-brown' id='checkbox' type='checkbox'/>
+                            <label className='ml-2.5 text-black font-medium group-hover:text-custom-brown cursor-pointer' htmlFor='checkbox'>Remember me</label>
                         </div>
-                        <button className='bg-custom-blue-dark text-black w-full mt-4 text-lg text-bold py-2.5 rounded-md hover:bg-custom-brown font-bold'>login</button>
+                        <button className='bg-custom-blue-dark text-black w-full mt-4 text-lg text-bold py-2.5 rounded-md hover:bg-custom-brown font-bold'>Login</button>
                     </div>
                 </form>
             </div>
         </div>
-        <div className='md:w-[800px] h-screen bg-login-image bg-no-repeat bg-bottom bg-cover hidden md:flex flex-row justify-center items-end md:py-10 md:px-6 lg:p-10'>
+        {/* <div className='md:w-[800px] h-screen bg-login-image bg-no-repeat bg-bottom bg-cover hidden md:flex flex-row justify-center items-end md:py-10 md:px-6 lg:p-10'>
             
             <div className='space-y-5 mb-5'>
                 <p className='font-bold text-3xl text-white text-transparent bg-clip-text bg-gradient-to-tl from-custom-blue-dark to-white'>
@@ -67,7 +70,7 @@ const Login = () => {
                     Albert Einstein
                 </p>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

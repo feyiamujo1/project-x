@@ -20,7 +20,7 @@ module.exports = {
         "custom-dark-image": "rgba(0, 84, 102, 0.4)"
       },
       boxShadow:{
-        // 'custom': '0px 0px 5px 5px #e4e4e4',
+        // 'custom': '0 0 15px -9px rgb(0 0 0 / 75%)',
         'custom-dark':'0px 2px 15px 5px rgba(0, 0, 0, 0.4)'
       },
       backgroundImage:{

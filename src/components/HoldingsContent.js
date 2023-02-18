@@ -5,13 +5,14 @@ import Navbar from './UI/Navbar'
 // import DirectionImage from '../../src/assets/images/directions.png'
 // import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
 import GantryImage from "../../src/assets/images/live-gantry.png"
+import SampleImageTwo from "../../src/assets/images/3.jpg"
+import SampleImageThree from "../../src/assets/images/thumbnail.JPG"
 import { IoLocationSharp } from "react-icons/io5"
 import { SlSizeFullscreen } from "react-icons/sl"
 import CountDownTimer from './UI/CountDownTimer'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { useState } from 'react'
 import SampleVideo from "../../src/assets/video/sample_video.mp4"
-import { BsPlayCircle } from "react-icons/bs"
 
 const HoldingsContent = () => {
     document.title = 'Holding Detail';
@@ -86,37 +87,30 @@ const HoldingsContent = () => {
                 </div>
             </div> */}
         </div>
-        <div className='h-fit md:pt-0 md:h-screen md:w-11/12 lg:w-[80%] box-border mx-auto flex flex-col-reverse md:flex-row gap-4 md:gap-6 xl:gap-8 justify-center items-center md:select-none'>
-                <div className='hidden md:flex flex-row md:flex-col gap-6 w-fit mx-auto items-center md:justify-between md:w-[85px] md:h-[85%] xl:w-[100px]'>
-                    <div onClick={() => {setCurrentSlide(0)}} className={currentSlide===0 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
-                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
-                        <div className={currentSlide===0 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
-                        <img src={GantryImage} alt='' className="w-full h-full"  />
+        <div 
+            data-aos="fade-up" 
+            data-aos-duration="1200"
+            data-aos-delay="600"
+            className='h-fit md:pt-0 md:h-screen md:w-11/12 lg:w-[80%] box-border mx-auto flex flex-col-reverse md:flex-row gap-4 md:gap-6 xl:gap-8 justify-center items-center select-none'>
+                <div className='absolute z-50 bottom-[6%] md:bottom-[12%] flex flex-row gap-4 w-fit mx-auto items-center md:justify-between '>
+                    <div onClick={() => {setCurrentSlide(0)}} className={currentSlide===0 ? 'w-2 h-2  cursor-pointer bg-custom-blue rounded-2xl overflow-hidden group relative' 
+                        : 'w-2 h-2   border-transparent bg-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
                     </div>
-                    <div onClick={() => {setCurrentSlide(1)}} className={currentSlide===1 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
-                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
-                        <div className={currentSlide===1 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
-                        <img src={GantryImage} alt='' className="w-full h-full" />
+                    <div onClick={() => {setCurrentSlide(1)}} className={currentSlide===1 ? 'w-2 h-2  cursor-pointer bg-custom-blue rounded-2xl overflow-hidden group relative' 
+                        : 'w-2 h-2   border-transparent bg-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
                     </div>
-                    <div onClick={() => {setCurrentSlide(2)}} className={currentSlide===2 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
-                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
-                        <div className={currentSlide===2 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
-                        <img src={GantryImage} alt='' className="w-full h-full" />
+                    <div onClick={() => {setCurrentSlide(2)}} className={currentSlide===2 ? 'w-2 h-2   cursor-pointer bg-custom-blue rounded-2xl overflow-hidden group relative' 
+                        : 'w-2 h-2   border-transparent bg-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
                     </div>
-                    <div onClick={() => {setCurrentSlide(3)}} className={currentSlide===3 ? 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] cursor-pointer border-[#005466] rounded-2xl overflow-hidden group relative' 
-                        : 'w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 border-[3px] border-transparent hover:border-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
-                        <div className={currentSlide===3 ? 'absolute w-full h-full bg-custom-dark-image z-50': "hidden"}></div>
-                        <BsPlayCircle className='text-white absolute w-full h-full p-6 z-40' />
-                        <video paused={true} className="w-full h-full">
-                            <source src={SampleVideo} type="video/mp4"/>
-                        </video>
+                    <div onClick={() => {setCurrentSlide(3)}} className={currentSlide===3 ? 'w-2 h-2   cursor-pointer bg-custom-blue rounded-2xl overflow-hidden group relative' 
+                        : 'w-2 h-2   border-transparent bg-[#005466] cursor-pointer rounded-2xl overflow-hidden group relative'}>
                     </div>
                 </div>
-                <div className={'w-full h-[345px] sm:h-[545px] md:h-[85%] box-border relative flex flex-row'}>
+                <div className='w-full h-[345px] sm:h-[545px] md:h-[85%] box-border relative flex flex-row'>
                     <img src={GantryImage} alt='' className={currentSlide===0 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
-                    <img src={GantryImage} alt='' className={currentSlide===1 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
-                    <img src={GantryImage} alt='' className={currentSlide===2 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
-                    <video  loop controls paused={true} playsInline className={currentSlide===3 ? "cursor-pointer w-full min-h-[350px] md:h-full md:rounded-2xl" : "hidden"}>
+                    <img src={SampleImageTwo} alt='' className={currentSlide===1 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
+                    <img src={SampleImageThree} alt='' className={currentSlide===2 ? "w-full h-[345px] sm:h-[545px] md:h-full md:rounded-2xl" : "hidden"} />
+                    <video  loop controls autoPlay playsInline className={currentSlide===3 ? "cursor-pointer w-full min-h-[350px] md:h-full md:rounded-2xl" : "hidden"}>
                         <source src={SampleVideo} type="video/mp4"/>
                     </video>
                     <IoIosArrowBack className='absolute left-0 top-0 bottom-0 my-auto z-50 text-white cursor-pointer text-[40px] active:text-custom-dark-image md:hover:text-custom-dark-image' onClick={showPreviousImage} /> 
@@ -128,6 +122,7 @@ const HoldingsContent = () => {
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
+                    data-aos-delay={ window.innerWidth < 768? "600": "0"}
                     className='space-y-4'>
                     <p className='text-custom-blue text-2xl font-semibold'>Gantry</p>
                     <h2 
@@ -175,7 +170,7 @@ const HoldingsContent = () => {
                         <input className='w-full py-[10px] px-[5px] rounded border-none outline-none contrast-50' readOnly type='text' id='subject_inputfield' value={'Gantry '+1+", Ajah, Lagos"} required/>
                     </div>
                     <input 
-                        className='w-full py-3 border-none outline-none text-white bg-custom-blue-dark cursor-pointer rounded hover:bg-custom-ash' type="button" id='send_message_button' value="Book Now"/>
+                        className='w-full py-3 border-none outline-none text-black bg-custom-blue-dark cursor-pointer rounded hover:bg-custom-ash font-bold' type="button" id='send_message_button' value="Book Now"/>
                 </form>
             </div>
         </div>
@@ -184,13 +179,13 @@ const HoldingsContent = () => {
                 data-aos-duration="1000"
                 className='font-semibold text-2xl text-custom-blue text-center'>Similar Holdings</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
-            <div 
+                <div 
                     data-aos="fade-up" 
                     data-aos-duration="1000"
                     className='flex flex-col text-center md:text-left md:flex-row py-5 px-4 gap-4 h-fit rounded-2xl border-[#005466] border-2 relative'>
                     <div className='flex absolute z-50 right-7 top-[30px] md:right-3 md:top-3.5 bg-black p-1.5 rounded-full'>
-                        <div className="w-3 h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
-                        <div className="w-3 h-3 bg-notification-red rounded-full relative"></div>
+                        <div className="w-2 h-2 md:w-3 md:h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
+                        <div className="w-2 h-2 md:w-3 md:h-3 bg-notification-red rounded-full relative"></div>
                     </div>
                     <div className='w-full md:w-[450px] relative'>
                         <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
@@ -214,8 +209,8 @@ const HoldingsContent = () => {
                     data-aos-duration="1000"
                     className='flex flex-col text-center md:text-left md:flex-row py-5 px-4 gap-4 h-fit rounded-2xl border-[#005466] border-2 relative'>
                     <div className='flex absolute z-50 right-7 top-[30px] md:right-3 md:top-3.5 bg-black p-1.5 rounded-full'>
-                        <div className="w-3 h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
-                        <div className="w-3 h-3 bg-notification-red rounded-full relative"></div>
+                        <div className="w-2 h-2 md:w-3 md:h-3 bg-notification-red rounded-full animate-ping absolute"> </div>
+                        <div className="w-2 h-2 md:w-3 md:h-3 bg-notification-red rounded-full relative"></div>
                     </div>
                     <div className='w-full md:w-[450px] relative'>
                         <img className='w-full md:w-[450px] h-full rounded-2xl' src={GantryImage} alt=""/>
