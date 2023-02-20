@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'custom-blue': '#3ADDFF',
         'custom-blue-dark': '#00D3FF',
+        'custom-blue-light': '#f5fdff',
         'custom-ash': '#ACACAC',
         'custom-black': 'rgba(0, 0, 0, 0.5)',
         'custom-white': 'rgba(255, 255, 255, 0.5)',

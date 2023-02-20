@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {BiUserCircle} from 'react-icons/bi'
 import {BiLock} from 'react-icons/bi'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../../src/assets/images/logo.png'
 // import {AiFillEyeInvisible} from 'react-icons/ai'
 // import {AiFillEye} from 'react-icons/ai'
@@ -21,29 +21,31 @@ const Login = () => {
     }
   return (
     <div className='w-full h-screen bg-hero-image bg-cover bg-no-repeat bg-center relative'>
-        <div className='absolute w-full top-0'>
+        {/* <div className='absolute w-full top-0'>
             <div className='w-11/12 lg:w-[80%] mx-auto pt-3 flex items-center backdrop:blur-lg'>
                 <Link to="/" className="w-fit">
-                    <img className='w-16 cursor-pointer mb-4' src={Logo} alt="" />
+                    
                 </Link>
                
             </div>
-        </div>
+        </div> */}
         <div className='h-full w-full pt-12 flex items-center justify-center'>
             <div className='flex flex-col gap-4 justify-center h-[410px] w-11/12 sm:max-w-[400px] md:max-w-[500px]  bg-[#f3f3f3] shadow-custom-dark p-10 rounded-md'>
                 <div>
+                <img className='w-16 cursor-pointer mb-4 mx-auto' src={Logo} alt="" />
                 <h1 className='text-4xl font-bold mb-3 w-fit mx-auto'>Login</h1>
                 {/* <h3 className={err ? error_notification : normal_notification}>{errorMessage}</h3> */}
                 </div>
                 <form onSubmit={submitHandler} className='flex flex-col gap-4'>
-                    <div className=' relative flex flex-row items-center p-4'>
+                    <div className=' relative flex flex-row items-center py-4 px-2 sm:py-4 sm:px-3 md:p-4  justify-between'>
                         <BiUserCircle className='text-2xl text-custom-brown group-hover:text-custom-green box-border'/>
-                        <input className='absolute w-full text-base font-medium rounded-md border-2 empty:border-[#acacac4e] foucs:border-custom-brown pl-12 invalid:border-red-600 text-black left-0 right-0 h-full bg-transparent outline-none login_input hover:border-custom-ash focus:border-custom-blue-dark' 
-                        type="email" placeholder='Email' required name="email" id="email" autoComplete='off' onChange={handleChange}/>
+                        <input className='absolute w-full text-sm md:text-base font-medium rounded-md border-2 empty:border-[#acacac4e] foucs:border-custom-brown pl-10 pr-[138px] sm:pr-[168px] md:pr-48 sm:pl-10 md:pl-12 invalid:border-red-600 text-black left-0 right-0 h-full bg-transparent outline-none login_input hover:border-custom-ash focus:border-custom-blue-dark' 
+                        type="text" placeholder='Email' required name="email" id="email" autoComplete='off' onChange={handleChange}/>
+                        <p className='text-xs text-custom-brown sm:text-sm md:text-base font-medium border-l-l'>@eyekontact.com.ng</p>
                     </div>
-                    <div className=' relative flex flex-row items-center p-4'>
+                    <div className=' relative flex flex-row items-center py-4 px-2 sm:py-4 sm:px-3 md:p-4'>
                         <BiLock className='text-2xl text-custom-brown group-hover:text-custom-green box-border'/>
-                        <input className='absolute w-full text-base font-medium rounded-md border-2 empty:border-[#acacac4e] border-custom-brown pl-12 invalid:border-red-600 text-black left-0 right-0 h-full bg-transparent outline-none login_input hover:border-custom-ash focus:border-custom-blue-dark' 
+                        <input className='absolute w-full text-sm md:text-base font-medium rounded-md border-2 empty:border-[#acacac4e] border-custom-brown pl-10 md:pl-12 invalid:border-red-600 text-black left-0 right-0 h-full bg-transparent outline-none login_input hover:border-custom-ash focus:border-custom-blue-dark' 
                         type="password" placeholder='Password' required name="password" id="password" autoComplete='off' onChange={handleChange}/>
                     </div>
                     <div>

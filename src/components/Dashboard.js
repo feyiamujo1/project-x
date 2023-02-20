@@ -5,10 +5,12 @@ import { BsFillChatLeftTextFill } from 'react-icons/bs'
 import { AiFillContainer } from 'react-icons/ai'
 // import { FaRegUserCircle } from 'react-icons/fa'
 import ProfileImage from '../../src/assets/images/profileImage.jpg'
-import Billboard from '../../src/assets/images/billboard.png'
-import Booked from '../../src/assets/images/books.png'
+import Billboard from '../../src/assets/images/billboard-weird-blue.png'
+import Booked from '../../src/assets/images/bokking-weird-blue.png'
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
-import PeopleImage from '../../src/assets/images/people.png'
+import PeopleImage from '../../src/assets/images/queue.png'
+import Logo from '../../src/assets/images/logo.png'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
   const data = [
@@ -86,7 +88,7 @@ const Dashboard = () => {
     <div>
       <div className='w-full px-6 py-3 h-[70px] flex flex-row justify-between items-center border-b fixed z-50 bg-white'>
         <div>
-
+          <img className='w-16 cursor-pointer mb-4 mx-auto' src={Logo} alt="" />
         </div>
         <div className='relative rounded-full flex flex-row gap-2 items-center'>
           <p className='font-semibold'>Hi, Abiola</p>
@@ -99,8 +101,10 @@ const Dashboard = () => {
                 <p className='break-words'>abiolaadeyeye@eyekontact.com</p>
               </div>
               <div className='py-1 box-border text-sm'>
-                <p className='px-3 py-1.5 cursor-pointer hover:bg-[#eeeeee]'>Profile</p>
-                <p className='px-3 py-1.5 cursor-pointer hover:bg-[#eeeeee]'>Sign Out</p>
+                <p className='px-3 py-1.5 cursor-pointer hover:bg-[#d8ecff]'>Profile</p>
+                <Link to='/login'>
+                  <p className='px-3 py-1.5 cursor-pointer hover:bg-[#d8ecff]'>Sign Out</p>
+                </Link>
               </div>
             </div>
           }
@@ -118,8 +122,8 @@ const Dashboard = () => {
         <section className='bg-[#f9fafb] min-h-screen w-full p-4 pl-[266px] space-y-6'>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
             <div className='h-32 rounded-xl shadow p-4 flex flex-row gap-3 items-center justify-center bg-white'>
-              <div className=' text-center'>
-                <img className='w-16' src={Billboard} alt="" />
+              <div className='w-24 rounded-full p-4 text-center box-border bg-custom-blue-light'>
+                <img className='' src={Billboard} alt="" />
               </div>
               <div className='w-full'>
                 <h1 className='text-black font-bold'>500</h1>
@@ -127,7 +131,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className='h-32 rounded-xl shadow p-4 flex flex-row gap-3 items-center justify-center bg-white'>
-              <div className='text-center'>
+              <div className='text-center w-24 rounded-full p-4 box-border bg-custom-blue-light'>
                 <img className='' src={Booked} alt="" />
               </div>
               <div className='w-full'>
@@ -136,7 +140,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className='h-32 rounded-xl shadow p-4 flex flex-row gap-3 items-center justify-center bg-white'>
-              <div className=' text-center'>
+              <div className=' text-center w-24 rounded-full p-4 box-border bg-custom-blue-light'>
                 <img className='' src={Billboard} alt="" />
               </div>
               <div className='w-full'>
@@ -145,7 +149,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className='h-32 rounded-xl shadow p-4 flex flex-row gap-3 items-center justify-center bg-white'>
-              <div className='text-center'>
+              <div className='text-center w-24 rounded-full p-4 box-border bg-custom-blue-light'>
                 <img className='w-16' src={PeopleImage} alt="" />
                 {/* <SlPeople className='w-20' /> */}
               </div>
@@ -165,8 +169,8 @@ const Dashboard = () => {
             <div className='w-full p-0 m-0 pr-5 box-border'>
               <ResponsiveContainer className="w-full p-0 pr-4 m-0 "  aspect={3}>
                 <LineChart className='w-full p-0 m-0' data ={data}>
-                  <XAxis dataKey="name" stroke ="#214882"/>
-                  <YAxis />
+                  <XAxis dataKey="name" stroke ="#000000" />
+                  <YAxis stroke ="#000000" />
                   <Line type ="monotone" dataKey = "Outlets Booked" fill="#82ca9d"/>
                   <Tooltip/>
                   <CartesianGrid stroke='#e0dfdf' strokeDasharray="5 5"/>
@@ -193,19 +197,19 @@ const Dashboard = () => {
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis />
+                  <XAxis dataKey="name" stroke='#000000'/>
+                  <YAxis stroke='#000000'/>
                   <Tooltip />
                   <Legend />
                   <Bar className='cursor-pointer' dataKey="Gantry" fill="#8884d8" />
                   <Bar className='cursor-pointer' dataKey="Unipoles" fill="#82ca9d" />
                   <Bar className='cursor-pointer' dataKey="Bus Shelter" fill="#FFBB28" />
                   <Bar className='cursor-pointer' dataKey="LED" fill="#FF8042" />
-                  <Bar className='cursor-pointer' dataKey="Murals" fill="#0088FE" />
+                  <Bar className='cursor-pointer' dataKey="Murals" fill="#00D3FF" />
                   <Bar className='cursor-pointer' dataKey="Lampost" fill="#00C49F" />
                   <Bar className='cursor-pointer' dataKey="Bridge Panels" fill="#6B7280" />
                   <Bar className='cursor-pointer' dataKey="Wallwrap" fill="#FF2500" />
-                  <Bar className='cursor-pointer' dataKey="Fence Drape" fill="#00D3FF" />
+                  <Bar className='cursor-pointer' dataKey="Fence Drape" fill="#0088FE" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -219,7 +223,7 @@ const Dashboard = () => {
                 <p className='font-normal text-sm text-custom-ash'>Most recent bookings</p>
               </div>
               <div>
-                <p className='text-[#1D4DE8] font-medium cursor-pointer font-Poppins hover:text-custom-ash'>View all</p>
+                <p className='text-[#9ecfff] font-medium cursor-pointer font-Poppins hover:text-custom-ash'>View all</p>
               </div>
             </div>
             <div className="flex flex-col">
@@ -227,7 +231,7 @@ const Dashboard = () => {
                 <div className="pb-4 inline-block min-w-full sm:px-6 lg:px-8">
                   <div className="overflow-hidden">
                     <table className="min-w-full text-center">
-                      <thead className="border-b bg-gray-800">
+                      <thead className="border-b bg-[#9ecfff]">
                         <tr>
                           <th className="text-sm text-center font-medium text-white py-4">
                             ID
