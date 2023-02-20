@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import {BiUserCircle} from 'react-icons/bi'
 import {BiLock} from 'react-icons/bi'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Logo from '../../src/assets/images/logo.png'
 // import {AiFillEyeInvisible} from 'react-icons/ai'
 // import {AiFillEye} from 'react-icons/ai'
 
 
 const Login = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     document.title = "Login";
     const [adminDetails, setAdminDetails] = useState("");
     const submitHandler = (e) => {
-        navigate('/dashboard');
+        // navigate('/#');
     }
     const handleChange = (e) => {
         setAdminDetails({
@@ -39,9 +39,9 @@ const Login = () => {
                 <form onSubmit={submitHandler} className='flex flex-col gap-4'>
                     <div className=' relative flex flex-row items-center py-4 px-2 sm:py-4 sm:px-3 md:p-4  justify-between'>
                         <BiUserCircle className='text-2xl text-custom-brown group-hover:text-custom-green box-border'/>
-                        <input className='absolute w-full text-sm md:text-base font-medium rounded-md border-2 empty:border-[#acacac4e] foucs:border-custom-brown pl-10 pr-[138px] sm:pr-[168px] md:pr-48 sm:pl-10 md:pl-12 invalid:border-red-600 text-black left-0 right-0 h-full bg-transparent outline-none login_input hover:border-custom-ash focus:border-custom-blue-dark' 
+                        <input className='absolute overflow-hidden w-full text-sm md:text-base font-medium rounded-md border-2 empty:border-[#acacac4e] foucs:border-custom-brown pl-10 pr-[138px] sm:pr-[168px] md:pr-48 sm:pl-10 md:pl-12 invalid:border-red-600 text-black left-0 right-0 h-full bg-transparent outline-none login_input hover:border-custom-ash focus:border-custom-blue-dark' 
                         type="text" placeholder='Email' required name="email" id="email" autoComplete='off' onChange={handleChange}/>
-                        <p className='text-xs text-custom-brown sm:text-sm md:text-base font-medium border-l-l'>@eyekontact.com.ng</p>
+                        <p className='text-xs text-black sm:text-sm md:text-base font-medium border-l-l bg-[#f3f3f3] '>@eyekontact.com.ng</p>
                     </div>
                     <div className=' relative flex flex-row items-center py-4 px-2 sm:py-4 sm:px-3 md:p-4'>
                         <BiLock className='text-2xl text-custom-brown group-hover:text-custom-green box-border'/>

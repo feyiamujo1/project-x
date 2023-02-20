@@ -5,7 +5,7 @@ import OperationManager from '../../src/assets/images/lucky.png'
 import ExecutiveAssistantImage from '../../src/assets/images/faith.png'
 import OfficeAssistantImage from '../../src/assets/images/daniel.png'
 import InnovationManagerImage from '../../src/assets/images/enare.png'
-import MarketingManagerImage from '../../src/assets/images/gbemi.png'
+// import MarketingManagerImage from '../../src/assets/images/gbemi.png'
 import CreativeSpecialityImage from '../../src/assets/images/abiola.png'
 import JohnDoeImage from '../../src/assets/images/john.png'
 import DirectionImage from '../../src/assets/images/directions.png'
@@ -25,9 +25,9 @@ const About = () => {
         { id: 2, name: "Faith Ikejiaku", position: "Customer Service Manager", image: ExecutiveAssistantImage },
         { id: 3, name: "Daniel Olarewaju", position: "Office Assistant", image: OfficeAssistantImage},
         { id: 4, name: "Enare Ejim", position: "Innovation Manager", image: InnovationManagerImage},
-        { id: 5, name: "Gbemisola Bello", position: "Marketing Manager", image: MarketingManagerImage },
-        { id: 6, name: "Abiola Adeyeye", position: "Creative Executive", image: CreativeSpecialityImage },
-        { id: 7, name: "Ibrahim Abiodun", position: "Operation Executive", image: JohnDoeImage }
+        // { id: 5, name: "Gbemisola Bello", position: "Marketing Manager", image: MarketingManagerImage },
+        { id: 5, name: "Abiola Adeyeye", position: "Creative Executive", image: CreativeSpecialityImage },
+        { id: 6, name: "Ibrahim Abiodun", position: "Operation Executive", image: JohnDoeImage }
     ]
 
     const firstContainer = useRef(null);
@@ -222,7 +222,7 @@ const About = () => {
                     <div className="bg-[#1E1E1E] sm:w-full h-[230px] absolute right-0 mx-auto z-[9] top-[1020px]"></div>
                     <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1490px]"></div>
                     <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[1960px]"></div>
-                    <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[2430px]"></div>
+                    {/* <div className="bg-[#1E1E1E] sm:w-full sm:h-[230px] absolute right-0 mx-auto z-[9] top-[2430px]"></div> */}
                 </div>
                 
             </div>
