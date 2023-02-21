@@ -7,7 +7,6 @@ import CreativeSpecialityImage from '../../../src/assets/images/abiola.png'
 import ExecutiveAssistantImage from '../../../src/assets/images/faith.png'
 import OfficeAssistantImage from '../../../src/assets/images/daniel.png'
 import InnovationManagerImage from '../../../src/assets/images/enare.png'
-// import MarketingManagerImage from '../../../src/assets/images/gbemi.png'
 import JohnDoeImage from '../../../src/assets/images/john.png'
 
 const Modal = (props) => {

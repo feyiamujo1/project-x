@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/*" element={<UserRoute />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
       {/* <Footer /> */}
       {/* </ScrollToTop>       */}
