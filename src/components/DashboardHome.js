@@ -8,57 +8,57 @@ const DashboardHome = () => {
     const data = [
         {
           name: 'Jan',
-          "Outlets Booked": 100,
+          "Holdings Booked": 100,
         },
         {
           name: 'Feb',
-          "Outlets Booked": 500,
+          "Holdings Booked": 500,
         },
         {
           name: 'Mar',
-          "Outlets Booked": 300,
+          "Holdings Booked": 300,
         },
         {
           name: 'Apr',
-          "Outlets Booked": 200,
+          "Holdings Booked": 200,
         },
         {
           name: 'May',
-          "Outlets Booked": 150,
+          "Holdings Booked": 150,
         },
         {
           name: 'Jun',
-          "Outlets Booked": 320,
+          "Holdings Booked": 320,
         },
         {
           name: 'Jul',
-          "Outlets Booked": 50,
+          "Holdings Booked": 50,
         },
         {
           name: 'Aug',
-          "Outlets Booked": 230,
+          "Holdings Booked": 230,
         },
         {
           name: 'Sep',
-          "Outlets Booked": 400,
+          "Holdings Booked": 400,
         },
         {
           name: 'Oct',
-          "Outlets Booked": 200,
+          "Holdings Booked": 200,
         },
         {
           name: 'Nov',
-          "Outlets Booked": 340,
+          "Holdings Booked": 340,
         },
         {
           name: 'Dec',
-          "Outlets Booked": 280, 
+          "Holdings Booked": 280, 
         }
       ];
     
       const barChartData = [
         {
-          name: 'Outlet Distribution',
+          name: 'Holdings Distribution',
           "Gantry": 200,
           "Unipoles": 150,
           "Bus Shelter": 100,
@@ -88,7 +88,7 @@ const DashboardHome = () => {
             </div>
             <div className='w-full'>
                 <h1 className='text-black font-bold'>300</h1>
-            <h2 className='text-custom-brown font-medium text-sm'>Booked Outlets</h2>
+            <h2 className='text-custom-brown font-medium text-sm'>Booked Holdings</h2>
             </div>
             </div>
             <div className='h-32 rounded-xl shadow p-4 flex flex-row gap-3 items-center justify-center bg-white'>
@@ -97,7 +97,7 @@ const DashboardHome = () => {
             </div>
             <div className='w-full'>
                 <h1 className='text-black font-bold'>100</h1>
-                <h2 className='text-custom-brown font-medium text-sm'>Available Outlets</h2>
+                <h2 className='text-custom-brown font-medium text-sm'>Available Holdings</h2>
             </div>
             </div>
             <div className='h-32 rounded-xl shadow p-4 flex flex-row gap-3 items-center justify-center bg-white'>
@@ -123,7 +123,7 @@ const DashboardHome = () => {
                 <LineChart className='w-full p-0 m-0' data ={data}>
                 <XAxis dataKey="name" stroke ="#000000" />
                 <YAxis stroke ="#000000" />
-                <Line type ="monotone" dataKey = "Outlets Booked" fill="#82ca9d"/>
+                <Line type ="monotone" dataKey = "Holdings Booked" fill="#82ca9d"/>
                 <Tooltip/>
                 <CartesianGrid stroke='#e0dfdf' strokeDasharray="5 5"/>
                 </LineChart>

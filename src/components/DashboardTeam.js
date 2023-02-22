@@ -25,6 +25,7 @@ const DashboardTeam = () => {
   const [open, setOpen] = useState(false);
   const [openNewUser, setOpenNewUser] = useState(false);
   const [selectedStaff, setSelectedStaff] = useState(null);
+  const [editable, setEditable] = useState(false);
 
   useEffect(() => {
     console.log(selectedStaff)
@@ -34,7 +35,7 @@ const DashboardTeam = () => {
   return (
     <div className='w-full h-full bg-white rounded-xl shadow-md py-6'>
       {open && <DialogBox setOpen={setOpen} open={open}/>}
-      {openNewUser && <AddTeamMember openNewUser={openNewUser} setOpenNewUser={setOpenNewUser} selectedStaff={selectedStaff} setSelectedStaff={setSelectedStaff} />}
+      {openNewUser && <AddTeamMember openNewUser={openNewUser} setOpenNewUser={setOpenNewUser} selectedStaff={selectedStaff} setSelectedStaff={setSelectedStaff} editable={editable} setEditable={setEditable}/>}
       <div className='px-6 pt-0 mb-6 flex flex-row justify-between'>
         <div>
           <h3 className='font-semibold text-lg'>
@@ -42,7 +43,7 @@ const DashboardTeam = () => {
           </h3>
           <p className='font-normal text-sm text-custom-ash'>List of Current Staff Members</p>
         </div>
-        <p onClick={()=>{setOpenNewUser(true)}} className='py-3 px-4 flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BsPlusLg className='font-semibold' /> Add member</p>
+        <p onClick={()=>{setOpenNewUser(true); setEditable(true)}} className='py-3 px-4 flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BsPlusLg className='font-semibold' /> Add member</p>
       </div>
       <div className="flex flex-col">
         <div className=""> 
