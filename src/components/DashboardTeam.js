@@ -49,7 +49,7 @@ const DashboardTeam = () => {
           <div className="pb-4 inline-block min-w-full">
               <div className="overflow-hidden">
                   <table className="min-w-full text-left">
-                      <thead className="border-b bg-gray-800 text-black">
+                      <thead className="border-b bg-[#152a3b] text-black">
                           <tr>
                           <th className="text-sm text-center font-medium text-white py-4">
                               S/N
@@ -80,10 +80,10 @@ const DashboardTeam = () => {
                               <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                 {teamMember.position}
                               </td>
-                              <td className="text-sm text-[#1D4DE8] px-1 h-full my-auto py-4 whitespace-nowrap text-center ">
-                                <div className='flex flex-row gap-2 items-center justify-center'>
-                                  <p onClick={()=>{setOpenNewUser(true); setSelectedStaff(teamMember.id)}} className='cursor-pointer hover:text-custom-ash py-3 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p>
-                                  <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-3 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
+                              <td className="text-sm text-[#1D4DE8] pr-6 h-full my-auto py-4 whitespace-nowrap text-center ">
+                                <div className='flex flex-row gap-2 items-center justify-end'>
+                                  <p onClick={()=>{setOpenNewUser(true); setSelectedStaff(teamMember.id)}} className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p>
+                                  <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                                 </div>
                               </td>
                             </tr>

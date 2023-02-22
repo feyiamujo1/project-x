@@ -2,6 +2,7 @@ import Billboard from '../../src/assets/images/billboard-weird-blue.png'
 import Booked from '../../src/assets/images/bokking-weird-blue.png'
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import PeopleImage from '../../src/assets/images/queue.png'
+import { Link } from 'react-router-dom'
 
 const DashboardHome = () => {
     const data = [
@@ -106,7 +107,7 @@ const DashboardHome = () => {
             </div>
             <div className='w-full'>
                 <h1 className='text-black font-bold'>100</h1>
-                <h2 className='text-custom-brown font-medium text-sm'>Customers Waitlist</h2>
+                <h2 className='text-custom-brown font-medium text-sm'>Wait List</h2>
             </div>
             </div>
         </div>
@@ -174,7 +175,7 @@ const DashboardHome = () => {
                     <p className='font-normal text-sm text-custom-ash'>Most recent bookings</p>
                 </div>
                 <div>
-                    <p className='text-[#1D4DE8] font-medium cursor-pointer font-Poppins hover:text-custom-ash'>View all</p>
+                    <p className='text-[#1D4DE8] font-medium cursor-pointer font-Poppins hover:text-custom-ash'><Link to='/dashboard/bookings'>View all</Link></p>
                 </div>
             </div>
             <div className="flex flex-col">
@@ -182,7 +183,7 @@ const DashboardHome = () => {
                     <div className="pb-4 inline-block min-w-full">
                         <div className="overflow-hidden">
                             <table className="min-w-full text-left">
-                                <thead className="border-b bg-gray-800 text-black">
+                                <thead className="border-b bg-[#152a3b] text-black">
                                     <tr>
                                     <th className="text-sm text-center font-medium text-white px-1 py-4">
                                         ID
@@ -197,7 +198,7 @@ const DashboardHome = () => {
                                         Size
                                     </th>
                                     <th className="text-sm font-medium text-white px-1 py-4">
-                                        Date
+                                        Booked On
                                     </th>
                                     <th className="text-sm font-medium text-white py-4">
                                         

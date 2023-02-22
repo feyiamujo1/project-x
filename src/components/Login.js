@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import {BiUserCircle} from 'react-icons/bi'
 import {BiLock} from 'react-icons/bi'
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../../src/assets/images/logo.png'
 // import {AiFillEyeInvisible} from 'react-icons/ai'
 // import {AiFillEye} from 'react-icons/ai'
 
 
 const Login = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     document.title = "Login";
     const [adminDetails, setAdminDetails] = useState("");
     const submitHandler = (e) => {
-        // navigate('/#');
+        navigate('/dashboard/home');
     }
     const handleChange = (e) => {
         setAdminDetails({

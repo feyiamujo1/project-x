@@ -19,9 +19,9 @@ const SideBar = () => {
                 <NavLink to="/dashboard/home" onClick={HideSideBar} 
                     className={
                         ({ isActive }) => isActive ?
-                            'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer border-l-4 border-black'
+                            'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer border-l-4 border-dashboard-blue text-dashboard-blue'
                         :
-                            'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer hover:border-l-4 text-[#5f616e] hover:border-custom-ash '
+                            'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer hover:border-l-4 text-gray-700 hover:border-custom-ash '
                     }
                     >
                     <MdDashboard className='text-2xl'/> Dashboard
@@ -31,9 +31,9 @@ const SideBar = () => {
                 <NavLink to='/dashboard/holdings' onClick={HideSideBar} 
                 className={
                     ({ isActive }) => isActive ?
-                        'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer border-l-4 border-black'
+                        'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer border-l-4 border-black border-dashboard-blue text-dashboard-blue'
                     :
-                        'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer hover:border-l-4 text-[#5f616e] hover:border-custom-ash'
+                        'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer hover:border-l-4 text-gray-700 hover:border-custom-ash'
                 }
                 >
                     <RiArtboardFill className='text-2xl'/> Holdings
@@ -43,9 +43,9 @@ const SideBar = () => {
                 <NavLink to='/dashboard/bookings' onClick={HideSideBar} 
                     className={
                         ({ isActive }) => isActive ?
-                            'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer border-l-4 border-black'
+                            'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer border-l-4 border-black border-dashboard-blue text-dashboard-blue'
                         :
-                            'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer hover:border-l-4 text-[#5f616e] hover:border-custom-ash'
+                            'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer hover:border-l-4 text-gray-700 hover:border-custom-ash'
                     }
                     >
                     <AiFillContainer className='text-2xl'/> Bookings
@@ -55,9 +55,9 @@ const SideBar = () => {
                 <NavLink to='/dashboard/blog' onClick={HideSideBar} 
                 className={
                     ({ isActive }) => isActive ?
-                        'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer border-l-4 border-black'
+                        'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer border-l-4 border-black border-dashboard-blue text-dashboard-blue'
                     :
-                        'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer hover:border-l-4 text-[#5f616e] hover:border-custom-ash'
+                        'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer hover:border-l-4 text-gray-700 hover:border-custom-ash'
                 }
                 >
                     <BsFillChatLeftTextFill className='text-2xl mt-1 p-[1.8px]'/> Blog
@@ -67,9 +67,9 @@ const SideBar = () => {
                 <NavLink to='/dashboard/team' onClick={HideSideBar} 
                 className={
                     ({ isActive }) => isActive ?
-                        'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer border-l-4 border-black'
+                        'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer border-l-4 border-black border-dashboard-blue text-dashboard-blue'
                     :
-                        'flex flex-row items-center gap-2 px-5 font-semibold cursor-pointer hover:border-l-4 text-[#5f616e] hover:border-custom-ash'
+                        'flex flex-row items-center gap-2 px-5 font-medium cursor-pointer hover:border-l-4 text-gray-700 hover:border-custom-ash '
                 }
                 >
                     <IoIosPeople className='text-2xl'/> Team

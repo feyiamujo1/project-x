@@ -10,6 +10,7 @@ import DashboardBookings from './DashboardBookings'
 import DashboardBlog from './DashboardBlog'
 import DashboardScrollToTop from './UI/DashboardScrollToTop'
 import DashboardTeam from './DashboardTeam'
+import BookingsDetails from './BookingsDetails'
 
 const Dashboard = () => {
 
@@ -51,10 +52,11 @@ const Dashboard = () => {
         <section className='bg-[#f9fafb] min-h-screen w-full p-4 pl-[266px]'>
           <DashboardScrollToTop>
             <Routes>
-              <Route path='/' element={<Navigate to='/admin' />} />
+              <Route path='/' element={<Navigate to='/home' />} />
               <Route path='/home' element={<DashboardHome />}/>
               <Route path='/holdings' element={<DashboardHoldings />} />
               <Route path='/bookings' element={<DashboardBookings />} />
+              <Route path='/bookings/holdings-details' element={<BookingsDetails />} />
               <Route path='/blog' element={<DashboardBlog />} />
               <Route path='/team' element={<DashboardTeam />} />
             </Routes>
