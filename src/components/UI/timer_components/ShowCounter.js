@@ -1,9 +1,10 @@
 import DateTimeDisplay from "./DateTimeDisplay"
-const ShowCounter = ({days, hours, minutes, seconds, targetText}) => {
+const ShowCounter = ({days, hours, minutes, seconds, targetText, dashboard}) => {
   return (
-    <div className="flex flex-col gap-1 text-white w-full">
+    <div className={dashboard ? "flex flex-col gap-1 text-black w-full" : "flex flex-col gap-1 text-white w-full"}>
         <p className="font-semibold text-sm">{targetText ? targetText : "Available In"}</p>
-        <div className={targetText ? "flex flex-row md:gap-1 xl:gap-1.5 items-start text-white" :
+        <div className={dashboard ? "flex flex-row md:gap-1 xl:gap-1.5 items-start text-black" :
+            targetText ? "flex flex-row md:gap-1 xl:gap-1.5 items-start text-white" :
                             "flex flex-row md:gap-1 xl:gap-1.5 items-start justify-center md:justify-start text-white"}>
             <DateTimeDisplay value={days} type={'Days'} />
             <p className=" font-semibold">:</p>

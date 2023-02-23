@@ -29,9 +29,11 @@ const DashboardHoldings = () => {
     setLgas(StateLga[holdingsDetails.state]);
   }, [holdingsDetails.state])
 
+  const [selectedHoldings, setSelectedHoldings] = useState(null);
+
   return (
     <div className='w-full h-full bg-white rounded-xl shadow-md py-6'>
-      {openNewProductDialog && <CreateNewHolding openNewProductDialog={openNewProductDialog} setOpenNewProductDialog={setOpenNewProductDialog} />}
+      {openNewProductDialog && <CreateNewHolding openNewProductDialog={openNewProductDialog} setOpenNewProductDialog={setOpenNewProductDialog} selectedHoldings={selectedHoldings} setSelectedHoldings={setSelectedHoldings} />}
       <div className='px-6 pt-0 mb-6 flex flex-col'>
         <div className='flex flex-row justify-between items-center'>
           <div>
@@ -129,7 +131,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -151,7 +153,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -173,7 +175,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -195,7 +197,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -217,7 +219,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -239,7 +241,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -261,7 +263,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -283,7 +285,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -305,7 +307,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>
@@ -327,7 +329,7 @@ const DashboardHoldings = () => {
                                       </div>
                                     </td>
                                     <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/bookings/holdings-details'>
+                                      <Link to='/dashboard/holdings/holdings-details'>
                                         View Details
                                       </Link>
                                     </td>

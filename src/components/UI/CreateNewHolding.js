@@ -3,7 +3,7 @@ import { FileUploader } from 'react-drag-drop-files';
 import { StateLga } from '../../../src/components/data/StateLga';
 
 
-const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog}) => {
+const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, selectedHoldings, setSelectedHoldings}) => {
 
     const imageTypes = ["JPEG", "PNG", "GIF"];
     const videoTypes = ["MP4", "AVI", "MOV", "MKV"];
@@ -29,6 +29,21 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog}) => {
         }
     }
 
+    const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+    const NOW_IN_MS = new Date().getTime();
+
+    const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+    console.log(dateTimeAfterThreeDays);
+
+    // const HoldingsDetails = {category: "Gantry", state: "Lagos", lga:"Ajah", size:"16Mx16M", time: dateTimeAfterThreeDays};
+    let description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    
+    useEffect(() => {
+        if (selectedHoldings >= 0 && selectedHoldings != null){
+            setHoldingInfo({category: "Gantry", state: "Lagos", lga:"Ikeja", size:"16Mx16M", date: new Date(dateTimeAfterThreeDays).toISOString, description: description})
+        }
+    }, [selectedHoldings]);
+
     const handleChange = (e) =>{
         setHoldingInfo({
             ...holdingInfo, [e.target.name] : e.target.value
@@ -43,7 +58,6 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog}) => {
         }else{
 
         }
-        
     }
 
     const [firstImage, setFirstImage] = useState(null);
@@ -126,32 +140,35 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog}) => {
                             </div>
                         </div>
                         <div className="w-full flex flex-col gap-2">
+                            <label className="text-sm font-medium">Date</label>
+                            <input type="date" name="date" className="border p-3 h-12 box-border rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.date} onChange={handleChange} />
+                        </div>
+                        <div className="w-full flex flex-col gap-2">
                             <label className="text-sm font-medium">Description</label>
-                            <textarea className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" name='description' rows={5} value={holdingInfo.description} onChange={handleChange} required >
+                            <textarea className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" name='description' rows={4} value={holdingInfo.description} onChange={handleChange} required >
 
                             </textarea> 
                         </div>
+                    </div> : view === 2 ?
+                    <div className="space-y-5 box-border">
+                        <div className="w-full flex flex-col gap-2">
+                            <label className="text-sm font-medium">Default Image</label> 
+                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleFileChange} name="file" type={imageTypes} />
+                        </div>
+                        <div className="w-full flex flex-col gap-2">
+                            <label className="text-sm font-medium">Second Image</label> 
+                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleSecondFileChange} name="file" type={imageTypes} />
+                        </div>
+                        <div className="w-full flex flex-col gap-2">
+                            <label className="text-sm font-medium">Third Image</label> 
+                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleThirdFileChange} name="file" type={imageTypes} />
+                        </div>
+                        <div className="w-full flex flex-col gap-2">
+                            <label className="text-sm font-medium">Video</label> 
+                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleVideoFileChange} name="file" type={videoTypes} />
+                        </div>
                     </div> : null
-                }
-                {view ===2 ?
-                <div className="space-y-5 box-border">
-                    <div className="w-full flex flex-col gap-2">
-                        <label className="text-sm font-medium">Default Image</label> 
-                        <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleFileChange} name="file" type={imageTypes} />
-                    </div>
-                    <div className="w-full flex flex-col gap-2">
-                        <label className="text-sm font-medium">Second Image</label> 
-                        <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleSecondFileChange} name="file" type={imageTypes} />
-                    </div>
-                    <div className="w-full flex flex-col gap-2">
-                        <label className="text-sm font-medium">Third Image</label> 
-                        <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleThirdFileChange} name="file" type={imageTypes} />
-                    </div>
-                    <div className="w-full flex flex-col gap-2">
-                        <label className="text-sm font-medium">Video</label> 
-                        <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleVideoFileChange} name="file" type={videoTypes} />
-                    </div>
-                </div> : null }
+                    }
                 <div className="flex flex-row justify-between w-full">
                     <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md hover:text-custom-brown cursor-pointer"> 
                         {view === 1 ? "Cancel" : "Back"}
