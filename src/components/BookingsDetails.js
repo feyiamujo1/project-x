@@ -3,6 +3,7 @@ import GantryImage from "../../src/assets/images/live-gantry.png"
 import { IoLocationSharp } from "react-icons/io5"
 import { SlSizeFullscreen } from "react-icons/sl"
 import { Link } from 'react-router-dom'
+import { FaRegCalendarAlt } from 'react-icons/fa'
 
 
 const BookingsDetails = () => {
@@ -18,8 +19,8 @@ const BookingsDetails = () => {
                         ID: 432
                     </h3>
                 </div>
-                <p className='font-normal text-sm text-custom-ash'>Information about the booked holdings</p>
-                <p className=' text-sm font-medium'>Date: Feb 18, 2022</p>
+                <p className='font-normal text-sm text-custom-ash mb-0.5'>Information about the booked holdings</p>
+                <p className='flex flex-row text-sm font-medium items-start gap-2'><FaRegCalendarAlt className='text-lg' /> Feb 18, 2022</p>
                 {/* <p className=' text-sm font-medium'>Category: Gantry</p> */}
             </div>
             <div className='text-black px-6 space-y-3 pb-8 border-b'>
@@ -29,10 +30,10 @@ const BookingsDetails = () => {
                     </h3>
                     <p className='font-normal text-sm text-custom-ash'>Customer's contact Information</p>
                 </div>
-                <div className='space-y-1 font-semibold'>
-                    <p className=''>Name: Adeyeye Abiola</p>
-                    <p className=''>Phone Number: 090123454678</p>
-                    <p className=''>Email: adeyeyeabiola@gmail.com</p>
+                <div className='space-y-1 '>
+                    <p className=''><span className='font-semibold'>Name: </span>Adeyeye Abiola</p>
+                    <p className=''><span className='font-semibold'>Phone Number: </span> 090123454678</p>
+                    <p className=''><span className='font-semibold'>Email: </span> adeyeyeabiola@gmail.com</p>
                 </div>
             </div>
             <div className='text-black px-6 py-8 space-y-3 '>

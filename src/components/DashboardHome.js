@@ -113,7 +113,7 @@ const DashboardHome = () => {
         </div>
         <div className='bg-white w-full rounded-xl shadow-md space-y-10 py-6'>
             <div>
-            <h3 className='font-semibold pl-6 text-lg'>
+            <h3 className='font-semibold bg-dashboard-bluey pl-6 text-lg'>
                 Bookings Analytics
             </h3>
             <p className='font-normal text-sm text-custom-ash pl-6'>Statistics for the year</p>
@@ -135,7 +135,7 @@ const DashboardHome = () => {
             <h3 className='font-semibold text-lg'>
                 Holdings Analytics
             </h3>
-            <p className='font-normal text-sm text-custom-ash'>Current Holdings distribution</p>
+            <p className='font-normal text-sm text-custom-ash'>Current holdings distribution</p>
             </div>
             <div className='w-full p-0 m-0 box-border'>
             <ResponsiveContainer className="w-full p-0 pr-4 m-0 " aspect={2.3}>

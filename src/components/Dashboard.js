@@ -49,12 +49,13 @@ const Dashboard = () => {
       </div>
       <div className='flex flex-row w-full relative h-full pt-[70px]'>
         <SideBar />
-        <section className='bg-[#f9fafb] min-h-screen w-full p-4 pl-[266px]'>
+        <section className='bg-[#f9fafb] min-h-screen w-full p-4 pl-[236px]'>
           <DashboardScrollToTop>
             <Routes>
               <Route path='/' element={<Navigate to='/home' />} />
               <Route path='/home' element={<DashboardHome />}/>
               <Route path='/holdings' element={<DashboardHoldings />} />
+              <Route path='/holdings/holdings-details' element={<BookingsDetails />} />
               <Route path='/bookings' element={<DashboardBookings />} />
               <Route path='/bookings/holdings-details' element={<BookingsDetails />} />
               <Route path='/blog' element={<DashboardBlog />} />

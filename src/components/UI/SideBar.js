@@ -13,7 +13,7 @@ const SideBar = () => {
         }
     }
   return (
-    <nav id='dashboard_sidebar' className=' h-full w-[250px] py-10 box-border border-r fixed bg-white'>
+    <nav id='dashboard_sidebar' className=' h-full w-[220px] py-10 box-border border-r fixed bg-white'>
         <ul className='space-y-8'>
             <li>
                 <NavLink to="/dashboard/home" onClick={HideSideBar} 

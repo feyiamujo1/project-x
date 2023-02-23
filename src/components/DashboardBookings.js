@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 const DashboardBookings = () => {
   return (
@@ -243,7 +244,14 @@ const DashboardBookings = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+      </div>
+      <div>
+        <p className='text-custom-brown text-sm text-center font-medium'>Showing <span className='text-black'>1-20</span> of <span className='text-black'>60</span></p>
+        <div className='py-3 px-5 flex flex-row justify-between text-sm'>
+          <p className='flex flex-row gap-1 items-center py-2 px-3 rounded-md bg-[#1D4ED8] text-white cursor-pointer hover:text-custom-brown'><IoIosArrowBack /> Previous</p>
+          <p className='flex flex-row gap-1 items-center py-2 px-5 rounded-md bg-[#1D4ED8] text-white cursor-pointer hover:text-custom-brown'>Next <IoIosArrowForward /></p>
+        </div>
+      </div>
     </div>
   )
 }

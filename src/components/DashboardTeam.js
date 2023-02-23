@@ -41,9 +41,11 @@ const DashboardTeam = () => {
           <h3 className='font-semibold text-lg'>
             Staff Members
           </h3>
-          <p className='font-normal text-sm text-custom-ash'>List of Current Staff Members</p>
+          <p className='font-normal text-sm text-custom-ash'>List of current staff members</p>
         </div>
-        <p onClick={()=>{setOpenNewUser(true); setEditable(true)}} className='py-3 px-4 flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BsPlusLg className='font-semibold' /> Add member</p>
+        <div>
+          <p onClick={()=>{setOpenNewUser(true); setEditable(true)}} className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BsPlusLg className='font-semibold' /> Add member</p>
+        </div>
       </div>
       <div className="flex flex-col">
         <div className=""> 

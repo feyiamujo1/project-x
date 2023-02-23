@@ -76,16 +76,16 @@ const AddTeamMember = ({openNewUser, setOpenNewUser, selectedStaff, setSelectedS
                 <div className="flex flex-col justify-between md:flex-row w-full box-border gap-4">
                     <div className="w-full sm:w-1/2 flex flex-col gap-2">
                         <label className="text-sm font-medium">Full Name</label>
-                        <input type="text" name="fullname" className="border p-3 box-border rounded-md" value={staffInfo.fullname} onChange={handleChange} readOnly={!editable}/>
+                        <input type="text" name="fullname" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={staffInfo.fullname} onChange={handleChange} readOnly={!editable}/>
                     </div>
                     <div className="w-full sm:w-1/2 flex flex-col gap-2">
                         <label className="text-sm font-medium">Role</label>
-                        <input type="text" name="position" className="border p-3 box-border rounded-md" value={staffInfo.position} onChange={handleChange} readOnly={!editable}/>
+                        <input type="text" name="position" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={staffInfo.position} onChange={handleChange} readOnly={!editable}/>
                     </div>
                 </div>
                 <div className="w-full flex flex-col gap-2">
                     <label className="text-sm font-medium">Description</label>
-                    <textarea className="border w-full rounded-md p-3" name='description' rows={4} value={staffInfo.description} onChange={handleChange} readOnly={!editable}>
+                    <textarea className="border w-full rounded-md p-3 border-custom-brown focus:border-[#152a3b] outline-none text-sm" name='description' rows={5} value={staffInfo.description} onChange={handleChange} readOnly={!editable}>
 
                     </textarea> 
                 </div>
