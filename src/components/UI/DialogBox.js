@@ -19,7 +19,7 @@ const DialogBox = ({open, setOpen}) => {
                 This item will be deleted permanently, are you sure you want to delete? 
             </p>
             <div className='flex justify-end gap-4 px-5'>
-                <p onClick={handleClose} className='py-3 px-4 text-black font-medium text-base rounded-md hover:text-custom-brown hover:text-white cursor-pointer'>
+                <p onClick={handleClose} className='py-3 px-4 text-black font-medium text-base rounded-md hover:text-custom-brown hover:text-custom-brown cursor-pointer'>
                     Cancel
                 </p>
                 <p onClick={handleSubmit} className='py-3 px-4 w-fit text-white font-medium text-base rounded-md hover:text-custom-brown bg-[#E02424] hover:text-slate-400 cursor-pointer'>

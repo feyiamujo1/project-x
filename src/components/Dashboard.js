@@ -12,6 +12,8 @@ import DashboardScrollToTop from './UI/DashboardScrollToTop'
 import DashboardTeam from './DashboardTeam'
 import BookingsDetails from './BookingsDetails'
 import HoldingsDetails from './HoldingsDetails'
+import DasboardBlogDetails from './DasboardBlogDetails'
+import DashboardCreateBlog from './DashboardCreateBlog'
 
 const Dashboard = () => {
 
@@ -60,6 +62,8 @@ const Dashboard = () => {
               <Route path='/bookings' element={<DashboardBookings />} />
               <Route path='/bookings/holdings-details' element={<BookingsDetails />} />
               <Route path='/blog' element={<DashboardBlog />} />
+              <Route path='/blog/blog-details' element={<DasboardBlogDetails />} />
+              <Route path='/blog/create-blog/:blog_id' element={<DashboardCreateBlog />} />
               <Route path='/team' element={<DashboardTeam />} />
             </Routes>
           </DashboardScrollToTop>

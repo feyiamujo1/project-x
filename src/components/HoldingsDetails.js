@@ -71,19 +71,19 @@ const HoldingsDetails = () => {
         {openBroadcastDialogue && <BroadcastMessageDialog setOpenBroadcastDialog={setOpenBroadcastDialog}/>}
         {openNewCustomerDialog && <NewCustomerDialog setOpenNewCustomerDialog={setOpenNewCustomerDialog} openNewCustomerDialog={NewCustomerDialog} setSelectedCustomer={setSelectedCustomer} selectedCustomer={selectedCustomer}/>}
         {openNewProductDialog && <CreateNewHolding  openNewProductDialog={openNewProductDialog} setOpenNewProductDialog={setOpenNewProductDialog} selectedHoldings={selectedHoldings} setSelectedHoldings={setSelectedHoldings}/>}
-      <div className='px-6 pb-6 flex flex-row justify-between border-b '>
-        <div>
-          <h3 className='font-semibold text-lg'>
-            Gantry
-          </h3>
-          <p className='font-normal text-sm text-custom-ash'>Details</p>
+        <div className='px-6 pb-6 flex flex-row justify-between border-b '>
+            <div>
+            <h3 className='font-semibold text-lg'>
+                Gantry
+            </h3>
+            <p className='font-normal text-sm text-custom-ash'>Details</p>
+            </div>
+            <div>
+                <p onClick={()=>{setOpenNewProductDialog(true)}} className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Edit Gantry</p>
+            </div>
         </div>
         <div>
-          <p onClick={()=>{setOpenNewProductDialog(true)}} className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Edit Gantry</p>
-        </div>
-      </div>
-      <div>
-        <div className='h-fit md:pt-0 md:h-screen px-6 box-border mx-auto flex flex-col gap-4 justify-center items-center select-none'>
+            <div className='h-fit md:pt-0 md:h-screen px-6 box-border mx-auto flex flex-col gap-4 justify-center items-center select-none'>
                 <p className='font-semibold text-left w-full'>Gallery</p>
                 <div className='w-full h-[345px] sm:h-[545px] md:h-[85%] box-border relative flex flex-row md:px-6'>
                     <img src={GantryImage} alt='' className={currentSlide===0 ? "w-full h-[345px] sm:h-[545px] md:h-full " : "hidden"} />
@@ -97,10 +97,10 @@ const HoldingsDetails = () => {
                 </div>
             </div>
             <div className='flex flex-row px-6 w-[500px] mx-auto justify-between'>
-                <img src={GantryImage} alt='' onClick={() => {setCurrentSlide(0)}} className={currentSlide===0 ? "w-[75px] h-[75px] sm:h-[75px] cursor-pointer brightness-50" : "w-[75px] h-[75px] sm:h-[75px] cursor-pointer"} />
-                <img src={SampleImageTwo} alt='' onClick={() => {setCurrentSlide(1)}} className={currentSlide===1 ? "w-[75px] h-[75px] sm:h-[75px] cursor-pointer brightness-50" : "w-[75px] h-[75px] sm:h-[75px] cursor-pointer"} />
-                <img src={SampleImageThree} alt='' onClick={() => {setCurrentSlide(2)}} className={currentSlide===2 ? "w-[75px] h-[75px] sm:h-[75px] cursor-pointer brightness-50" : "w-[75px] h-[75px] sm:h-[75px] cursor-pointer"} />
-                <div  className={currentSlide===3 ?'relative bg-black cursor-pointer brightness-50' : 'relative bg-black cursor-pointer'}>
+                <img src={GantryImage} alt='' onClick={() => {setCurrentSlide(0)}} className={currentSlide===0 ? "w-[75px] h-[75px] sm:h-[75px] cursor-pointer brightness-50 rounded-md" : "w-[75px] h-[75px] sm:h-[75px] cursor-pointer rounded-md"} />
+                <img src={SampleImageTwo} alt='' onClick={() => {setCurrentSlide(1)}} className={currentSlide===1 ? "w-[75px] h-[75px] sm:h-[75px] cursor-pointer brightness-50 rounded-md" : "w-[75px] h-[75px] sm:h-[75px] cursor-pointer rounded-md"} />
+                <img src={SampleImageThree} alt='' onClick={() => {setCurrentSlide(2)}} className={currentSlide===2 ? "w-[75px] h-[75px] sm:h-[75px] cursor-pointer brightness-50 rounded-md" : "w-[75px] h-[75px] sm:h-[75px] cursor-pointer rounded-md"} />
+                <div  className={currentSlide===3 ?'relative bg-black cursor-pointer brightness-50 rounded-md' : 'relative bg-black cursor-pointer rounded-md'}>
                     <video playsInline  className={currentSlide===3 ? "cursor-pointer w-[75px] h-[75px] sm:h-[75px] min-h-[75px] cursor-pointer" : "w-[75px] h-[75px] sm:h-[75px] cursor-pointer"}>
                         <source src={SampleVideo} type="video/mp4"/>
                     </video>
@@ -131,7 +131,7 @@ const HoldingsDetails = () => {
                 <p className='font-normal text-sm text-custom-ash'>Notify this customers on important information</p>
             </div>
             <div className='flex flex-row gap-2'>
-                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='w-[168px] box-border py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
+                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className=' box-border py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
                 <p onClick={()=>{setOpenBroadcastDialog(true)}} className=' w-[175px] box-border py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Create Broadcast</p>
             </div>
         </div>
@@ -176,7 +176,7 @@ const HoldingsDetails = () => {
                               </td>
                               <td className="text-sm text-[#1D4DE8] pr-6 h-full my-auto py-4 whitespace-nowrap text-center ">
                                 <div className='flex flex-row gap-2 items-center justify-end'>
-                                  <p onClick={()=>{setOpenNewCustomerDialog(true); setSelectedCustomer(teamMember.id)}} className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-base'/> View</p>
+                                  <p onClick={()=>{setOpenNewCustomerDialog(true); setSelectedCustomer(teamMember.id)}} className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-base'/> Edit</p>
                                   <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-base'/> Delete</p>
                                 </div>
                               </td>

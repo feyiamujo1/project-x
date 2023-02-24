@@ -15,7 +15,7 @@ module.exports = {
         'notification-white': '#BABABA',
         'notification-green': '#52FF00',
         'notification-red': '#FF0000',
-        'dashboard-blue': '#458cc4',
+        'dashboard-blue': '#1D4ED8',
         'custom-brown': '#6B7280',
         'dark-bg':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6))',
         "custom-dark": "rgba(0, 13, 26, 0.2)",

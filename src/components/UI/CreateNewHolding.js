@@ -85,7 +85,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
   return (
     <div className='h-screen w-full fixed left-0 right-0 top-0 bottom-0 bg-slate-300/30 flex justify-center items-center z-[100]'>
         <div className='bg-white py-5 w-[92%] sm:w-[500px] md:w-[550px] rounded-md shadow-xl space-y-4'>
-            <p className='text-black px-5 font-semibold border-b-2 border-b-brown pb-4 text-lg flex flex-row justify-between items-center'>New Holding</p>
+            <p className='text-black px-5 font-semibold border-b-2 border-b-brown pb-4 text-lg flex flex-row justify-between items-center'>{selectedHoldings >= 0 && selectedHoldings != null ? "Edit Holdings" : "New Holding"}</p>
             <form onSubmit={handleSubmit} className="px-6 py-4 space-y-5 box-border">
                 {
                     view === 1 ? 
@@ -140,7 +140,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                             </div>
                         </div>
                         <div className="w-full flex flex-col gap-2">
-                            <label className="text-sm font-medium">Date</label>
+                            <label className="text-sm font-medium">Expiration Date</label>
                             <input type="date" name="date" className="border p-3 h-12 box-border rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.date} onChange={handleChange} />
                         </div>
                         <div className="w-full flex flex-col gap-2">
