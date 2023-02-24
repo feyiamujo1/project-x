@@ -57,13 +57,13 @@ const Dashboard = () => {
             <IoMenu id='menubtn' onClick={showSideBar} className='cursor-pointer active:text-custom-brown md:hover:text-custom-brown text-black text-4xl md:hidden  '/>
             <HiX id='closebtn' onClick={HideSideBar} className='cursor-pointer active:text-custom-brown md:hover:text-custom-brown text-black text-4xl hidden'/>
           </div>
-          <img className='w-16 cursor-pointer mx-auto' src={Logo} alt="" />
+          <img className='w-16 hidden md:block cursor-pointer mx-auto' src={Logo} alt="" />
         </div>
-        <div onClick={toggleDropDown} className='relative rounded-full flex flex-row gap-2 items-center group border border-white cursor-pointer'>
+        <div onClick={()=>{setShowDropDown(true)}} className='relative rounded-full flex flex-row gap-2 items-center group border border-white cursor-pointer'>
           <p className='font-semibold group-active:text-custom-brown md:group-hover:text-custom-brown'>Hi, Abiola</p>
           <img src={ProfileImage} alt="" className='w-10 h-10 rounded-full object-cover cursor-pointer active:group-hover:border-2 active:group-hover:border-custom-blue-dark md:group-hover:brightness-50 group-active:brightness-50' />
             { showDropDown && 
-              <div className='absolute w-[190px] top-[40px] -right-4 bg-white rounded-md shadow box-border hidden md:group-hover:block'>
+              <div className='absolute w-[190px] top-[40px] -right-4 bg-white rounded-md shadow box-border hidden group-hover:block'>
                 <div className='p-3 border-b box-border text-sm'>
                   <p className='w-full break-words font-medium'>Abiola Adeyeye</p>
                   <p className='break-words'>abiolaadeyeye@eyekontact.com</p>
