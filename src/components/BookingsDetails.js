@@ -47,8 +47,8 @@ const BookingsDetails = () => {
                 </div>
                 <div className='flex flex-col w-full md:flex-row gap-6 md:items-end'>
 
-                    <div className='w-[470px] h-[250px]'>
-                        <img src={GantryImage} alt='' className='w-[400px] h-[250px]' />
+                    <div className='w-full md:w-[470px] md:h-[250px]'>
+                        <img src={GantryImage} alt='' className='w-full md:w-[400px] md:h-[250px]' />
                     </div>
                     <div className='w-fit'>
                         <p className='font-semibold text-lg mb-1'>Gantry</p>
@@ -66,8 +66,8 @@ const BookingsDetails = () => {
                         </div>
                         <div className='flex flex-row justify-between items-center'>
                             <p className='text-black flex flex-row w-fit gap-2'><SlSizeFullscreen className='text-lg'/><span className='font-medium'>16MX16M</span></p>
-                            <Link to='/dashboard/bookings/holdings-details' className="text-sm text-[#1D4DE8] font-semibold cursor-pointer hover:text-custom-ash">
-                                View Details
+                            <Link to='/dashboard/holdings/holdings-details' className="text-sm text-[#1D4DE8] font-semibold cursor-pointer hover:text-custom-ash">
+                                More Details
                             </Link>
                         </div>
                     </div>

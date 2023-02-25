@@ -84,14 +84,14 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
 
   return (
     <div className='h-screen w-full fixed left-0 right-0 top-0 bottom-0 bg-slate-300/30 flex justify-center items-center z-[100]'>
-        <div className='bg-white py-5 w-[92%] sm:w-[500px] md:w-[550px] rounded-md shadow-xl space-y-4'>
+        <div className='bg-white py-5 w-[92%] sm:w-[600px] md:w-[550px] rounded-md shadow-xl space-y-4'>
             <p className='text-black px-5 font-semibold border-b-2 border-b-brown pb-4 text-lg flex flex-row justify-between items-center'>{selectedHoldings >= 0 && selectedHoldings != null ? "Edit Holdings" : "New Holding"}</p>
-            <form onSubmit={handleSubmit} className="px-6 py-4 space-y-5 box-border">
+            <form onSubmit={handleSubmit} className="px-6 py-4 pt-0 space-y-5 box-border">
                 {
                     view === 1 ? 
                     <div className="space-y-5 box-border">
-                        <div className="flex flex-col justify-between md:flex-row w-full box-border gap-4">
-                            <div className="w-full sm:w-1/2 flex flex-col gap-2">
+                        <div className="flex justify-between flex-row w-full box-border gap-2 sm:gap-4">
+                            <div className="w-1/2 flex flex-col gap-2 box-border">
                                 <label className="text-sm font-medium">Category</label>
                                 {/* <input type="text" name="fullname" className="border p-3 box-border rounded-md"  onChange={handleChange} /> */}
                                 <select className='border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 box-border p-3 space-y-2' name="category" id='category' onChange={handleChange} value={holdingInfo.category} required>
@@ -107,7 +107,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                                     <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Fence Drape">Fence Drape</option>
                                 </select>
                             </div>
-                            <div className="w-full sm:w-1/2 flex flex-col gap-2">
+                            <div className="w-1/2 flex flex-col gap-2 box-border">
                                 <label className="text-sm font-medium">State</label>
                                 {/* <input type="text" name="location" className="border p-3 box-border rounded-md" value={holdingInfo.state} onChange={handleChange} /> */}
                                 <select className='border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 box-border p-3 space-y-2' name="state" id='state' onChange={handleChange} value={holdingInfo.state}>
@@ -120,11 +120,11 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                                 </select>
                             </div>
                         </div>
-                        <div className="flex flex-col justify-between md:flex-row w-full box-border gap-4">
-                            <div className="w-full sm:w-1/2 flex flex-col gap-2">
+                        <div className="flex justify-between flex-row w-full box-border gap-2 sm:gap-4">
+                            <div className="w-1/2 flex flex-col gap-2">
                                 <label className="text-sm font-medium">LGA</label>
                                 {/* <input type="text" name="fullname" className="border p-3 box-border rounded-md" value={holdingInfo.lga} onChange={handleChange} /> */}
-                                <select className='border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 box-border p-3 space-y-2' name="lga" id='lga' onChange={handleChange} value={holdingInfo.lga}>
+                                <select className='border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 p-3 space-y-2 w-full box-border' name="lga" id='lga' onChange={handleChange} value={holdingInfo.lga}>
                                     <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="">-Select Area-</option>    
                                     {
                                         lgas?.map((lga, index) =>(
@@ -134,14 +134,14 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                                     }
                                 </select>
                             </div>
-                            <div className="w-full sm:w-1/2 flex flex-col gap-2">
+                            <div className="w-1/2 flex flex-col gap-2">
                                 <label className="text-sm font-medium">Size</label>
-                                <input type="text" name="location" className="border p-3 h-12 box-border rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.size} onChange={handleChange} />
+                                <input type="text" name="location" className="w-full border p-3 h-12 box-border rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.size} onChange={handleChange} />
                             </div>
                         </div>
-                        <div className="w-full flex flex-col gap-2">
+                        <div className=" w-full flex flex-col gap-2 box-border">
                             <label className="text-sm font-medium">Expiration Date</label>
-                            <input type="date" name="date" className="border p-3 h-12 box-border rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.date} onChange={handleChange} />
+                            <input type="date" name="date" className="min-w-[130px] box-border border p-3 h-12 rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.date} onChange={handleChange} />
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-sm font-medium">Description</label>

@@ -31,28 +31,10 @@ const DashboardBlog = () => {
           </Link>
         </div>
       </div>
-      {/* <div className='px-6 flex flex-row grid grid-cols-2 gap-4'>
-        <div className="shadow p-3 flex flex-row gap-2 cursor-pointer rounded-md box-border">
-          <div className='w-[200px]'>
-            <img src={BlogImage1} alt='' className='h-fit w-full rounded-md'/>
-          </div>
-          <div className="w-full flex flex-col justify-end box-border gap-1">
-            <div className=''>
-              <p className='font-semibold'>End of the year (2022) celebration</p>
-              <p className='md:text-justify text-sm line-clamp-4 md:line-clamp-3 lg:line-clamp-4'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <p className='text-custom-brown font-medium text-xs text-right'>Jan 24, 2023</p>
-          </div>
-        </div>
-        
-      </div> */}
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-x-scroll">
         <div className=""> 
           <div className="pb-4 inline-block min-w-full">
-              <div className="overflow-hidden">
+              <div className="">
                   <table className="min-w-full text-left">
                       <thead className="border-b bg-[#152a3b] text-black">
                           <tr>

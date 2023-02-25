@@ -51,7 +51,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <div className='w-full px-6 py-3 h-[70px] flex flex-row justify-between items-center border-b fixed z-50 bg-white'>
+      <div className='w-full px-3 md:px-6 py-3 h-[70px] flex flex-row justify-between items-center border-b fixed z-50 bg-white'>
         <div className='flex flex-row gap-2 items-center'>
           <div className='flex flex-row items-center w-fit'>
             <IoMenu id='menubtn' onClick={showSideBar} className='cursor-pointer active:text-custom-brown md:hover:text-custom-brown text-black text-4xl md:hidden  '/>
@@ -60,15 +60,15 @@ const Dashboard = () => {
           <img className='w-16 hidden md:block cursor-pointer mx-auto' src={Logo} alt="" />
         </div>
         <div onClick={()=>{setShowDropDown(true)}} className='relative rounded-full flex flex-row gap-2 items-center group border border-white cursor-pointer'>
-          <p className='font-semibold group-active:text-custom-brown md:group-hover:text-custom-brown'>Hi, Abiola</p>
+          <p className='font-semibold text-lg group-active:text-custom-brown md:group-hover:text-custom-brown'>Hi, Abiola</p>
           <img src={ProfileImage} alt="" className='w-10 h-10 rounded-full object-cover cursor-pointer active:group-hover:border-2 active:group-hover:border-custom-blue-dark md:group-hover:brightness-50 group-active:brightness-50' />
             { showDropDown && 
-              <div className='absolute w-[190px] top-[40px] -right-4 bg-white rounded-md shadow box-border hidden group-hover:block'>
-                <div className='p-3 border-b box-border text-sm'>
-                  <p className='w-full break-words font-medium'>Abiola Adeyeye</p>
-                  <p className='break-words'>abiolaadeyeye@eyekontact.com</p>
+              <div className='absolute w-[260px] md:w-[190px] top-[40px] -right-4 bg-white rounded-md shadow box-border hidden group-hover:block'>
+                <div className='p-3 border-b box-border text-base'>
+                  <p className='w-full break-words font-medium '>Abiola Adeyeye</p>
+                  <p className='break-words text-sm'>abiolaadeyeye@eyekontact.com</p>
                 </div>
-                <div className='py-1 box-border text-sm'>
+                <div className='py-1 box-border text-base'>
                   <p onClick={()=>{setShowProfileModal(true); setShowDropDown(false)}} className='px-3 py-1.5 cursor-pointer hover:bg-[#d8ecff]'>Profile</p>
                   <Link to='/login'>
                     <p className='px-3 py-1.5 cursor-pointer hover:bg-[#d8ecff]'>Sign Out</p>

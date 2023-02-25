@@ -195,13 +195,13 @@ const DashboardHome = () => {
                                     <th className="text-sm text-center font-medium text-white px-4 md:px-1 py-4">
                                         ID
                                     </th>
-                                    <th className="text-sm font-medium text-white px-2 py-4">
+                                    <th className="text-sm font-medium text-white px-4 md:px-2 py-4">
                                         Category
                                     </th>
-                                    <th className="text-sm font-medium text-white px-2 py-4">
+                                    <th className="text-sm font-medium text-white px-4 md:px-2 py-4">
                                         location
                                     </th>
-                                    <th className="text-sm  font-medium text-white px-2 py-4">
+                                    <th className="text-sm  font-medium text-white px-4 md:px-2 py-4">
                                         Size
                                     </th>
                                     <th className="text-sm font-medium text-white px-4 md:px-1 py-4">
@@ -228,7 +228,9 @@ const DashboardHome = () => {
                                         Feb 18, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -246,7 +248,9 @@ const DashboardHome = () => {
                                         Feb 18, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -264,7 +268,9 @@ const DashboardHome = () => {
                                         Feb 17, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -282,7 +288,9 @@ const DashboardHome = () => {
                                         Feb 16, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -300,7 +308,9 @@ const DashboardHome = () => {
                                         Feb 15, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -318,7 +328,9 @@ const DashboardHome = () => {
                                         Feb 10, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -336,7 +348,9 @@ const DashboardHome = () => {
                                         Feb 8, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -354,7 +368,9 @@ const DashboardHome = () => {
                                         Jan 29, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -372,7 +388,9 @@ const DashboardHome = () => {
                                         Jan 19, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
@@ -390,7 +408,9 @@ const DashboardHome = () => {
                                         Jan 10, 2022
                                     </td>
                                     <td className="text-sm px-4 md:px-0 text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
+                                        <Link to='/dashboard/bookings/holdings-details'>
                                         View Details
+                                      </Link>
                                     </td>
                                     </tr>
                                 </tbody>
