@@ -55,10 +55,10 @@ const NewCustomerDialog = ({setOpenNewCustomerDialog, openNewCustomerDialog, set
                     <input type="tel" name="phone" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={customerInfo.phone} onChange={handleChange} />
                 </div>
                 <div className="flex flex-row justify-between w-full">
-                    <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md hover:text-custom-brown cursor-pointer"> 
+                    <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
                         cancel
                     </button>
-                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md hover:text-custom-brown bg-[#1D4ED8] cursor-pointer"> 
+                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"> 
                         Submit
                     </button>
                 </div>

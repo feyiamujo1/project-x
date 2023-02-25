@@ -153,27 +153,31 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                     <div className="space-y-5 box-border">
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-sm font-medium">Default Image</label> 
-                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleFileChange} name="file" type={imageTypes} />
+                            {/* <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleFileChange} name="file" type={imageTypes} /> */}
+                            <input type="file" name="firstImage" onChange={handleFileChange} required className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-sm font-medium">Second Image</label> 
-                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleSecondFileChange} name="file" type={imageTypes} />
+                            <input type="file" name="secondImage" required onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
+                            {/* <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleSecondFileChange} name="file" type={imageTypes} /> */}
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-sm font-medium">Third Image</label> 
-                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleThirdFileChange} name="file" type={imageTypes} />
+                            <input type="file" name="thirdImage" required onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
+                            {/* <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleThirdFileChange} name="file" type={imageTypes} /> */}
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-sm font-medium">Video</label> 
-                            <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleVideoFileChange} name="file" type={videoTypes} />
+                            <input type="file" name="video" required onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
+                            {/* <FileUploader dropMessageStyle={{color:'black', border:"#000", fill:"#000", background:"black"}} multiple={false} handleChange={handleVideoFileChange} name="file" type={videoTypes} /> */}
                         </div>
                     </div> : null
                     }
                 <div className="flex flex-row justify-between w-full">
-                    <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md hover:text-custom-brown cursor-pointer"> 
+                    <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
                         {view === 1 ? "Cancel" : "Back"}
                     </button>
-                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md hover:text-custom-brown bg-[#1D4ED8] cursor-pointer"> 
+                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"> 
                         {view === 1 ? "Continue" : "Submit"}
                     </button>
                 </div>

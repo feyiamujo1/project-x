@@ -34,19 +34,19 @@ const DashboardHoldings = () => {
   return (
     <div className='w-full h-full bg-white rounded-xl shadow-md py-6'>
       {openNewProductDialog && <CreateNewHolding openNewProductDialog={openNewProductDialog} setOpenNewProductDialog={setOpenNewProductDialog} selectedHoldings={selectedHoldings} setSelectedHoldings={setSelectedHoldings} />}
-      <div className='px-6 pt-0 mb-6 flex flex-col'>
-        <div className='flex flex-row justify-between items-center'>
+      <div className='px-4 pt-0 mb-6 flex flex-col'>
+        <div className='sm:flex sm:gap-0 sm:flex-row justify-between sm:items-center'>
           <div>
             <h3 className='font-semibold text-lg'>
               Holdings
             </h3>
             <p className='font-normal text-sm text-custom-ash mb-4'>Inventory of all holdings</p>
           </div>
-          <div>
-          <p onClick={()=>{setOpenNewProductDialog(true)}} className='py-2.5 px-3 flex flex-row gap-1 items-center bg-[#1D4ED8] text-sm text-white rounded-md hover:text-custom-brown cursor-pointer'><BsPlusLg className='font-semibold' /> Add Holdings</p>
+          <div className='w-full sm:w-fit'>
+            <p onClick={()=>{setOpenNewProductDialog(true)}} className='w-fit py-3 md:py-2.5 px-3 flex flex-row gap-1 items-center bg-[#1D4ED8] text-sm text-white rounded-md md:hover:bg-custom-brown active:bg-custom-brown cursor-pointer'><BsPlusLg className='font-semibold' /> Add Holdings</p>
           </div>
         </div>
-        <p className='text-sm font-semibold mx-auto md:ml-0 mb-2'>Search</p>
+        <p className='text-sm font-semibold mx-auto md:ml-0 mt-3 mb-2 md:mt-0'>Search</p>
         <form 
             onSubmit={handleSubmit}
             className='grid gap-2 sm:grid-cols-3 sm:gap-3 sm:mx-auto md:ml-0 md:grid-cols-4 max-w-[700px]'>
@@ -81,19 +81,19 @@ const DashboardHoldings = () => {
                     )
                 }
             </select>
-            <button type='submit' className='bg-[#1D4ED8] text-white sm:col-start-2 md:col-auto rounded-md text-sm py-2 px-4 space-y-2'>
+            <button type='submit' className='bg-[#1D4ED8] text-white sm:col-start-2 md:col-auto rounded-md text-sm py-3 md:py-2 px-4 space-y-2 md:hover:bg-custom-brown active:bg-custom-brown'>
                 Filter
             </button>
         </form>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-x-scroll md:overflow-x-hidden">
                 <div className="">
                     <div className="pb-4 inline-block min-w-full">
                         <div className="overflow-hidden">
                             <table className="min-w-full text-left">
                                 <thead className="border-b bg-[#152a3b] text-black">
                                     <tr>
-                                    <th className="text-sm text-center font-medium text-white px-1 py-4">
+                                    <th className="text-sm text-center font-medium text-white px-4 md:px-2">
                                         ID
                                     </th>
                                     <th className="text-sm font-medium text-white px-2 py-4">
@@ -102,10 +102,10 @@ const DashboardHoldings = () => {
                                     <th className="text-sm font-medium text-white px-2 py-4">
                                         location
                                     </th>
-                                    <th className="text-sm font-medium text-white px-1 py-4">
+                                    <th className="text-sm font-medium text-white px-2 py-4">
                                         Size
                                     </th>
-                                    <th className="text-sm font-medium text-white px-1 py-4">
+                                    <th className="text-sm font-medium text-white md:px-2 px-4 py-4">
                                         Status
                                     </th>
                                     <th className="text-sm font-medium text-white py-4">
@@ -115,51 +115,51 @@ const DashboardHoldings = () => {
                                 </thead>
                                 <tbody>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">1</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">1</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Gantry
                                     </td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Ajah, Lagos
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         12Mx12M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-green w-2 h-2 rounded-full'> </p> Available
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm  px-4 md:pr-6 whitespace-nowrap text-center ">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">2</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">2</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Billboard
                                     </td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Ife, Osun
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         16Mx16M
                                     </td>
-                                    <td className="text-sm text-black py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-green w-2 h-2 rounded-full'> </p> Available
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm  px-4 md:pr-6 whitespace-nowrap text-center">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">3</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">3</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Fence Drape
                                     </td>
@@ -169,19 +169,19 @@ const DashboardHoldings = () => {
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         10Mx10M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-red w-2 h-2 rounded-full'> </p> Deployed
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm  px-4 md:pr-6 whitespace-nowrap text-center ">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">4</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">4</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Murals
                                     </td>
@@ -191,19 +191,19 @@ const DashboardHoldings = () => {
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         12Mx12M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-green w-2 h-2 rounded-full'> </p> Available
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm  px-4 md:pr-6 whitespace-nowrap text-center ">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">5</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">5</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Lampost
                                     </td>
@@ -213,19 +213,19 @@ const DashboardHoldings = () => {
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         8Mx8M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-red w-2 h-2 rounded-full'> </p> Deployed
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm px-4 md:pr-6 whitespace-nowrap text-center">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">6</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">6</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Bridge Panels
                                     </td>
@@ -235,19 +235,19 @@ const DashboardHoldings = () => {
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         18Mx12M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-green w-2 h-2 rounded-full'> </p> Available
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm px-4 md:pr-6 whitespace-nowrap text-center ">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">7</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">7</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         LED
                                     </td>
@@ -257,19 +257,19 @@ const DashboardHoldings = () => {
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         12Mx12M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-red w-2 h-2 rounded-full'> </p> Deployed
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm px-4 md:pr-6 whitespace-nowrap text-center">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">8</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">8</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Gantry
                                     </td>
@@ -279,19 +279,19 @@ const DashboardHoldings = () => {
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         12Mx12M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-red w-2 h-2 rounded-full'> </p> Deployed
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm px-4 md:pr-6 whitespace-nowrap text-center ">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">9</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">9</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Bus Shelter
                                     </td>
@@ -301,35 +301,35 @@ const DashboardHoldings = () => {
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         12Mx12M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black md:px-2 px-4 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-green w-2 h-2 rounded-full'> </p> Available
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm px-4 md:pr-6 whitespace-nowrap text-center">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">10</td>
+                                    <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center px-4 md:px-2">10</td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Wallwrap
                                     </td>
                                     <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
                                         Ajah, Lagos
                                     </td>
-                                    <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black px-2 py-4 whitespace-nowrap">
                                         12Mx12M
                                     </td>
-                                    <td className="text-sm text-black  px-1 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-black px-4 md:px-2 py-4 whitespace-nowrap">
                                       <div className='flex flex-row items-center w-fit gap-2'>
                                         <p className='bg-notification-red w-2 h-2 rounded-full'> </p> Deployed
                                       </div>
                                     </td>
-                                    <td className="text-sm text-[#1D4DE8]  py-4 whitespace-nowrap text-center cursor-pointer hover:text-custom-ash">
-                                      <Link to='/dashboard/holdings/holdings-details'>
+                                    <td className="text-sm  px-4 md:pr-6 whitespace-nowrap text-center ">
+                                      <Link to='/dashboard/holdings/holdings-details' className='text-[#1D4DE8] hover:text-custom-ash cursor-pointer'>
                                         View Details
                                       </Link>
                                     </td>
@@ -343,8 +343,8 @@ const DashboardHoldings = () => {
       <div>
         <p className='text-custom-brown text-sm text-center font-medium'>Showing <span className='text-black'>1-20</span> of <span className='text-black'>60</span></p>
         <div className='py-3 px-5 flex flex-row justify-between text-sm'>
-          <p className='flex flex-row gap-1 items-center py-2 px-3 rounded-md bg-[#1D4ED8] text-white cursor-pointer hover:text-custom-brown'><IoIosArrowBack /> Previous</p>
-          <p className='flex flex-row gap-1 items-center py-2 px-5 rounded-md bg-[#1D4ED8] text-white cursor-pointer hover:text-custom-brown'>Next <IoIosArrowForward /></p>
+          <p className='flex flex-row gap-1 items-center py-2 px-3 rounded-md bg-[#1D4ED8] md:hover:bg-custom-brown active:bg-custom-brown text-white cursor-pointer'><IoIosArrowBack /> Previous</p>
+          <p className='flex flex-row gap-1 items-center py-2 px-5 rounded-md bg-[#1D4ED8] md:hover:bg-custom-brown active:bg-custom-brown text-white cursor-pointer'>Next <IoIosArrowForward /></p>
         </div>
       </div>
     </div>

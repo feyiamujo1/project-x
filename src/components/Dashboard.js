@@ -59,11 +59,11 @@ const Dashboard = () => {
           </div>
           <img className='w-16 hidden md:block cursor-pointer mx-auto' src={Logo} alt="" />
         </div>
-        <div onClick={()=>{setShowDropDown(true)}} className='relative rounded-full flex flex-row gap-2 items-center group border border-white cursor-pointer'>
+        <div onClick={()=>{setShowDropDown(!showDropDown)}} className='relative rounded-full flex flex-row gap-2 items-center group border border-white cursor-pointer'>
           <p className='font-semibold text-lg group-active:text-custom-brown md:group-hover:text-custom-brown'>Hi, Abiola</p>
-          <img src={ProfileImage} alt="" className='w-10 h-10 rounded-full object-cover cursor-pointer active:group-hover:border-2 active:group-hover:border-custom-blue-dark md:group-hover:brightness-50 group-active:brightness-50' />
+          <img src={ProfileImage} alt="" className='w-10 h-10 rounded-full object-cover cursor-pointer md:group-hover:brightness-50 group-active:brightness-50' />
             { showDropDown && 
-              <div className='absolute w-[260px] md:w-[190px] top-[40px] -right-4 bg-white rounded-md shadow box-border hidden group-hover:block'>
+              <div className={'absolute w-[260px] top-[40px] right-0 bg-white rounded-md shadow box-border hidden group-hover:block md:block md:group-hover:block'}>
                 <div className='p-3 border-b box-border text-base'>
                   <p className='w-full break-words font-medium '>Abiola Adeyeye</p>
                   <p className='break-words text-sm'>abiolaadeyeye@eyekontact.com</p>

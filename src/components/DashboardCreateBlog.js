@@ -54,27 +54,14 @@ const DashboardCreateBlog = () => {
     //     }
     // }
 
-    const [firstImage, setFirstImage] = useState(null);
-    const handleFileChange = (file) => {
-        setFirstImage(file);
-        console.log("First", firstImage);
+    const [blogImages, setBlogImages] = useState({});
+    const handleFileChange = (e) => {
+        setBlogImages({
+            ...blogImages, [e.target.name] : e.target.files[0]
+        });
+        console.log("Images", blogImages);
     };
 
-    const [secondImage, setSecondImage] = useState(null);
-    const handleSecondFileChange = (file) => {
-        setSecondImage(file);
-        console.log("Second", secondImage);
-    };
-    const [thirdImage, setThirdImage] = useState(null);
-    const handleThirdFileChange = (file) => {
-        setThirdImage(file);
-        console.log("Third", thirdImage);
-    };
-    const [fourthImage, setfourthImage] = useState(null);
-    const handleFourthFileChange = (file) => {
-        setfourthImage(file);
-        console.log("Third", fourthImage);
-    };
   return (
     <div className='w-full h-full bg-white rounded-xl shadow-md py-6'>
         <div className='px-6 pb-6 flex flex-row justify-between border-b '>
@@ -85,7 +72,7 @@ const DashboardCreateBlog = () => {
             <p className='font-normal text-sm text-custom-ash'>Fill blog content below</p>
             </div>
             {/* <div>
-                <p className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Submit?</p>
+                <p className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Submit?</p>
             </div> */}
         </div>
         <div className=' p-6 box-border w-full flex flex-col gap-4 justify-center items-center select-none'>
@@ -105,7 +92,8 @@ const DashboardCreateBlog = () => {
                         <div className='w-full md:w-1/2 space-y-5'>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">First Image</label> 
-                                <FileUploader  multiple={false} handleChange={handleFileChange} name="file" type={imageTypes} required/>
+                                <input type="file" name="firstImage" onChange={handleFileChange} required className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
+                                {/* <FileUploader dropMessageStyle={{color: 'red'}}  multiple={false} handleChange={handleFileChange} name="file" type={imageTypes} required/> */}
                             </div>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Image Description</label>
@@ -115,11 +103,12 @@ const DashboardCreateBlog = () => {
                         <div className='w-full md:w-1/2 space-y-5'>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Second Image</label> 
-                                <FileUploader  multiple={false} handleChange={handleSecondFileChange} name="file" type={imageTypes} />
+                                <input type="file" name="secondImage" required onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
+                                {/* <FileUploader  multiple={false} handleChange={handleSecondFileChange} name="file" type={imageTypes} /> */}
                             </div>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Image Description</label>
-                                <input type="text" name="secondImageDescription" className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm"  onChange={handleChange} value={blogInfo.secondImageDescription} />
+                                <input type="text" name="secondImageDescription" required className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm"  onChange={handleChange} value={blogInfo.secondImageDescription} />
                             </div>
                         </div>
                     </div>
@@ -136,7 +125,8 @@ const DashboardCreateBlog = () => {
                         <div className='w-full md:w-1/2 space-y-5'>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Third Image</label> 
-                                <FileUploader  multiple={false} handleChange={handleThirdFileChange} name="file" type={imageTypes} />
+                                <input type="file" name="thirdImage" onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
+                                {/* <FileUploader  multiple={false} handleChange={handleThirdFileChange} name="file" type={imageTypes} /> */}
                             </div>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Image Description</label>
@@ -146,7 +136,8 @@ const DashboardCreateBlog = () => {
                         <div className='w-full md:w-1/2 space-y-5'>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Fourth Image</label> 
-                                <FileUploader  multiple={false} handleChange={handleFourthFileChange} name="file" type={imageTypes} />
+                                <input type="file" name="fourthImage" onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
+                                {/* <FileUploader  multiple={false} handleChange={handleFourthFileChange} name="file" type={imageTypes} /> */}
                             </div>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Image Description</label>
@@ -156,10 +147,10 @@ const DashboardCreateBlog = () => {
                     </div>
                 </div> 
                 <div className="flex flex-row justify-end w-full">
-                    {/* <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md hover:text-custom-brown cursor-pointer"> 
+                    {/* <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
                         {view === 1 ? "Cancel" : "Back"}
                     </button> */}
-                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md hover:text-custom-brown bg-[#1D4ED8] cursor-pointer"> 
+                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"> 
                         Submit
                     </button>
                 </div>

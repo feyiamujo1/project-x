@@ -27,7 +27,7 @@ const DasboardBlogDetails = () => {
             </div>
             <div>
                 <Link to="/dashboard/blog/create-blog/1">
-                    <p className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Edit Post</p>
+                    <p className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Edit Post</p>
                 </Link>
             </div>
         </div>

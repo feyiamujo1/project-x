@@ -42,7 +42,7 @@ const ProfileModal = ({ setShowProfileModal }) => {
                     <input type="text" name="role" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={userInfo.role} onChange={handleChange} readOnly={!editable ? true : false} />
                 </div>
                 <div className="flex flex-row justify-end w-full">
-                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md hover:text-custom-brown bg-[#1D4ED8] cursor-pointer"> 
+                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"> 
                         {editable ? 'Submit' : 'Done'}
                     </button>
                 </div>

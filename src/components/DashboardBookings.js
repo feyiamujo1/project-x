@@ -11,7 +11,7 @@ const DashboardBookings = () => {
         </h3>
         <p className='font-normal text-sm text-custom-ash'>All holdings bookings</p>
       </div>
-      <div className="flex flex-col overflow-x-scroll">
+      <div className="flex flex-col overflow-x-scroll md:overflow-x-hidden">
                 <div className="">
                     <div className="pb-4 inline-block min-w-full">
                         <div className="overflow-hidden">
@@ -248,8 +248,8 @@ const DashboardBookings = () => {
       <div>
         <p className='text-custom-brown text-sm text-center font-medium'>Showing <span className='text-black'>1-20</span> of <span className='text-black'>60</span></p>
         <div className='py-3 px-5 flex flex-row justify-between text-sm'>
-          <p className='flex flex-row gap-1 items-center py-2 px-3 rounded-md bg-[#1D4ED8] text-white cursor-pointer hover:text-custom-brown'><IoIosArrowBack /> Previous</p>
-          <p className='flex flex-row gap-1 items-center py-2 px-5 rounded-md bg-[#1D4ED8] text-white cursor-pointer hover:text-custom-brown'>Next <IoIosArrowForward /></p>
+          <p className='flex flex-row gap-1 items-center py-2 px-3 rounded-md bg-[#1D4ED8] md:hover:bg-custom-brown active:bg-custom-brown text-white cursor-pointer'><IoIosArrowBack /> Previous</p>
+          <p className='flex flex-row gap-1 items-center py-2 px-5 rounded-md bg-[#1D4ED8] md:hover:bg-custom-brown active:bg-custom-brown text-white cursor-pointer'>Next <IoIosArrowForward /></p>
         </div>
       </div>
     </div>

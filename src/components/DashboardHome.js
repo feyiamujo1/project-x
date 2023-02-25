@@ -185,7 +185,7 @@ const DashboardHome = () => {
                     <p className='text-[#1D4DE8] font-medium cursor-pointer font-Poppins hover:text-custom-ash'><Link to='/dashboard/bookings'>View all</Link></p>
                 </div>
             </div>
-            <div className="flex flex-col overflow-x-scroll">
+            <div className="flex flex-col overflow-x-scroll md:overflow-x-hidden">
                 <div className="">
                     <div className="pb-4 inline-block min-w-full">
                         <div className="overflow-hidden">

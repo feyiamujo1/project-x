@@ -79,7 +79,7 @@ const HoldingsDetails = () => {
             <p className='font-normal text-sm text-custom-ash'>Details</p>
             </div>
             <div>
-                <p onClick={()=>{setOpenNewProductDialog(true)}} className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Edit Gantry</p>
+                <p onClick={()=>{setOpenNewProductDialog(true)}} className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Edit Gantry</p>
             </div>
         </div>
         <div className='space-y-6'>
@@ -131,11 +131,11 @@ const HoldingsDetails = () => {
                 <p className='font-normal text-sm text-custom-ash'>Notify this customers on important information</p>
             </div>
             <div className='flex flex-col gap-4 sm:flex-row sm:gap-2 '>
-                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='w-[180px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
-                <p onClick={()=>{setOpenBroadcastDialog(true)}} className=' w-[180px] md:w-[175px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Create Broadcast</p>
+                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='w-[180px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
+                <p onClick={()=>{setOpenBroadcastDialog(true)}} className=' w-[180px] md:w-[175px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Create Broadcast</p>
             </div>
         </div>
-        <div className="flex flex-col overflow-x-scroll">
+        <div className="flex flex-col overflow-x-scroll md:overflow-hidden">
         <div className=""> 
           <div className="pb-4 inline-block min-w-full">
               <div className="overflow-hidden">
@@ -176,8 +176,8 @@ const HoldingsDetails = () => {
                               </td>
                               <td className="text-sm text-[#1D4DE8] px-6 md:pr-6 h-full my-auto py-4 whitespace-nowrap text-center ">
                                 <div className='flex flex-row gap-2 items-center justify-end'>
-                                  <p onClick={()=>{setOpenNewCustomerDialog(true); setSelectedCustomer(teamMember.id)}} className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-base'/> Edit</p>
-                                  <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-base'/> Delete</p>
+                                  <p onClick={()=>{setOpenNewCustomerDialog(true); setSelectedCustomer(teamMember.id)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-base'/> Edit</p>
+                                  <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-base'/> Delete</p>
                                 </div>
                               </td>
                             </tr>

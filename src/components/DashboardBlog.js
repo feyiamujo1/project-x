@@ -27,11 +27,11 @@ const DashboardBlog = () => {
         </div>
         <div>
           <Link to='/dashboard/blog/create-blog/0'>
-            <p className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md hover:text-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Create Post</p>
+            <p className='py-2.5 px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Create Post</p>
           </Link>
         </div>
       </div>
-      <div className="flex flex-col overflow-x-scroll">
+      <div className="flex flex-col overflow-x-scroll md:overflow-hidden">
         <div className=""> 
           <div className="pb-4 inline-block min-w-full">
               <div className="">
@@ -70,8 +70,8 @@ const DashboardBlog = () => {
                           </td>
                           <td className="text-sm text-[#1D4DE8] pr-4 h-full my-auto py-4 whitespace-nowrap text-center ">
                             <div className='flex flex-row gap-2 items-center w-fit mx-auto'>
-                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
-                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
+                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
+                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                             </div>
                           </td>
                         </tr>
@@ -92,8 +92,8 @@ const DashboardBlog = () => {
                           </td>
                           <td className="text-sm text-[#1D4DE8] pr-4 h-full my-auto py-4 whitespace-nowrap text-center ">
                             <div className='flex flex-row gap-2 items-center w-fit mx-auto'>
-                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
-                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
+                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
+                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                             </div>
                           </td>
                         </tr>
@@ -114,8 +114,8 @@ const DashboardBlog = () => {
                           </td>
                           <td className="text-sm text-[#1D4DE8] pr-4 h-full my-auto py-4 whitespace-nowrap text-center ">
                             <div className='flex flex-row gap-2 items-center w-fit mx-auto'>
-                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
-                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
+                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
+                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                             </div>
                           </td>
                         </tr>
@@ -136,8 +136,8 @@ const DashboardBlog = () => {
                           </td>
                           <td className="text-sm text-[#1D4DE8] pr-4 h-full my-auto py-4 whitespace-nowrap text-center ">
                             <div className='flex flex-row gap-2 items-center w-fit mx-auto'>
-                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
-                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
+                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
+                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                             </div>
                           </td>
                         </tr>
@@ -158,8 +158,8 @@ const DashboardBlog = () => {
                           </td>
                           <td className="text-sm text-[#1D4DE8] pr-4 h-full my-auto py-4 whitespace-nowrap text-center ">
                             <div className='flex flex-row gap-2 items-center w-fit mx-auto'>
-                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
-                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
+                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
+                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                             </div>
                           </td>
                         </tr>
@@ -180,8 +180,8 @@ const DashboardBlog = () => {
                           </td>
                           <td className="text-sm text-[#1D4DE8] pr-4 h-full my-auto py-4 whitespace-nowrap text-center ">
                             <div className='flex flex-row gap-2 items-center w-fit mx-auto'>
-                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer hover:text-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
-                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer hover:text-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
+                              <Link className='w-fit h-fit' to='/dashboard/blog/blog-details'><p className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p></Link>
+                              <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-ash p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                             </div>
                           </td>
                         </tr>
