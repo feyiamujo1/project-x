@@ -28,6 +28,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
 
         }
     }
+    
 
     const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
     const NOW_IN_MS = new Date().getTime();
@@ -94,7 +95,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                             <div className="w-1/2 flex flex-col gap-2 box-border">
                                 <label className="text-sm font-medium">Category</label>
                                 {/* <input type="text" name="fullname" className="border p-3 box-border rounded-md"  onChange={handleChange} /> */}
-                                <select className='border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 box-border p-3 space-y-2' name="category" id='category' onChange={handleChange} value={holdingInfo.category} required>
+                                <select className='bg-transparent border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 box-border p-3 space-y-2' name="category" id='category' onChange={handleChange} value={holdingInfo.category} required>
                                     <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="">-Select Outlet-</option>
                                     <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Gantry">Gantry</option>
                                     <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="Unipoles">Unipoles</option>
@@ -110,7 +111,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                             <div className="w-1/2 flex flex-col gap-2 box-border">
                                 <label className="text-sm font-medium">State</label>
                                 {/* <input type="text" name="location" className="border p-3 box-border rounded-md" value={holdingInfo.state} onChange={handleChange} /> */}
-                                <select className='border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 box-border p-3 space-y-2' name="state" id='state' onChange={handleChange} value={holdingInfo.state}>
+                                <select className='bg-transparent border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 box-border p-3 space-y-2' name="state" id='state' onChange={handleChange} value={holdingInfo.state}>
                                     <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="">-Select State-</option>
                                     {
                                         states.map((state, index) =>(
@@ -124,7 +125,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                             <div className="w-1/2 flex flex-col gap-2">
                                 <label className="text-sm font-medium">LGA</label>
                                 {/* <input type="text" name="fullname" className="border p-3 box-border rounded-md" value={holdingInfo.lga} onChange={handleChange} /> */}
-                                <select className='border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 p-3 space-y-2 w-full box-border' name="lga" id='lga' onChange={handleChange} value={holdingInfo.lga}>
+                                <select className='bg-transparent border cursor-pointer  border-custom-brown focus:border-[#152a3b] rounded-md text-sm h-12 p-3 space-y-2 w-full box-border' name="lga" id='lga' onChange={handleChange} value={holdingInfo.lga} required>
                                     <option className='hover:bg-custom-blue bg-white hover:text-white cursor-pointer' value="">-Select Area-</option>    
                                     {
                                         lgas?.map((lga, index) =>(
@@ -139,10 +140,14 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                                 <input type="text" name="location" className="w-full border p-3 h-12 box-border rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.size} onChange={handleChange} />
                             </div>
                         </div>
-                        <div className=" w-full flex flex-col gap-2 box-border">
+                        <div className='flex flex-col gap-1 box-border'>
+                            <label className='text-custom-brown border-box text-base' htmlFor='dob'>Expiration Date</label>
+                            <input className='border border-custom-brown hover:border-custom-blue outline-none rounded text-base p-2 h-12 bg-transparent cursor-pointer' type='date' name='date' id='date' onChange={handleChange} value={holdingInfo.date} required/>
+                        </div>
+                        {/* <div className=" w-full flex flex-col gap-2 box-border">
                             <label className="text-sm font-medium">Expiration Date</label>
                             <input type="date" name="date" className="min-w-[130px] box-border border p-3 h-12 rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.date} onChange={handleChange} />
-                        </div>
+                        </div> */}
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-sm font-medium">Description</label>
                             <textarea className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" name='description' rows={4} value={holdingInfo.description} onChange={handleChange} required >
