@@ -140,8 +140,8 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                                 <input type="text" name="location" className="w-full border p-3 h-12 box-border rounded-md border-custom-brown focus:border-[#152a3b] text-sm" value={holdingInfo.size} onChange={handleChange} />
                             </div>
                         </div>
-                        <div className='flex flex-col gap-1 box-border'>
-                            <label className='text-custom-brown border-box text-base' htmlFor='dob'>Expiration Date</label>
+                        <div className='flex flex-col gap-2 box-border'>
+                            <label className='text-sm font-medium' htmlFor='date'>Expiration Date</label>
                             <input className='border border-custom-brown hover:border-custom-blue outline-none rounded text-base p-2 h-12 bg-transparent cursor-pointer' type='date' name='date' id='date' onChange={handleChange} value={holdingInfo.date} required/>
                         </div>
                         {/* <div className=" w-full flex flex-col gap-2 box-border">
