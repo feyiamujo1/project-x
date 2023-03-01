@@ -123,7 +123,6 @@ const DashboardCreateBlog = () => {
                         Remove Last
                     </button> : null
                 }
-                
                 <button type='button' onClick={()=>{setBlogSections(blogSections+1)}} className="py-3 px-4 w-fit font-medium text-base rounded-md bg-[#1D4ED8] text-white active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
                     Add more
                 </button>

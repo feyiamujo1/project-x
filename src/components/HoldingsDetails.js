@@ -29,6 +29,7 @@ const HoldingsDetails = () => {
     const [openBroadcastDialogue, setOpenBroadcastDialog] = useState(false);
     const [selectedCustomer, setSelectedCustomer] = useState(null);
     const [open, setOpen] = useState(false);
+    const [broadcastRecipient, setBroadcastRecipient] = useState(0);
 
     const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
     const NOW_IN_MS = new Date().getTime();
@@ -68,7 +69,7 @@ const HoldingsDetails = () => {
   return (
     <div className='w-full h-full bg-white rounded-xl shadow-md py-6'>
         {open && <DialogBox setOpen={setOpen} open={open}/>}
-        {openBroadcastDialogue && <BroadcastMessageDialog setOpenBroadcastDialog={setOpenBroadcastDialog}/>}
+        {openBroadcastDialogue && <BroadcastMessageDialog setOpenBroadcastDialog={setOpenBroadcastDialog} broadcastRecipient={broadcastRecipient} setBroadcastRecipient={setBroadcastRecipient}/>}
         {openNewCustomerDialog && <NewCustomerDialog setOpenNewCustomerDialog={setOpenNewCustomerDialog} openNewCustomerDialog={NewCustomerDialog} setSelectedCustomer={setSelectedCustomer} selectedCustomer={selectedCustomer}/>}
         {openNewProductDialog && <CreateNewHolding  openNewProductDialog={openNewProductDialog} setOpenNewProductDialog={setOpenNewProductDialog} selectedHoldings={selectedHoldings} setSelectedHoldings={setSelectedHoldings}/>}
         <div className='px-6 pb-6 flex flex-row justify-between border-b '>
@@ -131,8 +132,8 @@ const HoldingsDetails = () => {
                 <p className='font-normal text-sm text-custom-ash'>Notify this customers on important information</p>
             </div>
             <div className='flex flex-col gap-4 sm:flex-row sm:gap-2 '>
-                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='w-[180px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
-                <p onClick={()=>{setOpenBroadcastDialog(true)}} className=' w-[180px] md:w-[175px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Create Broadcast</p>
+                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='w-[180px] md:w-fit box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
+                <p onClick={()=>{setOpenBroadcastDialog(true); setBroadcastRecipient(TeamMembers.length)}} className=' w-[180px] md:w-[175px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Create Broadcast</p>
             </div>
         </div>
         <div className="flex flex-col overflow-x-scroll md:overflow-hidden">
@@ -176,6 +177,11 @@ const HoldingsDetails = () => {
                               </td>
                               <td className="text-sm text-[#1D4DE8] px-6 md:pr-6 h-full my-auto py-4 whitespace-nowrap text-center ">
                                 <div className='flex flex-row gap-2 items-center justify-end'>
+                                {
+                                    teamMember.id === 0 ? 
+                                        <p onClick={()=>{setOpenBroadcastDialog(true); setBroadcastRecipient(1)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><TiMessages className='text-base'/> Message</p>
+                                    : null
+                                }
                                   <p onClick={()=>{setOpenNewCustomerDialog(true); setSelectedCustomer(teamMember.id)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-base'/> Edit</p>
                                   <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-base'/> Delete</p>
                                 </div>

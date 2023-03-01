@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const BroadcastMessageDialog = ({setOpenBroadcastDialog}) => {
+const BroadcastMessageDialog = ({setOpenBroadcastDialog, broadcastRecipient, setBroadcastRecipient}) => {
   const [message, setMessage] = useState("");
 
   const handleChange = (e) =>{
@@ -19,7 +19,10 @@ const handleSubmit = (e) => {
   return (
     <div className='h-screen w-full fixed left-0 right-0 top-0 bottom-0 bg-slate-300/30 flex justify-center items-center z-[100]'>
       <div className='bg-white py-5 w-[92%] sm:w-[500px] md:w-[550px] rounded-md shadow-xl space-y-4'>
-        <p className='text-black px-5 font-semibold border-b-2 border-b-brown pb-4 text-lg flex flex-row justify-between items-center'>Notification Message</p>
+        <div className='px-5 font-semibold font-semibold border-b-2 border-b-brown pb-4'>
+          <p className='text-black  text-lg flex flex-row justify-between items-center'>Notification Message</p>
+          <p className='text-custom-brown text-sm '>Recipients: {broadcastRecipient} </p>
+        </div>
         <form onSubmit={handleSubmit} className="px-6 py-4 space-y-5 box-border">
           <div className="w-full flex flex-col gap-2">
             <label className="text-sm font-medium">Message</label>
