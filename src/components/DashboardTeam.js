@@ -6,7 +6,7 @@ import OfficeAssistantImage from '../../src/assets/images/daniel.png'
 import InnovationManagerImage from '../../src/assets/images/enare.png'
 import JohnDoeImage from '../../src/assets/images/john.png'
 import { BsPlusLg } from 'react-icons/bs'
-import { MdOutlineVisibility } from 'react-icons/md'
+import { BiEdit } from 'react-icons/bi'
 import { RiDeleteBinLine } from 'react-icons/ri'
 import DialogBox from './UI/DialogBox'
 import { useEffect, useState } from 'react'
@@ -85,7 +85,7 @@ const DashboardTeam = () => {
                               </td>
                               <td className="text-sm text-[#1D4DE8] px-6 md:pr-6 h-full my-auto py-4 whitespace-nowrap text-center ">
                                 <div className='flex flex-row gap-2 items-center justify-end'>
-                                  <p onClick={()=>{setOpenNewUser(true); setSelectedStaff(teamMember.id)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><MdOutlineVisibility className='text-lg'/> View</p>
+                                  <p onClick={()=>{setOpenNewUser(true); setSelectedStaff(teamMember.id)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-lg'/> Edit</p>
                                   <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-lg'/> Delete</p>
                                 </div>
                               </td>

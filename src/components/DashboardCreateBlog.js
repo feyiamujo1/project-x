@@ -8,8 +8,7 @@ import BlogImage3 from '../../src/assets/images/blogimage3.png'
 import BlogImage4 from '../../src/assets/images/blogimage4.png'
 
 const DashboardCreateBlog = () => {
-    // const [view, setView] = useState(1);
-    const imageTypes = ["JPEG", "PNG", "GIF"];
+    const [blogSections, setBlogSections] = useState(1);
     const [blogInfo, setBlogInfo] = useState({});
 
     let {blog_id} = useParams();
@@ -77,7 +76,9 @@ const DashboardCreateBlog = () => {
         </div>
         <div className=' p-6 box-border w-full flex flex-col gap-4 justify-center items-center select-none'>
             <form onSubmit={handleSubmit} className="w-full pb-4 space-y-5 box-border">
-                <div className="space-y-5 box-border">
+            {
+              Array.apply(null, {length: blogSections}).map((e, i)=>(
+                <div key={i} className="space-y-5 box-border">
                     <div className="w-full flex flex-col gap-2">
                         <label className="text-sm font-medium">Topic</label>
                         <input type="text" name="topic" className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm"  onChange={handleChange} value={blogInfo.topic} required/>
@@ -113,8 +114,21 @@ const DashboardCreateBlog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="space-y-5 box-border">
-                    {/* <p className='font-semibold'>Section 2</p> */}
+              ))
+            }
+            <div className='flex flex-end w-full gap-6'>
+                {
+                    blogSections>1 ? 
+                    <button type='button' onClick={()=>{setBlogSections(blogSections-1)}} className="py-3 px-4 w-fit font-medium text-base rounded-md bg-[#E02424] text-white active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
+                        Remove Last
+                    </button> : null
+                }
+                
+                <button type='button' onClick={()=>{setBlogSections(blogSections+1)}} className="py-3 px-4 w-fit font-medium text-base rounded-md bg-[#1D4ED8] text-white active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
+                    Add more
+                </button>
+            </div>
+                {/* <div className="space-y-5 box-border">
                     <div className="w-full flex flex-col gap-2">
                         <label className="text-sm font-medium">Description</label>
                         <textarea className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" name='secondcontent' rows={6} value={blogInfo.secondcontent} onChange={handleChange} >
@@ -126,7 +140,6 @@ const DashboardCreateBlog = () => {
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Third Image</label> 
                                 <input type="file" name="thirdImage" onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
-                                {/* <FileUploader  multiple={false} handleChange={handleThirdFileChange} name="file" type={imageTypes} /> */}
                             </div>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Image Description</label>
@@ -137,7 +150,6 @@ const DashboardCreateBlog = () => {
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Fourth Image</label> 
                                 <input type="file" name="fourthImage" onChange={handleFileChange} className="border w-full rounded-md p-3 outline-none border-custom-brown focus:border-[#152a3b] text-sm" />
-                                {/* <FileUploader  multiple={false} handleChange={handleFourthFileChange} name="file" type={imageTypes} /> */}
                             </div>
                             <div className="w-full flex flex-col gap-2">
                                 <label className="text-sm font-medium">Image Description</label>
@@ -145,10 +157,10 @@ const DashboardCreateBlog = () => {
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>  */}
                 <div className="flex flex-row justify-end w-full">
-                    {/* <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
-                        {view === 1 ? "Cancel" : "Back"}
+                    {/* <button type='button' onClick={()=>{setBlogSections(blogSections+1)}} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
+                        Add more
                     </button> */}
                     <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"> 
                         Submit

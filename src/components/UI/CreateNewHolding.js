@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { FileUploader } from 'react-drag-drop-files';
 import { StateLga } from '../../../src/components/data/StateLga';
 
 
 const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, selectedHoldings, setSelectedHoldings}) => {
-
-    const imageTypes = ["JPEG", "PNG", "GIF"];
-    const videoTypes = ["MP4", "AVI", "MOV", "MKV"];
 
     const [holdingInfo, setHoldingInfo] = useState({});
     const states = Object.keys(StateLga);
@@ -34,7 +30,6 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
     const NOW_IN_MS = new Date().getTime();
 
     const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-    console.log(dateTimeAfterThreeDays);
 
     // const HoldingsDetails = {category: "Gantry", state: "Lagos", lga:"Ajah", size:"16Mx16M", time: dateTimeAfterThreeDays};
     let description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
@@ -54,12 +49,15 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
     const handleClose = () =>{
         if (view === 1) {
             setOpenNewProductDialog(false);
-        }else if (view === 2){
+        }
+        if (view === 2){
             setView(1);
-        }else{
-
         }
     }
+    // useEffect(() => {
+    //     console.log(view);
+    // }, [view])
+    
 
     const [firstImage, setFirstImage] = useState(null);
     const handleFileChange = (file) => {
@@ -82,6 +80,8 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
         setVideo(file);
         console.log("Video", video);
     };
+
+    
 
   return (
     <div className='h-screen w-full fixed left-0 right-0 top-0 bottom-0 bg-slate-300/30 flex justify-center items-center z-[100]'>
@@ -179,7 +179,7 @@ const CreateNewHolding = ({openNewProductDialog, setOpenNewProductDialog, select
                     </div> : null
                     }
                 <div className="flex flex-row justify-between w-full">
-                    <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
+                    <button onClick={handleClose} type="button" className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
                         {view === 1 ? "Cancel" : "Back"}
                     </button>
                     <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"> 

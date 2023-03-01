@@ -66,26 +66,26 @@ const AddTeamMember = ({openNewUser, setOpenNewUser, selectedStaff, setSelectedS
   return (
     <div className='h-screen w-full fixed left-0 right-0 top-0 bottom-0 bg-slate-300/30 flex justify-center items-center z-[100]'>
         <div className='bg-white py-5 w-[92%] sm:w-[500px] md:w-[550px] rounded-md shadow-xl space-y-4'>
-            <p className='text-black px-5 font-semibold border-b-2 border-b-brown pb-4 text-lg flex flex-row justify-between items-center'><span>{selectedStaff >= 0 && selectedStaff != null ? "Staff Details" : "Add Staff"}</span> <span onClick={()=>{setEditable(prevState => (!prevState))}} className={selectedStaff >= 0 && selectedStaff != null ? editable ? "flex flex-row items-center gap-1 text-notification-red cursor-pointer" : "flex flex-row items-center gap-1 cursor-pointer" : "hidden"}><FaRegEdit className="font-semibold text-xl -mt-1 " />Edit</span> </p>
+            <p className='text-black px-5 font-semibold border-b-2 border-b-brown pb-4 text-lg flex flex-row justify-between items-center'><span>{selectedStaff >= 0 && selectedStaff != null ? "Edit Staff Details" : "Add Staff"}</span> </p>
             <form onSubmit={handleSubmit} className="px-6 py-4 space-y-5 box-border">
                 <div className="flex flex-col gap-2">
                     <img src={uploadedImage === null ? staffInfo.image: uploadedImage} alt="" className="w-[70px] h-[70px] rounded-full"/>
                     {/* <label className="text-sm font-medium">Upload Image</label> */}
-                    <input type='file' name='image' className="w-fit cursor-pointer" title='Upload Image' onChange={handleFileChange} accept="image/png, image/jpeg, image/jpg" readOnly={!editable}/>
+                    <input type='file' name='image' className="w-fit cursor-pointer" title='Upload Image' onChange={handleFileChange} accept="image/png, image/jpeg, image/jpg"/>
                 </div>
                 <div className="flex flex-col justify-between md:flex-row w-full box-border gap-4">
                     <div className="w-full sm:w-1/2 flex flex-col gap-2">
                         <label className="text-sm font-medium">Full Name</label>
-                        <input type="text" name="fullname" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={staffInfo.fullname} onChange={handleChange} readOnly={!editable}/>
+                        <input type="text" name="fullname" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={staffInfo.fullname} onChange={handleChange} />
                     </div>
                     <div className="w-full sm:w-1/2 flex flex-col gap-2">
                         <label className="text-sm font-medium">Role</label>
-                        <input type="text" name="position" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={staffInfo.position} onChange={handleChange} readOnly={!editable}/>
+                        <input type="text" name="position" className="border p-3 h-12 box-border rounded-md border-custom-brown outline-none focus:border-[#152a3b] text-sm" value={staffInfo.position} onChange={handleChange} />
                     </div>
                 </div>
                 <div className="w-full flex flex-col gap-2">
                     <label className="text-sm font-medium">Description</label>
-                    <textarea className="border w-full rounded-md p-3 border-custom-brown focus:border-[#152a3b] outline-none text-sm" name='description' rows={5} value={staffInfo.description} onChange={handleChange} readOnly={!editable}>
+                    <textarea className="border w-full rounded-md p-3 border-custom-brown focus:border-[#152a3b] outline-none text-sm" name='description' rows={5} value={staffInfo.description} onChange={handleChange}>
 
                     </textarea> 
                 </div>
@@ -93,7 +93,7 @@ const AddTeamMember = ({openNewUser, setOpenNewUser, selectedStaff, setSelectedS
                     <button onClick={handleClose} className="py-3 px-4 w-fit text-black font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer"> 
                         cancel
                     </button>
-                    <button type="submit" className={!editable ? "py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer opacity-50" : "py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"}> 
+                    <button type="submit" className="py-3 px-4 w-fit text-white font-medium text-base rounded-md active:bg-custom-brown md:hover:bg-custom-brown bg-[#1D4ED8] cursor-pointer"> 
                         Submit
                     </button>
                 </div>
