@@ -127,19 +127,78 @@ const HoldingsDetails = () => {
         <div className='px-6 p-8 gap-y-4 flex flex-col md:flex-row justify-between border-t '>
             <div>
                 <h3 className='font-semibold text-lg'>
+                    Subscribers List
+                </h3>
+                <p className='font-normal text-sm text-custom-ash'>Holdings active Subscriber</p>
+            </div>
+            <div className='flex flex-col gap-4 sm:flex-row sm:gap-2 '>
+                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='md:w-fit box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Subscriber</p>
+                <p onClick={()=>{setOpenBroadcastDialog(true); setBroadcastRecipient(TeamMembers.lengthy)}} className=' box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Send Message</p>
+            </div>
+        </div>
+        <div className=" min-w-full border-red-500">
+            <div className="overflow-x-scroll lg:overflow-hidden">
+                <table className="min-w-full text-left">
+                    <thead className="border-b bg-[#152a3b] text-black">
+                        <tr>
+                        <th className="text-sm text-center font-medium text-white px-4 md:px-0 py-4">
+                            S/N
+                        </th>
+                        <th className="text-sm font-medium text-white px-2 py-4">
+                            Name
+                        </th>
+                        <th className="text-sm font-medium text-white px-2 py-4">
+                            Email
+                        </th>
+                        <th className="text-sm font-medium text-white px-2 py-4">
+                            Phone
+                        </th>
+                        <th className="text-sm font-medium text-white px-6 md:px-0 py-4">
+                            
+                        </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className="bg-white">
+                            <td className=" py-4 whitespace-nowrap text-sm font-medium text-black text-center">1</td>
+                            <td className="text-sm text-black  px-2 py-4 whitespace-nowrap">
+                            {/* <img src={teamMember.image} className="w-[50px] h-[50px] rounded-full object-contain object-top bg-custom-brown" alt=''/> */}
+                            Amujoyegbe Feyisayo
+                            </td>
+                            <td className='text-sm lowercase px-2'>
+                            feyisayoamujoyegbe@gmail.com
+                            </td>
+                            <td className="text-sm text-black py-4 whitespace-nowrap px-2">
+                            09098876786
+                            </td>
+                            <td className="text-sm text-[#1D4DE8] px-6 md:pr-6 h-full my-auto py-4 whitespace-nowrap text-center ">
+                            <div className='flex flex-row gap-2 items-center justify-end'>
+                                {/* <p onClick={()=>{setOpenBroadcastDialog(true); setBroadcastRecipient(1)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><TiMessages className='text-base'/> Message</p> */}
+                                <p onClick={()=>{setOpenNewCustomerDialog(true); setSelectedCustomer(2)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-base'/> Edit</p>
+                                <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-base'/> Delete</p>
+                            </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div className='px-6 p-8 gap-y-4 flex flex-col md:flex-row justify-between border-t '>
+            <div>
+                <h3 className='font-semibold text-lg'>
                     Wait List
                 </h3>
                 <p className='font-normal text-sm text-custom-ash'>Notify this customers on important information</p>
             </div>
             <div className='flex flex-col gap-4 sm:flex-row sm:gap-2 '>
-                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='w-[180px] md:w-fit box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
-                <p onClick={()=>{setOpenBroadcastDialog(true); setBroadcastRecipient(TeamMembers.length)}} className=' w-[180px] md:w-[175px] box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Create Broadcast</p>
+                <p onClick={()=>{setOpenNewCustomerDialog(true)}} className='md:w-fit box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><BiEdit className='font-semibold text-base' /> Add Customer</p>
+                <p onClick={()=>{setOpenBroadcastDialog(true); setBroadcastRecipient(TeamMembers.lengthy)}} className='box-border p-4 md:py-2.5 md:px-3 text-sm flex flex-row gap-1 items-center bg-[#1D4ED8] text-white rounded-md active:bg-custom-brown md:hover:bg-custom-brown cursor-pointer'><TiMessages className='font-semibold text-base' /> Send Broadcast</p>
             </div>
         </div>
         <div className="flex flex-col overflow-x-scroll md:overflow-hidden">
         <div className=""> 
-          <div className="pb-4 inline-block min-w-full">
-              <div className="overflow-hidden">
+          <div className="pb-4 min-w-full">
+              <div className="overflow-x-scroll lg:overflow-hidden">
                   <table className="min-w-full text-left">
                       <thead className="border-b bg-[#152a3b] text-black">
                           <tr>
@@ -177,11 +236,11 @@ const HoldingsDetails = () => {
                               </td>
                               <td className="text-sm text-[#1D4DE8] px-6 md:pr-6 h-full my-auto py-4 whitespace-nowrap text-center ">
                                 <div className='flex flex-row gap-2 items-center justify-end'>
-                                {
+                                {/* {
                                     teamMember.id === 0 ? 
                                         <p onClick={()=>{setOpenBroadcastDialog(true); setBroadcastRecipient(1)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><TiMessages className='text-base'/> Message</p>
                                     : null
-                                }
+                                } */}
                                   <p onClick={()=>{setOpenNewCustomerDialog(true); setSelectedCustomer(teamMember.id)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown py-2 px-5 bg-[#1D4ED8] rounded-md flex flex-row gap-1 items-center text-white'><BiEdit className='text-base'/> Edit</p>
                                   <p onClick={()=>{setOpen(true)}} className='cursor-pointer active:bg-custom-brown md:hover:bg-custom-brown p-3 py-2 px-4 bg-[#E02424] rounded-md flex flex-row gap-1 items-center text-white'><RiDeleteBinLine className='text-base'/> Delete</p>
                                 </div>
