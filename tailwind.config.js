@@ -18,7 +18,7 @@ module.exports = {
         'dashboard-blue': '#3460dc',
         'custom-brown': '#6B7280',
         'custom-darker-blue': '#0c1f56',
-        'dark-bg':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6))',
+        'dark-bg':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6))','dark-bg':'linear-gradient(rgba(0, 13, 26, 0.6),rgba(0, 13, 26, 0.6))',
         "custom-dark": "rgba(0, 13, 26, 0.2)",
         "custom-dark-image": "rgba(0, 84, 102, 0.4)"
       },

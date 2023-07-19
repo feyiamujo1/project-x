@@ -60,13 +60,13 @@ const Dashboard = () => {
           <img className='w-16 hidden md:block cursor-pointer mx-auto' src={Logo} alt="" />
         </div>
         <div onClick={()=>{setShowDropDown(!showDropDown)}} className='relative rounded-full flex flex-row gap-2 items-center group border border-white cursor-pointer'>
-          <p className='font-semibold text-lg group-active:text-custom-brown md:group-hover:text-custom-brown'>Hi, Abiola</p>
+          <p className='font-semibold text-lg group-active:text-custom-brown md:group-hover:text-custom-brown'>Hi, John</p>
           <img src={ProfileImage} alt="" className='w-10 h-10 rounded-full object-cover cursor-pointer md:group-hover:brightness-50 group-active:brightness-50' />
             { showDropDown && 
               <div className={'absolute w-[260px] top-[40px] right-0 bg-white rounded-md shadow box-border hidden group-hover:block md:block md:group-hover:block'}>
                 <div className='p-3 border-b box-border text-base'>
-                  <p className='w-full break-words font-medium '>Abiola Adeyeye</p>
-                  <p className='break-words text-sm'>abiolaadeyeye@eyekontact.com</p>
+                  <p className='w-full break-words font-medium '>John Doe</p>
+                  <p className='break-words text-sm'>johndoe@eyekontact.com</p>
                 </div>
                 <div className='py-1 box-border text-base'>
                   <p onClick={()=>{setShowProfileModal(true); setShowDropDown(false)}} className='px-3 py-1.5 cursor-pointer hover:bg-[#d8ecff]'>Profile</p>

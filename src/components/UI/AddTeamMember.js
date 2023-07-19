@@ -1,6 +1,4 @@
 import ManagingDirectorImage from '../../../src/assets/images/md.png'
-import OperationManager from '../../../src/assets/images/lucky.png'
-import CreativeSpecialityImage from '../../../src/assets/images/abiola.png'
 import ExecutiveAssistantImage from '../../../src/assets/images/faith.png'
 import OfficeAssistantImage from '../../../src/assets/images/daniel.png'
 import InnovationManagerImage from '../../../src/assets/images/enare.png'
@@ -27,11 +25,9 @@ const AddTeamMember = ({openNewUser, setOpenNewUser, selectedStaff, setSelectedS
 
     const TeamMembers = [
         { id: 0, name: "Adeniyi Ganiyu", position: "Managing Director", image: ManagingDirectorImage},
-        { id: 1, name: "Lucky Nwaka", position: "Asset Manager", image: OperationManager },
         { id: 2, name: "Faith Ikejiaku", position: "Customer Service Manager", image: ExecutiveAssistantImage },
         { id: 3, name: "Daniel Olarewaju", position: "Office Assistant", image: OfficeAssistantImage},
         { id: 4, name: "Enare Ejim", position: "Innovation Manager", image: InnovationManagerImage},
-        { id: 5, name: "Abiola Adeyeye", position: "Creative Executive", image: CreativeSpecialityImage },
         { id: 6, name: "Ibrahim Abiodun", position: "Operation Executive", image: JohnDoeImage }
     ]
 

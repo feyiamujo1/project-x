@@ -1,12 +1,10 @@
 import AboutImage from '../../src/assets/images/about_image.png'
 import AboutImageMobile from '../../src/assets/images/about_image_mobile.png'
 import ManagingDirectorImage from '../../src/assets/images/md.png'
-import OperationManager from '../../src/assets/images/lucky.png'
 import ExecutiveAssistantImage from '../../src/assets/images/faith.png'
 import OfficeAssistantImage from '../../src/assets/images/daniel.png'
 import InnovationManagerImage from '../../src/assets/images/enare.png'
 // import MarketingManagerImage from '../../src/assets/images/gbemi.png'
-import CreativeSpecialityImage from '../../src/assets/images/abiola.png'
 import JohnDoeImage from '../../src/assets/images/john.png'
 import DirectionImage from '../../src/assets/images/directions.png'
 import {ReactComponent as DownButton}  from "../../src/assets/images/down-arrow-svgrepo-com.svg"
@@ -21,13 +19,10 @@ const About = () => {
     const [memberId, SetmemberId] = useState(null);
     const Members = [
         { id: 0, name: "Adeniyi Ganiyu", position: "Managing Director", image: ManagingDirectorImage },
-        { id: 1, name: "Lucky Nwaka", position: "Asset Manager", image: OperationManager },
-        { id: 2, name: "Faith Ikejiaku", position: "Customer Service Manager", image: ExecutiveAssistantImage },
-        { id: 3, name: "Daniel Olarewaju", position: "Office Assistant", image: OfficeAssistantImage},
-        { id: 4, name: "Enare Ejim", position: "Innovation Manager", image: InnovationManagerImage},
-        // { id: 5, name: "Gbemisola Bello", position: "Marketing Manager", image: MarketingManagerImage },
-        { id: 5, name: "Abiola Adeyeye", position: "Creative Executive", image: CreativeSpecialityImage },
-        { id: 6, name: "Ibrahim Abiodun", position: "Operation Executive", image: JohnDoeImage }
+        { id: 1, name: "Faith Ikejiaku", position: "Customer Service Manager", image: ExecutiveAssistantImage },
+        { id: 2, name: "Daniel Olarewaju", position: "Office Assistant", image: OfficeAssistantImage},
+        { id: 3, name: "Enare Ejim", position: "Innovation Manager", image: InnovationManagerImage},
+        { id: 4, name: "Ibrahim Abiodun", position: "Operation Executive", image: JohnDoeImage }
     ]
 
     const firstContainer = useRef(null);
